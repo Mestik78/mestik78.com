@@ -1,5 +1,3 @@
-var webMode
-
 var ProjectsJson
 fetch("../publicDatabase/projects.json")
     .then(response => response.json())
@@ -36,7 +34,7 @@ const classes = {
 }
 
 
-function generateProject(Project){
+function generateProject(Project, webMode){
     
     var project = document.createElement('div');
     project.className = classes[webMode]["project"]
@@ -100,14 +98,9 @@ function generateSpacing(){
 
 function addElement () {
 
-    if (window.innerWidth <= 1080){
-        webMode = "mobile"
-    } else {
-        webMode = "desktop"
-    }
-
     for(i in ProjectsJson){
-        generateProject(ProjectsJson[i])
+        generateProject(ProjectsJson[i], "desktop")
+        generateProject(ProjectsJson[i], "mobile")
         generateSpacing()
     }
 
