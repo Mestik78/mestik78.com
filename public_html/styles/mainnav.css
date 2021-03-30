@@ -1,0 +1,25 @@
+.overMainnav{
+    width: 65%;
+    margin: 0 auto;
+
+    position: relative;
+    left: -8;
+    bottom: -300px;
+    
+    display:block;
+    
+}
+
+.mainnav {
+    overflow: hidden;
+    list-style-type: none;
+
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

@@ -1,0 +1,48 @@
+.Projects{
+
+    width: 90%;
+    height: 90%;
+
+    display: block;
+    padding: 20px, 20px;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.project {
+    background-color: rgba(255, 255, 255, 0.2);
+    
+    width: 100%;
+    height: 500px;
+}
+
+.projectimage{
+    width: 90%;
+    height: 90%;
+}
+
+.projectimage-bg{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 300px;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    bottom: auto;
+    top: 50%;
+    left: 50px;
+    
+    transform: translate(0, -50%); 
+}
+
+.projecttitle{
+
+}
+
+.projectdesc{
+
+}

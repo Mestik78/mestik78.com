@@ -1,15 +1,3 @@
-
-body {
-    margin: 0;
-    font-family: ABeeZee, Helvetica, sans-serif;
-
-    background-image: url('./multimedia/images/background.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center top;
-}
-
 .topnav {
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.5);
@@ -19,6 +7,7 @@ body {
     display:flex;
     justify-content: left;
     align-items: center;
+    position: fixed;
 }
 
 .topnav topNavButton {
@@ -36,11 +25,12 @@ body {
     color: #f2f2f2;
     text-align: center;
     text-decoration: none;
-    font-size: 17px;
+    font: ABeeZee;
+    font-size: 23px;
 }
 
 .topnav topNavLogo {
-    content:url('./multimedia/images/Logo Tansparente.png');
+    content:url('../multimedia/images/Logo Tansparente.png');
     width: 100%;
     height: 100%;
 }
