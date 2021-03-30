@@ -5,7 +5,6 @@ fetch("../publicDatabase/projects.json")
         ProjectsJson = json
     })
 
-document.body.onload = addElement;
 
 const Containers = {
     "desktop": document.getElementById("ProjectsDesktop"),
@@ -33,6 +32,7 @@ const classes = {
     }
 }
 
+document.body.onload = addElement;
 
 function generateProject(Project, webMode){
     
@@ -89,10 +89,15 @@ function generateProject(Project, webMode){
 }
 
 function generateSpacing(){
-    var spacing = document.createElement('div');
-    spacing.style.height = "50px"
+    var spacingdesktop = document.createElement('div');
+    spacingdesktop.style.height = "50px"
 
-    Containers[webMode].insertAdjacentElement('beforeend',spacing);
+    Containers["desktop"].insertAdjacentElement('beforeend',spacingdesktop);
+    
+    var spacingmobile = document.createElement('div');
+    spacingmobile.style.height = "50px"
+
+    Containers["mobile"].insertAdjacentElement('beforeend',spacingmobile);
 }
 
 
