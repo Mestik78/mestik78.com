@@ -1,0 +1,55 @@
+
+body {
+    margin: 0;
+    font-family: ABeeZee, Helvetica, sans-serif;
+
+    background-image: url('./multimedia/images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    list-style-type: none;
+    width: 100%;
+    height: 100px;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.topnav topNavButton {
+    float: left;
+    padding: 14px 16px;
+    height: 100%;
+    width: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.topnav topNavText {
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav topNavLogo {
+    content:url('./multimedia/images/Logo Tansparente.png');
+    width: 100%;
+    height: 100%;
+}
+
+
+.topnav topNavButton:hover {
+    background-color: #3333337F;
+}
+
+.topnav topNavButton:active {
+    background-color: #4d4d4d7f;
+}
