@@ -1,10 +1,15 @@
-console.log("Hello World!")
 
+var ProjectsJson
+fetch("../publicDatabase/projects.json")
+    .then(response => response.json())
+    .then(json => {
+        ProjectsJson = json
+    })
 
 var Projects = document.getElementById("Projects");
 document.body.onload = addElement;
 
-function generateProject(){
+function generateProject(Project){
     
     var project = document.createElement('div');
     project.className = "project"
@@ -12,6 +17,7 @@ function generateProject(){
     Projects.insertAdjacentElement('beforeend',project);
 
     
+
 
     var projectImageBg = document.createElement("div");
     projectImageBg.className = "projectimage-bg"
@@ -21,9 +27,39 @@ function generateProject(){
 
     var projectImage = document.createElement('img');
     projectImage.className = "projectimage"
-    projectImage.src = "https://img.itch.zone/aW1nLzIwNDI4MDYucG5n/original/nM2ihk.png" //--
+    projectImage.src = Project.image //--
     
     projectImageBg.insertAdjacentElement('beforeend',projectImage);
+
+
+
+    
+    var projectTitleBox = document.createElement('div');
+    projectTitleBox.className = "projecttitlebox"
+    
+    project.insertAdjacentElement('beforeend',projectTitleBox);
+
+    
+    var projectTitle = document.createElement('h3');
+    projectTitle.className = "projecttitle"
+    projectTitle.textContent = Project.title //--
+    
+    projectTitleBox.insertAdjacentElement('beforeend',projectTitle);
+
+
+
+    
+    var projectDescBox = document.createElement('div');
+    projectDescBox.className = "projectdescbox"
+    
+    project.insertAdjacentElement('beforeend',projectDescBox);
+
+    
+    var projectDes = document.createElement('h6');
+    projectDes.className = "projectdesc"
+    projectDes.textContent = Project.description //--
+    
+    projectDescBox.insertAdjacentElement('beforeend',projectDes);
 
 }
 
@@ -37,8 +73,8 @@ function generateSpacing(){
 
 function addElement () {
 
-    for(i = 0; i < 3; i++){
-        generateProject()
+    for(i in ProjectsJson){
+        generateProject(ProjectsJson[i])
         generateSpacing()
     }
 

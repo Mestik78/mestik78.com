@@ -32,17 +32,56 @@
     align-items: center;
 
     position: relative;
-    bottom: auto;
     top: 50%;
     left: 50px;
     
     transform: translate(0, -50%); 
 }
 
-.projecttitle{
+.projecttitlebox{
 
+    width: 50%;
+    height: 50px;
+
+    position: relative;
+    left: 95%;
+    bottom: 45%;
+    
+    transform: translate(-100%, -100%); 
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projecttitle{
+    font: ABeeZee;
+    color: white;
+    font-size: 45px;
+    text-align: right;
+}
+
+
+.projectdescbox{
+
+    width: 50%;
+    height: 300px;
+
+    position: relative;
+    bottom: 100px;
+    right: 50px;
+    
+    transform: translate(100%, -50%); 
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .projectdesc{
-
+    font-family: Montserrat;
+    font-weight: lighter;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
 }
