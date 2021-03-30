@@ -57,7 +57,7 @@ function generateProject(Project){
     
     var projectDes = document.createElement('h6');
     projectDes.className = "projectdesc"
-    projectDes.textContent = Project.description //--
+    projectDes.textContent = Project.briefDescription //--
     
     projectDescBox.insertAdjacentElement('beforeend',projectDes);
 
