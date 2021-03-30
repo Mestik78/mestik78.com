@@ -1,3 +1,4 @@
+var webMode
 
 var ProjectsJson
 fetch("../publicDatabase/projects.json")
@@ -6,27 +7,53 @@ fetch("../publicDatabase/projects.json")
         ProjectsJson = json
     })
 
-var Projects = document.getElementById("Projects");
 document.body.onload = addElement;
+
+const Containers = {
+    "desktop": document.getElementById("ProjectsDesktop"),
+    "mobile": document.getElementById("ProjectsMobile")
+}
+
+const classes = {
+    "desktop": {
+        "project": "project",
+        "projectimage-bg": "projectimage-bg",
+        "projectimage": "projectimage",
+        "projecttitlebox": "projecttitlebox",
+        "projecttitle": "projecttitle",
+        "projectdescbox": "projectdescbox",
+        "projectdesc": "projectdesc"
+    },
+    "mobile": {
+        "project": "project-mobile",
+        "projectimage-bg": "projectimage-bg-mobile",
+        "projectimage": "projectimage-mobile",
+        "projecttitlebox": "projecttitlebox-mobile",
+        "projecttitle": "projecttitle-mobile",
+        "projectdescbox": "projectdescbox-mobile",
+        "projectdesc": "projectdesc-mobile"
+    }
+}
+
 
 function generateProject(Project){
     
     var project = document.createElement('div');
-    project.className = "project"
+    project.className = classes[webMode]["project"]
 
-    Projects.insertAdjacentElement('beforeend',project);
+    Containers[webMode].insertAdjacentElement('beforeend',project);
 
     
 
 
     var projectImageBg = document.createElement("div");
-    projectImageBg.className = "projectimage-bg"
+    projectImageBg.className = classes[webMode]["projectimage-bg"]
 
     project.insertAdjacentElement('beforeend',projectImageBg);
 
 
     var projectImage = document.createElement('img');
-    projectImage.className = "projectimage"
+    projectImage.className = classes[webMode]["projectimage"]
     projectImage.src = Project.image //--
     
     projectImageBg.insertAdjacentElement('beforeend',projectImage);
@@ -35,13 +62,13 @@ function generateProject(Project){
 
     
     var projectTitleBox = document.createElement('div');
-    projectTitleBox.className = "projecttitlebox"
+    projectTitleBox.className = classes[webMode]["projecttitlebox"]
     
     project.insertAdjacentElement('beforeend',projectTitleBox);
 
     
     var projectTitle = document.createElement('h3');
-    projectTitle.className = "projecttitle"
+    projectTitle.className = classes[webMode]["projecttitle"]
     projectTitle.textContent = Project.title //--
     
     projectTitleBox.insertAdjacentElement('beforeend',projectTitle);
@@ -50,13 +77,13 @@ function generateProject(Project){
 
     
     var projectDescBox = document.createElement('div');
-    projectDescBox.className = "projectdescbox"
+    projectDescBox.className = classes[webMode]["projectdescbox"]
     
     project.insertAdjacentElement('beforeend',projectDescBox);
 
     
     var projectDes = document.createElement('h6');
-    projectDes.className = "projectdesc"
+    projectDes.className = classes[webMode]["projectdesc"]
     projectDes.textContent = Project.briefDescription //--
     
     projectDescBox.insertAdjacentElement('beforeend',projectDes);
@@ -67,11 +94,17 @@ function generateSpacing(){
     var spacing = document.createElement('div');
     spacing.style.height = "50px"
 
-    Projects.insertAdjacentElement('beforeend',spacing);
+    Containers[webMode].insertAdjacentElement('beforeend',spacing);
 }
 
 
 function addElement () {
+
+    if (window.innerWidth <= 1080){
+        webMode = "mobile"
+    } else {
+        webMode = "desktop"
+    }
 
     for(i in ProjectsJson){
         generateProject(ProjectsJson[i])

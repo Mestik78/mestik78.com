@@ -8,6 +8,8 @@
 		<link rel="stylesheet" href="./styles/general.css">
 		<link rel="stylesheet" href="./styles/mainnav.css">
 		<link rel="stylesheet" href="./styles/topnav.css">
+		<link rel="stylesheet" href="./styles/topnavMobile.css">
+		<link rel="stylesheet" href="./styles/desktopMobile.css">
 		
 		<TITLE>Mestik78</TITLE>
 		<link rel="icon" type="image/png" href='./multimedia/images/favicon.png' sizes="any">
@@ -17,7 +19,19 @@
 	
 	<nav>
 
-		<div class="topnav">
+		
+		<div class="topnav desktop">
+			<a href='./index.html'><topNavButton class="active" href="#home">
+				<topNavLogo></img>
+			</topNavButton></a>
+
+			<a href='./projects.html'><topNavButton>
+				<topNavText>Projects</topNavText>
+			</topNavButton></a>
+		</div>
+
+		
+		<div class="topnav-mobile mobile_device">
 			<a href='./index.html'><topNavButton class="active" href="#home">
 				<topNavLogo></img>
 			</topNavButton></a>
@@ -34,7 +48,16 @@
 
 
 
-		<div class="overMainnav">
+		<div class="overMainnav desktop">
+
+			<div class="imageContainer" style="width:100%;height:600px;margin-bottom: 75;">
+				<img src='./multimedia/images/Logo Tansparente.png' alt="Logo Mestik78" style="width:600px;height:100%;"></img>
+			</div>
+
+		</div>
+
+		
+		<div class="overMainnav mobile_device">
 
 			<div class="imageContainer" style="width:100%;height:600px;margin-bottom: 75;">
 				<img src='./multimedia/images/Logo Tansparente.png' alt="Logo Mestik78" style="width:600px;height:100%;"></img>

@@ -1,0 +1,12 @@
+/* if desktop */
+    .mobile_device {
+        display: none;
+    }
+
+
+
+/* if mobile device max width 480px */
+    @media only screen and (max-device-width: 1080px) {
+    .mobile_device{display: block;}
+    .desktop {display: none;}
+    }

@@ -1,0 +1,25 @@
+.overMainnav-mobile{
+    width: 90%;
+    margin: 0 auto;
+
+    position: relative;
+    left: 0;
+    bottom: -300px;
+    
+    display:block;
+    
+}
+
+.mainnav-mobile {
+    overflow: hidden;
+    list-style-type: none;
+
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+}
