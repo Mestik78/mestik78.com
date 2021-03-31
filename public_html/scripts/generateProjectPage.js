@@ -23,12 +23,16 @@ const classes = {
     "Desktop": {
         "projectTitle": "projectTitle",
         "projecticon-bg": "projecticon-bg",
-        "projecticon": "projecticon"
+        "projecticon": "projecticon",
+        "projectimage": "projectimage",
+        "projectimage-bg": "projectimage-bg"
     },
     "Mobile": {
         "projectTitle": "projectTitle-mobile",
         "projecticon-bg": "projecticon-bg-mobile",
-        "projecticon": "projecticon-mobile"
+        "projecticon": "projecticon-mobile",
+        "projectimage": "projectimage-mobile",
+        "projectimage-bg": "projectimage-bg-mobile"
     }
 }
 
@@ -89,5 +93,35 @@ function setupPage(webMode){
 
     var projectIcon = document.getElementById("projecticon"+ [webMode])
     projectIcon.src = projectInfo.icon //--
+
+
+    
+
+    images = projectInfo.images
+    console.log(images)
+    
+    for(i in images){
+        generateProjectImage(images[i], webMode)
+    }
+}
+
+function generateProjectImage(image, webMode){
+
+    container = document.getElementById("projectimages"+ [webMode])
+
+    var projectImageBg = document.createElement("div");
+    projectImageBg.className = classes[webMode]["projectimage-bg"]
+
+    container.insertAdjacentElement('beforeend',projectImageBg);
+
+
+    var projectImage = document.createElement('img');
+    projectImage.className = classes[webMode]["projectimage"]
+    projectImage.src = image //--
+    
+    projectImageBg.insertAdjacentElement('beforeend',projectImage);
+
+    
+    generateSpacing(container)
 
 }

@@ -1,9 +1,10 @@
 .projectPage{
-    position: relative;
-    display: block;
-
     width: 100%;
-    height: 100%;
+    margin: 0 auto;
+
+    position: relative;
+    
+    display:block;
 }
 
 
@@ -55,7 +56,7 @@
     font-family: Montserrat;
     font-weight: lighter;
     color: white;
-    font-size: 2vmin;
+    font-size: 2.5vmin;
     text-align: justify;
 }
 
@@ -63,9 +64,9 @@
 
 .projectdescbox{
 
-    height: 100%;
+    position: relative;
+    width: calc(100% - 725px);
 
-    position: absolute;
     right: 625px;
     top: 25px;
     left: 75px;
@@ -93,24 +94,33 @@
 }
 
 .project-downpart{
-    height: 500px;
-
     position: relative;
     display: flex;
+    height: fit-content;
 }
 
 .projectimages{
+    display: block;
+    width: 525px;
+    height: fit-content;
 
-    height: 100%;
-    width: 500px;
-
-    position: absolute;
-    right: 50px;
+    position: relative;
     top: 0px;
+    right: 50px;
     bottom: 0px;
-    
+    left: 150px;
+}
 
-    display:block;
-    justify-content: center;
-    align-items: center;
+.projectimage-bg{
+
+    width: 100%;
+    height: auto;
+
+    position: relative;
+}
+
+.projectimage{
+
+    height: auto;
+    width: 100%;
 }
