@@ -4,6 +4,7 @@ fetch("../publicDatabase/projects.json")
     .then(json => {
         ProjectsJson = json
     })
+    .then(document.body.onload = addElement)
 
 
 const Containers = {
@@ -32,10 +33,16 @@ const classes = {
     }
 }
 
-document.body.onload = addElement;
+
+function generateLink(object, Project){
+
+    object.href = "/projectPage.html?project=" + Project.title //--
+}
+
 
 function generateProject(Project, webMode){
     
+
     var project = document.createElement('div');
     project.className = classes[webMode]["project"]
 
@@ -44,15 +51,16 @@ function generateProject(Project, webMode){
     
 
 
-    var projectImageBg = document.createElement("div");
+    var projectImageBg = document.createElement("a");
     projectImageBg.className = classes[webMode]["projectimage-bg"]
+    generateLink(projectImageBg, Project)
 
     project.insertAdjacentElement('beforeend',projectImageBg);
 
 
     var projectImage = document.createElement('img');
     projectImage.className = classes[webMode]["projectimage"]
-    projectImage.src = Project.image //--
+    projectImage.src = Project.icon //--
     
     projectImageBg.insertAdjacentElement('beforeend',projectImage);
 
@@ -65,9 +73,10 @@ function generateProject(Project, webMode){
     project.insertAdjacentElement('beforeend',projectTitleBox);
 
     
-    var projectTitle = document.createElement('h3');
+    var projectTitle = document.createElement('a');
     projectTitle.className = classes[webMode]["projecttitle"]
     projectTitle.textContent = Project.title //--
+    generateLink(projectTitle, Project)
     
     projectTitleBox.insertAdjacentElement('beforeend',projectTitle);
 

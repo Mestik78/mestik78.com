@@ -1,0 +1,55 @@
+.projectTitle{
+    text-align: center;
+    color: white;
+    font: ABeeZee;
+    font-size: 10vmin;
+}
+
+.projecticon{
+    width: 90%;
+    height: 90%;
+}
+
+.projecticon-bg{
+
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 500px;
+    height: 500px;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top:50px;
+    left: 50px;
+    
+}
+
+
+.projectdescbox{
+
+    width: calc(50% - 50px);
+    height: 350px;
+
+    position: relative;
+    left: 50%;
+    
+    transform: translate(0, -100%);
+
+    display:inline-table;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectdesc{
+    font-family: Montserrat;
+    font-weight: lighter;
+    color: white;
+    font-size: 2vmin;
+    text-align: justify;
+}
+
+.projectpagecontainer{
+
+}

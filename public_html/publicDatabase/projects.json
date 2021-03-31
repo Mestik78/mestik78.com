@@ -1,30 +1,34 @@
 [
     {
         "title": "Zombie Blower",
-        "image": "https://img.itch.zone/aW1nLzM1NDE4MzEucG5n/315x250%23c/VIp88U.png",
+        "icon": "https://img.itch.zone/aW1nLzM1NDE4MzEucG5n/315x250%23c/VIp88U.png",
         "briefDescription": "Zombie Blower was created for a game jam. It's a top down shooter in which you have to decide if you want to stun or to push you enemies as you cant kill them.",
-        "description": "Top Down Shooter for CPB Jam.\n\nIn this game the enemies are zombies so they can't die. You'll have to stun them or push'em away to survive.\n\n\n\nThere are some Easter eggs, if you find anyone say it in the comments :D"
+        "description": "Top Down Shooter for CPB Jam.\n\nIn this game the enemies are zombies so they can't die. You'll have to stun them or push'em away to survive.\n\n\n\nThere are some Easter eggs, if you find anyone say it in the comments :D",
+        "images": []
     },
 
     {
         "title": "Space Program Simulator",
-        "image": "https://img.itch.zone/aW1nLzM1MDgzNTUucG5n/315x250%23c/R7ou8t.png",
+        "icon": "https://img.itch.zone/aW1nLzM1MDgzNTUucG5n/315x250%23c/R7ou8t.png",
         "briefDescription": "Space Program Simulator is a physics test. It tries to simulate general relavity.",
-        "description": ""
+        "description": "",
+        "images": []
     },
 
     {
         "title": "Empyre 2019",
-        "image": "https://img.itch.zone/aW1nLzM1MzIwNjkucG5n/315x250%23c/fn%2BXgp.png",
+        "icon": "https://img.itch.zone/aW1nLzM1MzIwNjkucG5n/315x250%23c/fn%2BXgp.png",
         "briefDescription": "Empyre 2019 is a prototype of a game I've been wanting to make for a long time. It didn't end it's development because I didn't have enough experience yet.",
-        "description": ""
+        "description": "",
+        "images": []
     },
 
     {
         "title": "Gravity Ball 3D",
-        "image": "https://img.itch.zone/aW1nLzIwNDI4MDYucG5n/original/nM2ihk.png",
+        "icon": "https://img.itch.zone/aW1nLzIwNDI4MDYucG5n/original/nM2ihk.png",
         "briefDescription": "Gravity Ball 3D is a game published in 2018 in wich you have to change the gravity to avoid crashing into obstacles.",
-        "description": "In this game you'll have to change the gravity to avoid the dangerous red blocks. With w, a, s and d you can change the gravity and with space you can use the special hability. You can collect coins to buy skins, including Ricardo."
+        "description": "In this game you'll have to change the gravity to avoid the dangerous red blocks. With w, a, s and d you can change the gravity and with space you can use the special hability. You can collect coins to buy skins, including Ricardo.",
+        "images": []
     }
     
 ]
