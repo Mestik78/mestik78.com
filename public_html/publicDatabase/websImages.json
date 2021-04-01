@@ -1,3 +1,5 @@
 {
-    "Play Store": "./publicDatabase/websImages/Play Store.png"
+    "Play Store": "./publicDatabase/websImages/Play Store.png",
+    "itch.io": "./publicDatabase/websImages/itch.io.png",
+    "Roblox": "./publicDatabase/websImages/Roblox.png"
 }

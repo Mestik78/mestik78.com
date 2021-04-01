@@ -83,6 +83,7 @@
     color: white;
     font-size: 1.2vw;
     text-align: justify;
+    white-space: pre-line;
 }
 
 .project-upperpart{
@@ -178,8 +179,6 @@
     position: relative;
     width: 100%;
 
-    top: 75px;
-
     display:inline-table;
     justify-content: center;
     align-items: center;
@@ -187,7 +186,9 @@
 
 .linkimage{
 
-    width: 70%;
-    height: auto;
+    width: auto;
+    height: 8vh;
+    left: 25px;
+    top: 25px;
 
 }
