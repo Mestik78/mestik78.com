@@ -56,7 +56,7 @@
     font-family: Montserrat;
     font-weight: lighter;
     color: white;
-    font-size: 2.5vmin;
+    font-size: 1.5vw;
     text-align: justify;
 }
 
@@ -65,12 +65,11 @@
 .projectdescbox{
 
     position: relative;
-    width: calc(100% - 725px);
+    width: calc(100% - 50px);
 
-    right: 625px;
+    right: 25px;
     top: 25px;
-    left: 75px;
-    bottom: 25px;
+    left: 25px;
     
 
     display:inline-table;
@@ -82,7 +81,7 @@
     font-family: Montserrat;
     font-weight: lighter;
     color: white;
-    font-size: 2vmin;
+    font-size: 1.2vw;
     text-align: justify;
 }
 
@@ -101,14 +100,12 @@
 
 .projectimages{
     display: block;
-    width: 525px;
+    width: calc(100% - 725px + 75px);
     height: fit-content;
 
     position: relative;
     top: 0px;
-    right: 50px;
-    bottom: 0px;
-    left: 150px;
+    left: 75px;
 }
 
 .projectimage-bg{
@@ -156,4 +153,41 @@
 
 .projectplay:active {
     background-color: rgb(64, 128, 0);
+}
+
+
+
+.descandwidgets{
+
+    position: relative;
+    width: calc(100% - 725px);
+
+    right: 600px;
+    top: 0px;
+    left: 50px;
+    bottom: 0px;
+    
+
+    display:inline-table;
+    justify-content: center;
+    align-items: center;
+}
+
+.widgets{
+
+    position: relative;
+    width: 100%;
+
+    top: 75px;
+
+    display:inline-table;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkimage{
+
+    width: 70%;
+    height: auto;
+
 }

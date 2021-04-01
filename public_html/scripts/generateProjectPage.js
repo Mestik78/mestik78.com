@@ -1,17 +1,18 @@
 var ProjectsJson
+var WebsImages
+
 fetch("../publicDatabase/projects.json")
     .then(response => response.json())
     .then(json => {
         ProjectsJson = json
     })
-    .then(window.onload = start)
+    .then(document.body.onloadstart = start)
 
 
 var currentProject
     
 var projectIndex = -1
 
-var openingTime = 0
 
 
 const Containers = {
@@ -25,46 +26,44 @@ const classes = {
         "projecticon-bg": "projecticon-bg",
         "projecticon": "projecticon",
         "projectimage": "projectimage",
-        "projectimage-bg": "projectimage-bg"
+        "projectimage-bg": "projectimage-bg",
+        "linkimage": "linkimage",
+        "linkimagecontainer": "linkimagecontainer"
     },
     "Mobile": {
         "projectTitle": "projectTitle-mobile",
         "projecticon-bg": "projecticon-bg-mobile",
         "projecticon": "projecticon-mobile",
         "projectimage": "projectimage-mobile",
-        "projectimage-bg": "projectimage-bg-mobile"
+        "projectimage-bg": "projectimage-bg-mobile",
+        "linkimage": "linkimage-mobile",
+        "linkimagecontainer": "linkimagecontainer-mobile"
     }
 }
 
 
 function start(){
-    if (openingTime == 1){
+    var params = {};
+    location.search.slice(1).split("&").forEach(function(pair) {
+        pair = pair.split("=");
+        params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+    });
     
-        var params = {};
-        location.search.slice(1).split("&").forEach(function(pair) {
-            pair = pair.split("=");
-            params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
-        });
-        
-        currentProject = params.project
-        
-        for(i in ProjectsJson){
-            if (ProjectsJson[i].title == currentProject){
-                projectIndex = i
-            }
+    currentProject = params.project
+    
+    for(i in ProjectsJson){
+        if (ProjectsJson[i].title == currentProject){
+            projectIndex = i
         }
-    
-        console.log(projectIndex)
-        if (projectIndex == -1){
-            //window.location.href = 'index.html';
-        }
-    
-    
-        setupPage("Desktop")
-        setupPage("Mobile")
     }
-    
-    openingTime++
+
+    if (projectIndex == -1){
+        //window.location.href = 'index.html';
+    }
+
+
+    setupPage("Desktop")
+    setupPage("Mobile")
 }
 
 
@@ -91,6 +90,13 @@ function setupPage(webMode){
     projectIcon.src = projectInfo.icon //--
 
 
+    
+    var briefDescription = document.getElementById("projectbriefdesc"+ [webMode])
+    briefDescription.textContent = projectInfo.briefDescription //--
+    
+    var Description = document.getElementById("projectdesc"+ [webMode])
+    Description.textContent = projectInfo.description //--
+
 
     if(webMode == "Desktop"){
 
@@ -101,16 +107,67 @@ function setupPage(webMode){
         }else{
             projectPlay.className += " hide"
         }
+
+
+        
+        var itchicoWidget = document.getElementById("itchioWidget")
+        if(projectInfo.widgets.hasOwnProperty("itch.io")){
+            itchicoWidget.src = projectInfo.widgets["itch.io"].src
+            itchicoWidget.href = projectInfo.widgets["itch.io"].href
+        }else{
+            itchicoWidget.className = "hide"
+        }
     }
-    
+
+
+
+
 
     images = projectInfo.images
-    console.log(images)
     
     for(i in images){
         generateProjectImage(images[i], webMode)
     }
+
+
+    
+    fetch("../publicDatabase/websImages.json")
+        .then(response => response.json())
+        .then(json => {
+            WebsImages = json
+        }).then(
+            function() {
+                
+                for(i in projectInfo.links){
+                    generateLinkImage(i, webMode)
+                }
+            }
+        )
 }
+
+function generateLinkImage(i, webMode){
+
+    container = document.getElementById("linksImages" + [webMode])
+
+
+    var linkImageContainer = document.createElement("a");
+    linkImageContainer.className = classes[webMode]["linkimagecontainer"]
+    linkImageContainer.href = projectInfo.links[i]
+    linkImageContainer.target = "_blank"
+
+    container.insertAdjacentElement('beforeend',linkImageContainer);
+
+
+    
+    var linkImage = document.createElement("img");
+    linkImage.className = classes[webMode]["linkimage"]
+    linkImage.src = WebsImages[i]
+
+
+    linkImageContainer.insertAdjacentElement('beforeend',linkImage);
+}
+
+
 
 function generateProjectImage(image, webMode){
 

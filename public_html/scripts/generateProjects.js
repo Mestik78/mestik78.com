@@ -4,7 +4,7 @@ fetch("../publicDatabase/projects.json")
     .then(json => {
         ProjectsJson = json
     })
-    .then(document.body.onload = addElement)
+    .then(document.body.onloadstart = addElement)
 
 
 const Containers = {
@@ -117,5 +117,4 @@ function addElement () {
         generateProject(ProjectsJson[i], "mobile")
         generateSpacing()
     }
-
 }

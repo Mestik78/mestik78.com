@@ -11,39 +11,34 @@ var currentProject
     
 var projectIndex = -1
 
-var openingTime = 0
 
 
 const Containers = document.getElementById("mainnav")
 
 
 function start(){
-    if (openingTime == 1){
     
-        var params = {};
-        location.search.slice(1).split("&").forEach(function(pair) {
-            pair = pair.split("=");
-            params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
-        });
-        
-        currentProject = params.project
-        
-        for(i in ProjectsJson){
-            if (ProjectsJson[i].title == currentProject){
-                projectIndex = i
-            }
+    var params = {};
+    location.search.slice(1).split("&").forEach(function(pair) {
+        pair = pair.split("=");
+        params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+    });
+    
+    currentProject = params.project
+    
+    for(i in ProjectsJson){
+        if (ProjectsJson[i].title == currentProject){
+            projectIndex = i
         }
-    
-        console.log(projectIndex)
-        if (projectIndex == -1){
-            //window.location.href = 'index.html';
-        }
-    
-    
-        setupPage()
     }
-    
-    openingTime++
+
+    console.log(projectIndex)
+    if (projectIndex == -1){
+        //window.location.href = 'index.html';
+    }
+
+
+    setupPage()
 }
 
 

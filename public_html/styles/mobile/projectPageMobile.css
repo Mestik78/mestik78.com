@@ -56,7 +56,7 @@
     font-family: Montserrat;
     font-weight: lighter;
     color: white;
-    font-size: 3vmin;
+    font-size: 2.8vw;
     text-align: justify;
 }
 
@@ -76,7 +76,7 @@
     font-family: Montserrat;
     font-weight: lighter;
     color: white;
-    font-size: 3vmin;
+    font-size: 2.5vw;
     text-align: justify;
 }
 
@@ -109,4 +109,11 @@
 
     height: auto;
     width: 100%;
+}
+
+.linkimage-mobile{
+
+    width: 100%;
+    height: auto;
+
 }
