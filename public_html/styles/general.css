@@ -36,7 +36,7 @@ img{
     color: white;
 }
 
-.noselect, .topnav topNavText,  .topnav-mobile topNavText{
+.noselect, .topnav topNavText,  .topnav-mobile topNavText, .projectplay{
     -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */
        -khtml-user-select: none; /* Konqueror HTML */
@@ -44,4 +44,8 @@ img{
           -ms-user-select: none; /* Internet Explorer/Edge */
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
-  }
+}
+
+.hide{
+    display: none;
+}

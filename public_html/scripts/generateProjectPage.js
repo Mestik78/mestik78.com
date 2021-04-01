@@ -39,9 +39,6 @@ const classes = {
 
 function start(){
     if (openingTime == 1){
-
-
-        console.log("hey")
     
         var params = {};
         location.search.slice(1).split("&").forEach(function(pair) {
@@ -64,7 +61,7 @@ function start(){
     
     
         setupPage("Desktop")
-        //setupPage("Mobile")
+        setupPage("Mobile")
     }
     
     openingTime++
@@ -82,7 +79,6 @@ function generateSpacing(Container){
 function setupPage(webMode){
 
     projectInfo = ProjectsJson[projectIndex]
-    console.log(projectInfo)
 
 
     var projectTitleObj = document.getElementById("projectTitle" + [webMode])
@@ -95,6 +91,17 @@ function setupPage(webMode){
     projectIcon.src = projectInfo.icon //--
 
 
+
+    if(webMode == "Desktop"){
+
+        var projectPlay = document.getElementById("projectplay")
+
+        if (projectInfo.game){
+            projectPlay.href = "/projectPlay.html?project=" + projectInfo.title //--
+        }else{
+            projectPlay.className += " hide"
+        }
+    }
     
 
     images = projectInfo.images

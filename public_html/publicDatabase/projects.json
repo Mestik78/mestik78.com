@@ -11,7 +11,8 @@
             "https://img.itch.zone/aW1hZ2UvNjU4NTQwLzM1NDE4OTgucG5n/347x500/VMIA2S.png",
             "https://img.itch.zone/aW1hZ2UvNjU4NTQwLzM1NDE4OTMucG5n/347x500/APxaQl.png",
             "https://img.itch.zone/aW1hZ2UvNjU4NTQwLzM1NDE4OTUucG5n/347x500/mN%2BeoH.png"
-        ]
+        ],
+        "game": true
     },
 
     {
@@ -19,7 +20,8 @@
         "icon": "https://img.itch.zone/aW1nLzM1MDgzNTUucG5n/315x250%23c/R7ou8t.png",
         "briefDescription": "Space Program Simulator is a physics test. It tries to simulate general relavity.",
         "description": "",
-        "images": []
+        "images": [],
+        "game": false
     },
 
     {
@@ -27,7 +29,8 @@
         "icon": "https://img.itch.zone/aW1nLzM1MzIwNjkucG5n/315x250%23c/fn%2BXgp.png",
         "briefDescription": "Empyre 2019 is a prototype of a game I've been wanting to make for a long time. It didn't end it's development because I didn't have enough experience yet.",
         "description": "",
-        "images": []
+        "images": [],
+        "game": false
     },
 
     {
@@ -35,7 +38,8 @@
         "icon": "https://img.itch.zone/aW1nLzIwNDI4MDYucG5n/original/nM2ihk.png",
         "briefDescription": "Gravity Ball 3D is a game published in 2018 in wich you have to change the gravity to avoid crashing into obstacles.",
         "description": "In this game you'll have to change the gravity to avoid the dangerous red blocks. With w, a, s and d you can change the gravity and with space you can use the special hability. You can collect coins to buy skins, including Ricardo.",
-        "images": []
+        "images": [],
+        "game": false
     }
     
 ]

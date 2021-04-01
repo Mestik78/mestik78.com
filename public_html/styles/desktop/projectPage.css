@@ -124,3 +124,36 @@
     height: auto;
     width: 100%;
 }
+
+.projectplay{
+
+    background-color: rgb(76, 151, 0);
+    border-radius: 10px;
+
+    min-width: 100px;
+
+    position: absolute;
+    right: calc(50px + 10%);
+    top: calc(100% - 75px);
+    left: calc(600px + 10%);
+    bottom: 0px;
+    
+}
+
+.projectplay-arrow{
+    
+    position: absolute;
+
+    height: 70%;
+
+    top: 15%;
+    left: 50%;
+
+    transform: translate(-50%);
+
+}
+
+
+.projectplay:active {
+    background-color: rgb(64, 128, 0);
+}
