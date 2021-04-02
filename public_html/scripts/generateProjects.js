@@ -14,7 +14,7 @@ const Containers = {
 
 const classes = {
     "desktop": {
-        "project": "project",
+        "project": "project-list",
         "projectimage-bg": "projectimage-bg",
         "projectimage": "projectimage",
         "projecttitlebox": "projecttitlebox",
@@ -100,11 +100,13 @@ function generateProject(Project, webMode){
 function generateSpacing(){
     var spacingdesktop = document.createElement('div');
     spacingdesktop.style.height = "50px"
+    spacingdesktop.className = "space"
 
     Containers["desktop"].insertAdjacentElement('beforeend',spacingdesktop);
     
     var spacingmobile = document.createElement('div');
     spacingmobile.style.height = "50px"
+    spacingmobile.className = "space"
 
     Containers["mobile"].insertAdjacentElement('beforeend',spacingmobile);
 }

@@ -55,11 +55,24 @@
 
             <div class="mainnav desktop">
 
-                <div id="ProjectsDesktop" class="Projects">
+				<div class="ProjectsListContainer">
+					<div class="listform">
+						<img id="listButton" type="submit" class="listformicon" src="multimedia/images/icons/list.png"></img>
+						<img id="gridButton" type="submit" class="listformicon" src="multimedia/images/icons/grid.png"></img>
+					</div>
 
-                    <div id="space" style="height: 50px;"></div>
+					<div class="space" style="height: 25px;"></div>
 
-                </div>
+					<div id="grid-space1" class="grid-space hide" style="height: 75px;"></div>
+
+					<div id="ProjectsDesktop" class="ProjectsList">
+
+						<div class="space" style="height: 50px;"></div>
+
+					</div>
+			
+					<div id="grid-space2" class="grid-space hide" style="height: 50px;"></div>
+				</div>
 
             </div>
 
@@ -86,6 +99,7 @@
 		</div>
 
 		
+		<script type="text/javascript" src="./scripts/changeProjectsListType.js"></script>
 		<script type="text/javascript" src="./scripts/generateProjects.js"></script>
 
 	</body>
