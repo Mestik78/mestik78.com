@@ -124,9 +124,10 @@
 }
 
 .projectplay{
-
-    background-color: rgb(76, 151, 0);
-    border-radius: 10px;
+    background-color: #00b06f;
+    border-color: #00b06f;
+    color: #fff;
+    border-radius: 8px;
 
     min-width: 100px;
 
@@ -134,7 +135,7 @@
     right: calc(50px + 10%);
     top: calc(100% - 75px);
     left: calc(600px + 10%);
-    bottom: 0px;
+    bottom: 25px;
     
 }
 
@@ -153,7 +154,7 @@
 
 
 .projectplay:active {
-    background-color: rgb(64, 128, 0);
+    background-color: #00945e;
 }
 
 
