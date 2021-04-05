@@ -1,9 +1,45 @@
 [
     {
+      "title": "Fight Game",
+      "icon": "./publicDatabase/projects/Fight Game/icon.png",
+      "briefDescription": "Fight Game / Battle Buddy Simulator​ / Battle",
+      "description": "This game has had lots of names so I refer to it with its prototype one, Fight Game. This game was made for some people from Fiverr. I've been working with them since November 2020. The game is still in development and I'm constantly releasing new updates.\n\nNote:\nI'm not the owner of the game. I've made all the game (I've had help from some friends to make some 3D models) and I'm still working on it. But the real owner is the people that pay me to develop the game. You can visit their group from the game page.",
+      "images": [
+      	"https://t1.rbxcdn.com/716fcb140ca1285616ef16e93ca9ffed",
+      	"https://img.itch.zone/aW1hZ2UvODY2NjU1LzQ4Njc3NjEucG5n/original/RzTxrE.png",
+        "https://img.itch.zone/aW1hZ2UvODY2NjU1LzQ4Njc3NjIucG5n/original/oWNHWi.png",
+        "https://img.itch.zone/aW1hZ2UvODY2NjU1LzQ4Njc3NzIucG5n/original/cNWppF.png",
+        "https://img.itch.zone/aW1hZ2UvODY2NjU1LzQ4Njc3NzQucG5n/original/jA4LWq.png",
+        "https://img.itch.zone/aW1hZ2UvODY2NjU1LzQ4Njc3NzUucG5n/original/9GOHk7.png"
+      ],
+      "game": false,
+      "widgets": {},
+      "links": {
+        "Roblox": "https://www.roblox.com/games/6130403285"
+      }
+    },
+    {
+      "title": "Mestik's Store",
+      "icon": "./publicDatabase/projects/Mestik's Store/icon.png",
+      "briefDescription": "Mestik's Clothes Store on Roblox.",
+      "description": "Mestik's Store was created in summer 2020. I already had experience in creating Minecraft skins so I tried making Roblox clothing for 2 months. The store made lots of Robux and still sells items so it can be considered a success.",
+      "images": [
+      	"./publicDatabase/projects/Mestik's Store/images/banner1.png",
+        "https://img.itch.zone/aW1hZ2UvNzI5OTY5LzQwNTY4NzYucG5n/original/9DswZV.png",
+        "https://img.itch.zone/aW1hZ2UvNzI5OTY5LzQwNTY4NzcucG5n/original/8UGHI0.png",
+        "https://img.itch.zone/aW1hZ2UvNzI5OTY5LzQwNTY4NzgucG5n/original/LusZQT.png"
+      ],
+      "game": false,
+      "widgets": {},
+      "links": {
+        "Roblox": "https://www.roblox.com/games/5364529945/Mestiks-Store"
+      }
+    },
+    {
       "title": "Mine Game",
       "icon": "./publicDatabase/projects/Mine Game/icon.png",
-      "briefDescription": "----------------------------------------------------------------------------------------------------",
-      "description": "----------------------------------------------------------------------------------------------------",
+      "briefDescription": "Mine Game could be considered a tapping game with more complexity. It was my first solo professional game.",
+      "description": "In Arshield Studios Marcos was busy with another project so I had to make this game all by myself. In this game, you can mine minerals, sell them and use the money to upgrade your pickaxe or to buy some items.",
       "images": [
         "https://img.itch.zone/aW1hZ2UvNzU1NTc5LzQyMjIyNjIucG5n/original/G7ZRsz.png",
         "https://img.itch.zone/aW1hZ2UvNzU1NTc5LzQyMjIyNjQucG5n/original/iV3ybb.png",
@@ -20,8 +56,8 @@
     {
       "title": "GIVER Parkour",
       "icon": "./publicDatabase/projects/GIVER Parkour/icon.png",
-      "briefDescription": "----------------------------------------------------------------------------------------------------",
-      "description": "----------------------------------------------------------------------------------------------------",
+      "briefDescription": "This is my first professional game. It was made for the YouTuber Robux Giver.",
+      "description": "Arshield Studios was contacted by Robux Giver to create a game for his youtube subscribers. We made the game in about a week. This was the first project I've worked on professionally.",
       "images": [
         "https://img.itch.zone/aW1hZ2UvNzI5OTg4LzQwNTcwODUucG5n/original/bWtIWi.png",
         "https://img.itch.zone/aW1hZ2UvNzI5OTg4LzQwNTcwODcucG5n/original/ztGUVN.png",
@@ -37,8 +73,8 @@
     {
       "title": "Arshield Studios Tycoon [BETA]",
       "icon": "./publicDatabase/projects/Arshield Studios Tycoon [BETA]/icon.png",
-      "briefDescription": "----------------------------------------------------------------------------------------------------",
-      "description": "----------------------------------------------------------------------------------------------------",
+      "briefDescription": "This is the first Tycoon made by Arshield Studios and my first Roblox game.",
+      "description": "In summer 2020 I founded Arshield Studios with a friend, Marcos. We developed our first Roblox Game: Arshield Studios Tycoon [BETA]. It is a simple tycoon. You have a factory in which you can produce spheres that then are sold automatically.",
       "images": [
         "https://img.itch.zone/aW1hZ2UvNzI5OTgyLzQwNTcwMjcucG5n/original/oQ2zUM.png",
         "https://img.itch.zone/aW1hZ2UvNzI5OTgyLzQwNTcwMjgucG5n/original/k5pQyM.png",
@@ -81,7 +117,7 @@
       "title": "Space Program Simulator",
       "icon": "./publicDatabase/projects/Space Program Simulator/icon.png",
       "briefDescription": "Space Program Simulator is a physics test. It tries to simulate general relativity.",
-      "description": "Space Program Simulator was created inspired in the Android game Space Flight Simulator. It was going to be a space rocket builder but it ended being a simple physics simulator.\nIt tries to simulate general relativity removing all the non relative positions.",
+      "description": "Space Program Simulator was created inspired by the Android game Space Flight Simulator. It was going to be a space rocket builder but it ended being a simple physics simulator.\nIt tries to simulate general relativity removing all the non-relative positions.",
       "images": [
         "https://img.itch.zone/aW1hZ2UvNTg3NTg3LzMxMDAzNTIucG5n/347x500/%2BbKgAU.png",
         "https://img.itch.zone/aW1hZ2UvNTg3NTg3LzMxMDAzNTMucG5n/347x500/kBYZEd.png",
@@ -102,8 +138,8 @@
     {
       "title": "Empyre 2019",
       "icon": "./publicDatabase/projects/Empyre 2019/icon.png",
-      "briefDescription": "Empyre 2019 is a prototype of a game I've been wanting to make for a long time. It didn't end it's development because I didn't have enough experience yet.",
-      "description": "",
+      "briefDescription": "Empyre 2019 is a prototype of a game I've been wanting to make for a long time. It didn't end its development because I didn't have enough experience yet.",
+      "description": "In June 2018 some friends of mine and I had an idea for a game. We would play on multiplayer each one ruling over their own country. We could attack each other, develop our countries, upgrade our infrastructure, etc. At the time I didn't have the skill to finish it. I tried to make it once again in 2019 but abandoned the project for lack of interest.",
       "images": [
         "https://img.itch.zone/aW1hZ2UvNTI0NzQzLzM1MzIwNzAucG5n/347x500/2KBWns.png",
         "https://img.itch.zone/aW1hZ2UvNTI0NzQzLzI3MjUzNzUucG5n/347x500/0P0%2BFv.png"
@@ -122,8 +158,8 @@
     {
       "title": "Gravity Ball 3D",
       "icon": "https://img.itch.zone/aW1nLzIwNDI4MDYucG5n/original/nM2ihk.png",
-      "briefDescription": "Gravity Ball 3D is a game published in 2018 in wich you have to change the gravity to avoid crashing into obstacles.",
-      "description": "In this game you'll have to change the gravity to avoid the dangerous red blocks. With w, a, s and d you can change the gravity and with space you can use the special hability. You can collect coins to buy skins, including Ricardo.",
+      "briefDescription": "Gravity Ball 3D is a game published in 2018 in which you have to change the gravity to avoid crashing into obstacles.",
+      "description": "In this game, you'll have to change the gravity to avoid the dangerous red blocks. With w, a, s and d you can change the gravity and with space, you can use the special ability. You can collect coins to buy skins, including Ricardo.",
       "images": [
         "https://play-lh.googleusercontent.com/VrtjILgTD_khtC6EfQ9SX8AsAi6kkW7YvLZsdegdm0H42Rqw9JCt1k6CrJrvUs1lpA=w720-h310-rw",
         "https://play-lh.googleusercontent.com/3RzHBZmsnP0GY1jORfTKK6Q4lUvI5T23iVdv6BLueFfsj2RvMegFe223csKbaQ9YonE=w1886-h992-rw",
