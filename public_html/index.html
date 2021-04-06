@@ -10,6 +10,8 @@
 		<link rel="stylesheet" href="./styles/mobile/mainnavMobile.css">
 		<link rel="stylesheet" href="./styles/desktop/topnav.css">
 		<link rel="stylesheet" href="./styles/mobile/topnavMobile.css">
+		<link rel="stylesheet" href="./styles/desktop/projects.css">
+		<link rel="stylesheet" href="./styles/mobile/projectsMobile.css">
 		<link rel="stylesheet" href="./styles/desktopMobile.css">
 		
 		<TITLE>Mestik78</TITLE>
@@ -22,22 +24,22 @@
 
 		
 		<div class="topnav desktop">
-			<a href='./index.html'><topNavButton class="active">
+			<a href='#Home'><topNavButton class="active">
 				<topNavLogo></img>
 			</topNavButton></a>
 
-			<a href='./projects.html'><topNavButton>
+			<a href='#Projects'><topNavButton>
 				<topNavText>Projects</topNavText>
 			</topNavButton></a>
 		</div>
 
 		
 		<div class="topnav-mobile mobile_device">
-			<a href='./index.html'><topNavButton class="active">
+			<a href='#Home'><topNavButton class="active">
 				<topNavLogo></img>
 			</topNavButton></a>
 
-			<a href='./projects.html'><topNavButton>
+			<a href='#Projects'><topNavButton>
 				<topNavText>Projects</topNavText>
 			</topNavButton></a>
 		</div>
@@ -49,23 +51,101 @@
 
 
 
-		<div class="overMainnav desktop">
+		<div id="Home">
 
-			<div class="imageContainer" style="width:100%;height:600px;margin-bottom: 75;">
-				<img src='./multimedia/images/Logo Tansparente.png' alt="Logo Mestik78" style="width:600px;height:100%;"></img>
+
+			<div class="space" style="height: 15%;"></div>
+
+			<div class="overMainnav desktop">
+
+				<div class="imageContainer" style="width:100%;height:600px;margin-bottom: 75;">
+					<img src='./multimedia/images/Logo Tansparente.png' alt="Logo Mestik78" style="width:600px;height:100%;"></img>
+				</div>
+
+			</div>
+
+			
+			<div class="overMainnav mobile_device">
+
+				<div class="imageContainer" style="width:100%;height:800px;margin-bottom: 75;">
+					<img src='./multimedia/images/Logo Tansparente.png' alt="Logo Mestik78" style="width:800px;height:100%;"></img>
+				</div>
+
 			</div>
 
 		</div>
+
+
+
 
 		
-		<div class="overMainnav mobile_device">
+		<div id="Projects"> <!--Projects-->
 
-			<div class="imageContainer" style="width:100%;height:600px;margin-bottom: 75;">
-				<img src='./multimedia/images/Logo Tansparente.png' alt="Logo Mestik78" style="width:600px;height:100%;"></img>
+
+			<div id="Projects" class="overMainnav desktop">
+
+				<div class="space" style="height: 15%;"></div>
+				<h1 class="Title">Projects</h1>
+
+				<div class="mainnav desktop">
+
+					<div class="ProjectsListContainer">
+						<div class="listform">
+							<img id="listButton" type="submit" class="listformicon" src="multimedia/images/icons/list.png"></img>
+							<img id="gridButton" type="submit" class="listformicon" src="multimedia/images/icons/grid.png"></img>
+						</div>
+
+						<div class="space" style="height: 25px;"></div>
+
+						<div id="grid-space1" class="grid-space hide" style="height: 75px;"></div>
+
+						<div id="ProjectsDesktop" class="ProjectsList">
+
+							<div class="space" style="height: 50px;"></div>
+
+						</div>
+				
+						<div id="grid-space2" class="grid-space hide" style="height: 50px;"></div>
+					</div>
+
+				</div>
+
+				
+				<div id="space" style="height: 50px;"></div>
 			</div>
+				
+
+			
+			<div class="overMainnav-mobile mobile_device">
+
+				<h1 class="Title">Projects</h1>
+
+				<div class="space" style="height: 2%;"></div>
+
+				<div class="mainnav-mobile mobile_device">
+
+					<div id="ProjectsMobile" class="Projects-mobile">
+
+						<div id="space" style="height: 50px;"></div>
+
+					</div>
+
+				</div>
+
+				
+				<div id="space" style="height: 50px;"></div>
+			</div>
+
+			
+			<script type="text/javascript" src="./scripts/changeProjectsListType.js"></script>
+			<script type="text/javascript" src="./scripts/generateProjects.js"></script>
 
 		</div>
 
+
 	</body>
+
+	
+	<script type="text/javascript" src="./scripts/scrollAnimation.js"></script>
 
 </html>
