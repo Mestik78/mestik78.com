@@ -59,8 +59,9 @@ function generateProject(Project, webMode){
 
 
     var projectImage = document.createElement('img');
-    projectImage.className = classes[webMode]["projectimage"]
-    projectImage.src = Project.icon //--
+    projectImage.className = classes[webMode]["projectimage"] + " asyncImage"
+    projectImage["data-src"] = Project.icon //--
+    projectImage.src = Project.iconLowRes //--
     
     projectImageBg.insertAdjacentElement('beforeend',projectImage);
 
