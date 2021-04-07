@@ -31,6 +31,10 @@
 			<a href='#Projects'><topNavButton>
 				<topNavText>Projects</topNavText>
 			</topNavButton></a>
+
+			<a href='#Offers'><topNavButton>
+				<topNavText>Offers</topNavText>
+			</topNavButton></a>
 		</div>
 
 		
@@ -41,6 +45,10 @@
 
 			<a href='#Projects'><topNavButton>
 				<topNavText>Projects</topNavText>
+			</topNavButton></a>
+
+			<a href='#Offers'><topNavButton>
+				<topNavText>Offers</topNavText>
 			</topNavButton></a>
 		</div>
 
@@ -93,23 +101,13 @@
 
 				<div class="mainnav desktop">
 
-					<div class="ProjectsListContainer">
-						<div class="listform">
-							<img id="listButton" type="submit" class="listformicon" src="multimedia/images/icons/list.png"></img>
-							<img id="gridButton" type="submit" class="listformicon" src="multimedia/images/icons/grid.png"></img>
-						</div>
+					<div class="ProjectsContainer">
 
-						<div class="space" style="height: 25px;"></div>
+						<div class="space" style="height: 75px;"></div>
 
-						<div id="grid-space1" class="grid-space hide" style="height: 75px;"></div>
+						<div id="ProjectsDesktop" class="ProjectsGrid"></div>
 
-						<div id="ProjectsDesktop" class="ProjectsList">
-
-							<div class="space" style="height: 50px;"></div>
-
-						</div>
-				
-						<div id="grid-space2" class="grid-space hide" style="height: 50px;"></div>
+						<div class="space" style="height: 75px;"></div>
 					</div>
 
 				</div>
@@ -141,11 +139,65 @@
 			</div>
 
 			
-			<script type="text/javascript" src="./scripts/changeProjectsListType.js"></script>
 			<script type="text/javascript" src="./scripts/generateProjects.js"></script>
 
 		</div>
 
+
+		
+		<div id="Offers"> <!--Offers-->
+
+
+			<div id="Offers" class="overMainnav desktop">
+
+				<div class="space" style="height: 15%;"></div>
+				<h1 class="Title">Offers</h1>
+
+				<div class="mainnav desktop">
+
+					<div class="OffersContainer">
+
+						<div class="space" style="height: 75px;"></div>
+
+						<div id="OffersDesktop" class="ProjectsGrid"></div>
+						<h4 class="Title" style="font-size: 50; font-style: italic;">work in progress</h4>
+
+						<div class="space" style="height: 75px;"></div>
+					</div>
+
+				</div>
+
+				
+				<div id="space" style="height: 50px;"></div>
+			</div>
+				
+
+			
+			<div class="overMainnav-mobile mobile_device">
+
+				<h1 class="Title">Offers</h1>
+
+				<div class="space" style="height: 2%;"></div>
+
+				<div class="mainnav-mobile mobile_device">
+
+					<div id="OffersMobile" class="Offers-mobile">
+
+						<div id="space" style="height: 50px;"></div>
+						<h4 class="Title" style="font-size: 50; font-style: italic;">work in progress</h4>
+
+					</div>
+
+				</div>
+
+				
+				<div id="space" style="height: 50px;"></div>
+			</div>
+
+			
+			<script type="text/javascript" src="./scripts/generateOffers.js"></script>
+
+		</div>
 
 	</body>
 

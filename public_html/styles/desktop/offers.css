@@ -1,4 +1,4 @@
-.ProjectsContainer{
+.ProjectsListContainer{
 
     width: 80%;
 
@@ -10,6 +10,20 @@
 
 }
 
+
+.ProjectsList{
+
+    width: 100%;
+    height: calc(100% + 50px);
+
+    display: block;
+    justify-content: center;
+    align-items: flex-start;
+    
+    position: relative;
+
+
+}
 .ProjectsGrid{
 
     width: 100%;
@@ -25,7 +39,16 @@
 
 }
 
-.project {
+.project-list {
+    background-color: rgba(255, 255, 255, 0.2);
+    
+    width: 100%;
+    height: 400px;
+
+    position: relative;
+}
+
+.project-grid {
     background-color: rgba(255, 255, 255, 0.2);
     
     width: 300px;
@@ -37,6 +60,48 @@
 .projectimage{
     width: 90%;
     height: 90%;
+}
+
+.projectimage-bg{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 325px;
+    height: 325px;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    bottom: 50px;
+    
+    transform: translate(0, -50%); 
+}
+
+.projecttitlebox{
+
+    width: 50%;
+    height: 50px;
+
+    position: absolute;
+    top:50px;
+    right: 75px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projecttitle{
+    width: 100%;
+    height: 100%;
+
+    font: ABeeZee;
+    color: white;
+    font-size: 2vmax;
+    text-align: right;
+    text-decoration: none;
 }
 
 
@@ -95,7 +160,7 @@
 }
 
 
-.projectimage-bg{
+.projectimage-bg-grid{
     background-color: rgba(0, 0, 0, 0.5);
     width: 250px;
     height: 250px;
@@ -111,7 +176,7 @@
     transform: translate(-50%, 0); 
 }
 
-.projecttitlebox{
+.projecttitlebox-grid{
 
     height: 50px;
 
@@ -125,7 +190,7 @@
     align-items: center;
 }
 
-.projecttitle{
+.projecttitle-grid{
     font: ABeeZee;
     color: white;
     width: 100%;

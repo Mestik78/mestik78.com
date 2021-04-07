@@ -1,4 +1,4 @@
-var ProjectsJson
+/*var ProjectsJson
 fetch("../publicDatabase/projects.json")
     .then(response => response.json())
     .then(json => {
@@ -89,7 +89,7 @@ function generateSpacing(){
 
     Containers["desktop"].insertAdjacentElement('beforeend',spacingdesktop);*/
     
-    var spacingmobile = document.createElement('div');
+    /*var spacingmobile = document.createElement('div');
     spacingmobile.style.height = "50px"
     spacingmobile.className = "space"
 
@@ -104,4 +104,4 @@ function addElement () {
         generateProject(ProjectsJson[i], "mobile")
         generateSpacing()
     }
-}
+}*/
