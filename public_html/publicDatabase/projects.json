@@ -1,5 +1,26 @@
 [
     {
+      "title": "Pana Miguel",
+      "icon": "./publicDatabase/projects/Pana Miguel/icon.png",
+      "iconLowRes": "./publicDatabase/projects/Pana Miguel/iconLowRes.png",
+      "briefDescription": "Pana Miguel",
+      "description": "Pana Miguel is a discord bot I created for my discord server. It has lots of personalised functions for the server including games.",
+      "images": [
+      	"./publicDatabase/projects/Pana Miguel/images/0.png",
+      	"./publicDatabase/projects/Pana Miguel/images/1.png",
+      	"./publicDatabase/projects/Pana Miguel/images/2.png",
+      	"./publicDatabase/projects/Pana Miguel/images/3.png",
+      	"./publicDatabase/projects/Pana Miguel/images/4.png",
+      	"./publicDatabase/projects/Pana Miguel/images/5.png",
+      	"./publicDatabase/projects/Pana Miguel/images/6.png"
+      ],
+      "game": false,
+      "widgets": {},
+      "links": {
+        "Github": "https://github.com/Mestik78/Pana-Miguel-Bot"
+      }
+    },
+    {
       "title": "Fight Game",
       "icon": "./publicDatabase/projects/Fight Game/icon.png",
       "iconLowRes": "./publicDatabase/projects/Fight Game/iconLowRes.png",
