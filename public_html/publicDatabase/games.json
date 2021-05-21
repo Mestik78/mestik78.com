@@ -1,0 +1,11 @@
+[
+    {
+      "title": "GTA 0.0.20",
+      "icon": "./publicDatabase/games/GTA 0.0.20/icon.png",
+      "iconLowRes": "./publicDatabase/games/GTA 0.0.20/iconLowRes.png",
+      "type": "Scratch",
+      "data":{
+      	"ScratchId": "125741564"
+      }
+    }
+  ]

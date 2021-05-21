@@ -12,6 +12,8 @@
 		<link rel="stylesheet" href="./styles/mobile/topnavMobile.css">
 		<link rel="stylesheet" href="./styles/desktop/projects.css">
 		<link rel="stylesheet" href="./styles/mobile/projectsMobile.css">
+		<link rel="stylesheet" href="./styles/desktop/porfolioEntries.css">
+		<link rel="stylesheet" href="./styles/mobile/porfolioEntriesMobile.css">
 		<link rel="stylesheet" href="./styles/desktopMobile.css">
 		
 		<TITLE>Mestik78</TITLE>
@@ -28,6 +30,14 @@
 				<topNavLogo></img>
 			</topNavButton></a>
 
+			<a href='#Porfolio'><topNavButton>
+				<topNavText>Porfolio</topNavText>
+			</topNavButton></a>
+
+			<a href='#Games'><topNavButton>
+				<topNavText>Games</topNavText>
+			</topNavButton></a>
+
 			<a href='#Projects'><topNavButton>
 				<topNavText>Projects</topNavText>
 			</topNavButton></a>
@@ -41,6 +51,10 @@
 		<div class="topnav-mobile mobile_device">
 			<a href='#Home'><topNavButton class="active">
 				<topNavLogo></img>
+			</topNavButton></a>
+
+			<a href='#Porfolio'><topNavButton>
+				<topNavText>Porfolio</topNavText>
 			</topNavButton></a>
 
 			<a href='#Projects'><topNavButton>
@@ -88,7 +102,93 @@
 		</div>
 
 
+		<!--RedBubble-->
+		<script type="text/javascript" src="https://www.redbubble.com/assets/external_portfolio.js"></script>
+		<script id="rb-xzfcxvzx" type="text/javascript">new RBExternalPortfolio('www.redbubble.com', 'mestik78', 2, 2).renderIframe();</script>
 
+		<div id="Porfolio"> <!--Offers-->
+
+
+			<div id="PorfolioEntries" class="overMainnav desktop">
+
+				<div class="space" style="height: 15%;"></div>
+				<h1 class="Title">Porfolio</h1>
+
+				<div class="mainnav desktop">
+
+					<div class="PorfolioEntriesContainer">
+
+						<div class="space" style="height: 75px;"></div>
+
+						<div id="PorfolioEntriesDesktop" class="PorfolioEntries"></div>
+
+						<div class="space" style="height: 75px;"></div>
+					</div>
+
+				</div>
+
+				
+				<div id="space" style="height: 50px;"></div>
+			</div>
+				
+
+			
+			<div class="overMainnav-mobile mobile_device">
+
+				<h1 class="Title">Porfolio</h1>
+
+				<div class="space" style="height: 2%;"></div>
+
+				<div class="mainnav-mobile mobile_device">
+
+					<div id="PorfolioEntriesMobile" class="PorfolioEntries-mobile">
+
+						<div id="space" style="height: 50px;"></div>
+						<h4 class="Title" style="font-size: 50; font-style: italic;">work in progress</h4>
+
+					</div>
+
+				</div>
+
+				
+				<div id="space" style="height: 50px;"></div>
+			</div>
+
+			
+			<script type="text/javascript" src="./scripts/generatePorfolio.js"></script>
+
+		</div>
+
+		
+		<div id="Games"> <!--Projects-->
+
+
+			<div id="Games" class="overMainnav desktop">
+
+				<div class="space" style="height: 15%;"></div>
+				<h1 class="Title">Games</h1>
+
+				<div class="mainnav desktop">
+
+					<div class="GamesContainer">
+
+						<div class="space" style="height: 75px;"></div>
+
+						<div id="GamesDesktop" class="ProjectsGrid"></div>
+
+						<div class="space" style="height: 75px;"></div>
+					</div>
+
+				</div>
+
+				
+				<div id="space" style="height: 50px;"></div>
+			</div>
+
+			
+			<script type="text/javascript" src="./scripts/generateGames.js"></script>
+
+		</div>
 
 		
 		<div id="Projects"> <!--Projects-->
@@ -162,6 +262,8 @@
 						<div id="OffersDesktop" class="ProjectsGrid"></div>
 						<h4 class="Title" style="font-size: 50; font-style: italic;">work in progress</h4>
 
+						<a href="https://www.fiverr.com/miguelplaton?up_rollout=true" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Fiverr_Logo_09.2020.svg/1280px-Fiverr_Logo_09.2020.svg.png" style="height: 100px;"/></a>
+
 						<div class="space" style="height: 75px;"></div>
 					</div>
 
@@ -201,8 +303,10 @@
 
 	</body>
 
-	
-	<script type="text/javascript" src="./scripts/scrollAnimation.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 	<script type="text/javascript" src="./scripts/loadLowResImages.js"></script>
+	<script type="text/javascript" src="./scripts/scrollAnimation.js"></script>
 
 </html>
