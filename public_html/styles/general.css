@@ -21,12 +21,18 @@ img{
     position: fixed;
     width: 100%;
     height: auto;
+    
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .background-mobile{
     position: fixed;
     width: auto;
     height: 100%;
+    
+    left: 50%;
+    transform: translate(-50%);
 }
 
 
@@ -42,10 +48,19 @@ img{
 .Title{
     font: ABeeZee;
     
-    font-size: 9vh;
+    font-size: 75px;
     text-align: center;
     color: white;
 }
+
+.text{
+    font: ABeeZee;
+}
+.subtitle{
+    text-align: center;
+    color: rgb(168, 168, 168);
+}
+
 
 .noselect, .topnav topNavText,  .topnav-mobile topNavText, .projectplay{
     -webkit-touch-callout: none; /* iOS Safari */

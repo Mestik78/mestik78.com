@@ -12,7 +12,13 @@
 
 .PorfolioEntries{
 
+
     width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 30%);
+    grid-row-gap: 50px;
+    grid-column-gap: 0;
 
     position: relative;
 

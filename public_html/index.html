@@ -14,6 +14,7 @@
 		<link rel="stylesheet" href="./styles/mobile/projectsMobile.css">
 		<link rel="stylesheet" href="./styles/desktop/porfolioEntries.css">
 		<link rel="stylesheet" href="./styles/mobile/porfolioEntriesMobile.css">
+		<link rel="stylesheet" href="./styles/desktop/spaces.css">
 		<link rel="stylesheet" href="./styles/desktopMobile.css">
 		
 		<TITLE>Mestik78</TITLE>
@@ -71,8 +72,8 @@
 
 	<body bgcolor="black">
 
-		<img class="background asyncImage desktop" src="./multimedia/images/background small.jpg" data-src="./multimedia/images/background.jpg"></img>
-		<img class="background-mobile asyncImage mobile_device" src="./multimedia/images/background small.jpg" data-src="./multimedia/images/background.jpg"></img>
+		<img class="background desktop" src="./multimedia/images/background.jpg"></img>
+		<img class="background-mobile asyncImage mobile_device" src="./multimedia/images/background.jpg" data-src="./multimedia/images/background.jpg"></img>
 
 
 
@@ -102,23 +103,23 @@
 		</div>
 
 
-		<!--RedBubble-->
-		<script type="text/javascript" src="https://www.redbubble.com/assets/external_portfolio.js"></script>
-		<script id="rb-xzfcxvzx" type="text/javascript">new RBExternalPortfolio('www.redbubble.com', 'mestik78', 2, 2).renderIframe();</script>
 
+		<div class="space" style="height: 75px;"></div>
+		<div class="space" style="height: calc(15%-125px);"></div>
 		<div id="Porfolio"> <!--Offers-->
 
 
 			<div id="PorfolioEntries" class="overMainnav desktop">
 
-				<div class="space" style="height: 15%;"></div>
-				<h1 class="Title">Porfolio</h1>
+				<div class="spaceBeforeMainavDesktop"></div>
 
 				<div class="mainnav desktop">
 
 					<div class="PorfolioEntriesContainer">
 
-						<div class="space" style="height: 75px;"></div>
+						<div class="space spaceBeforeTitleDesktop"></div>
+						<h1 class="Title">Porfolio</h1>
+						<div class="space spaceAfterTitleDesktop"></div>
 
 						<div id="PorfolioEntriesDesktop" class="PorfolioEntries"></div>
 
@@ -128,21 +129,21 @@
 				</div>
 
 				
-				<div id="space" style="height: 50px;"></div>
+				<div id="spaceAfterMainavDesktop"></div>
 			</div>
 				
 
-			
+			<!--
 			<div class="overMainnav-mobile mobile_device">
 
-				<h1 class="Title">Porfolio</h1>
-
-				<div class="space" style="height: 2%;"></div>
+				<div class="space" style="height: 225px;"></div>
 
 				<div class="mainnav-mobile mobile_device">
 
 					<div id="PorfolioEntriesMobile" class="PorfolioEntries-mobile">
 
+						<div class="space" style="height: 25px;"></div>
+						<h1 class="Title">Porfolio</h1>
 						<div id="space" style="height: 50px;"></div>
 						<h4 class="Title" style="font-size: 50; font-style: italic;">work in progress</h4>
 
@@ -152,7 +153,7 @@
 
 				
 				<div id="space" style="height: 50px;"></div>
-			</div>
+			</div>-->
 
 			
 			<script type="text/javascript" src="./scripts/generatePorfolio.js"></script>
@@ -160,29 +161,35 @@
 		</div>
 
 		
+		<div class="space" style="height: calc(15%-125px);"></div>
 		<div id="Games"> <!--Projects-->
 
 
 			<div id="Games" class="overMainnav desktop">
 
-				<div class="space" style="height: 15%;"></div>
-				<h1 class="Title">Games</h1>
+				<div class="spaceBeforeMainavDesktop"></div>
 
 				<div class="mainnav desktop">
 
-					<div class="GamesContainer">
+					<div class="ProjectsContainer">
 
-						<div class="space" style="height: 75px;"></div>
+						<div class="space spaceBeforeTitleDesktop"></div>
+						<h1 class="Title">Games</h1>
+						<div class="space spaceAfterTitleDesktop"></div>
 
 						<div id="GamesDesktop" class="ProjectsGrid"></div>
 
-						<div class="space" style="height: 75px;"></div>
+						<div class="space" style="height: 25px;"></div>
+
+						<h3 class="text subtitle">All these games were made by Mestik78.</h3>
+
+						<div class="space" style="height: 50px;"></div>
 					</div>
 
 				</div>
 
 				
-				<div id="space" style="height: 50px;"></div>
+				<div id="spaceAfterMainavDesktop"></div>
 			</div>
 
 			
@@ -191,19 +198,21 @@
 		</div>
 
 		
+		<div class="space" style="height: calc(15%-125px);"></div>
 		<div id="Projects"> <!--Projects-->
 
 
 			<div id="Projects" class="overMainnav desktop">
 
-				<div class="space" style="height: 15%;"></div>
-				<h1 class="Title">Projects</h1>
+				<div class="spaceBeforeMainavDesktop"></div>
 
 				<div class="mainnav desktop">
 
 					<div class="ProjectsContainer">
 
-						<div class="space" style="height: 75px;"></div>
+						<div class="space spaceBeforeTitleDesktop"></div>
+						<h1 class="Title">Projects</h1>
+						<div class="space spaceAfterTitleDesktop"></div>
 
 						<div id="ProjectsDesktop" class="ProjectsGrid"></div>
 
@@ -213,19 +222,20 @@
 				</div>
 
 				
-				<div id="space" style="height: 50px;"></div>
+				<div id="spaceAfterMainavDesktop"></div>
 			</div>
 				
 
 			
 			<div class="overMainnav-mobile mobile_device">
 
-				<h1 class="Title">Projects</h1>
-
-				<div class="space" style="height: 2%;"></div>
+				<div class="space" style="height: 225px;"></div>
 
 				<div class="mainnav-mobile mobile_device">
 
+					<div class="space" style="height: 25px;"></div>	
+					<h1 class="Title">Projects</h1>
+					<div id="space" style="height: 25px;"></div>
 					<div id="ProjectsMobile" class="Projects-mobile">
 
 						<div id="space" style="height: 50px;"></div>
@@ -245,24 +255,26 @@
 
 
 		
+		<div class="space" style="height: calc(15%-125px);"></div>
 		<div id="Offers"> <!--Offers-->
 
 
 			<div id="Offers" class="overMainnav desktop">
 
-				<div class="space" style="height: 15%;"></div>
-				<h1 class="Title">Offers</h1>
+				<div class="spaceBeforeMainavDesktop"></div>
 
 				<div class="mainnav desktop">
 
 					<div class="OffersContainer">
 
-						<div class="space" style="height: 75px;"></div>
+						<div class="space spaceBeforeTitleDesktop"></div>
+						<h1 class="Title">Offers</h1>
+						<div class="space spaceAfterTitleDesktop"></div>
 
 						<div id="OffersDesktop" class="ProjectsGrid"></div>
 						<h4 class="Title" style="font-size: 50; font-style: italic;">work in progress</h4>
 
-						<a href="https://www.fiverr.com/miguelplaton?up_rollout=true" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Fiverr_Logo_09.2020.svg/1280px-Fiverr_Logo_09.2020.svg.png" style="height: 100px;"/></a>
+						<a href="https://www.fiverr.com/miguelplaton?up_rollout=true" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Fiverr_Logo_09.2020.svg/1280px-Fiverr_Logo_09.2020.svg.png" style="height: 100px; position: relative;left: 50%;    transform: translate(-50%);"/></a>
 
 						<div class="space" style="height: 75px;"></div>
 					</div>
@@ -270,24 +282,27 @@
 				</div>
 
 				
-				<div id="space" style="height: 50px;"></div>
+				<div id="spaceAfterMainavDesktop"></div>
 			</div>
 				
 
 			
 			<div class="overMainnav-mobile mobile_device">
 
-				<h1 class="Title">Offers</h1>
-
-				<div class="space" style="height: 2%;"></div>
+				<div class="space" style="height: 225px;"></div>
 
 				<div class="mainnav-mobile mobile_device">
 
+					<div class="space" style="height: 25px;"></div>	
+					<h1 class="Title">Offers</h1>
+					<div id="space" style="height: 25px;"></div>
 					<div id="OffersMobile" class="Offers-mobile">
 
-						<div id="space" style="height: 50px;"></div>
 						<h4 class="Title" style="font-size: 50; font-style: italic;">work in progress</h4>
 
+						<a href="https://www.fiverr.com/miguelplaton?up_rollout=true" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Fiverr_Logo_09.2020.svg/1280px-Fiverr_Logo_09.2020.svg.png" style="height: 100px; position: relative;left: 50%;    transform: translate(-50%);"/></a>
+
+						<div class="space" style="height: 75px;"></div>
 					</div>
 
 				</div>
@@ -300,6 +315,9 @@
 			<script type="text/javascript" src="./scripts/generateOffers.js"></script>
 
 		</div>
+
+		
+		<div class="space" style="height: 50px;"></div>
 
 	</body>
 

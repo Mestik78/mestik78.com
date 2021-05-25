@@ -1,11 +1,26 @@
 [
     {
-      "title": "GTA 0.0.20",
-      "icon": "./publicDatabase/games/GTA 0.0.20/icon.png",
-      "iconLowRes": "./publicDatabase/games/GTA 0.0.20/iconLowRes.png",
+      "title": "Duck Hunt",
+      "icon": "./publicDatabase/games/Duck Hunt/icon.png",
+      "iconLowRes": "./publicDatabase/games/Duck Hunt/iconLowRes.png",
       "type": "Scratch",
       "data":{
-      	"ScratchId": "125741564"
+      	"ScratchId": "533892021"
+      }
+    },
+    {
+      "title": "Zombie Blower",
+      "icon": "./publicDatabase/projects/Zombie Blower/icon.png",
+      "iconLowRes": "./publicDatabase/projects/Zombie Blower/iconLowRes.png",
+      "type": "Unity"
+    },
+    {
+      "title": "Mestik's Paint",
+      "icon": "./publicDatabase/games/Mestik's Paint/icon.png",
+      "iconLowRes": "./publicDatabase/games/Mestik's Paint/iconLowRes.png",
+      "type": "Scratch",
+      "data":{
+      	"ScratchId": "333571993"
       }
     }
   ]

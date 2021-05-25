@@ -51,7 +51,9 @@ function loadGame(){
             gameInfo = GamesJson[gameIndex]
         
             var children = document.getElementById("GameTypes").children
-            for (i in children) {
+            
+            for (let i = 0; i < children.length; i++) {
+                console.log(children[i])
                 if (children[i].classList[0] != gameInfo.type){
                     children[i].classList += " hide"
                 }
@@ -60,16 +62,18 @@ function loadGame(){
     
             switch (gameInfo.type){
                 case "Unity":
-    
-                    var projectTitleObj = document.getElementById("projectTitle")
-                    projectTitleObj.textContent = projectInfo.title
-                    projectTitleObj.className = "projectTitle"
-                
-                
-                    var projectGame = document.getElementById("game")
-                    projectGame.src = "./publicDatabase/games/" + projectInfo.title + "/index.html"
+                 
+                    var projectGame = document.getElementById("UnityGame")
+                    projectGame.src = "./publicDatabase/games/" + gameInfo.title + "/index.html"
     
                     break;
+
+                case "Scratch":
+
+                    var projectGame = document.getElementById("ScratchGame")
+                    projectGame.src = "https://scratch.mit.edu/projects/embed/" + gameInfo.data.ScratchId + "/?autostart=true"
+
+                    break
             }
     
         }   

@@ -3,5 +3,15 @@
       "title": "Gravity Ball 3D",
       "image": "./publicDatabase/projects/Gravity Ball 3D/images/frontBanner.png",
       "imageLowRes": "./publicDatabase/projects/Gravity Ball 3D/images/frontBannerLowRes.png"
+    },
+    {
+      "title": "Battle (Fight Game)",
+      "image": "./publicDatabase/projects/Fight Game/frontBanner.png",
+      "imageLowRes": "./publicDatabase/projects/Fight Game/frontBanner.png"
+    },
+    {
+      "title": "Zombie Blower",
+      "image": "./publicDatabase/projects/Zombie Blower/frontBanner.png",
+      "imageLowRes": "./publicDatabase/projects/Zombie Blower/frontBanner.png"
     }
 ]

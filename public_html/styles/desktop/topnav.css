@@ -10,6 +10,8 @@
     position: fixed;
     
     z-index: 1;
+
+    backdrop-filter: blur(5px)
 }
 
 .topnav topNavLogo {
@@ -34,7 +36,7 @@
     text-align: center;
     text-decoration: none;
     font: ABeeZee;
-    font-size: 2vh;
+    font-size: 20px;
 }
 
 .topnav topNavButton:hover {

@@ -28,14 +28,25 @@
 
 	<nav>
 
-		
 		<div class="topnav desktop">
-			<a href='./index.html'><topNavButton class="active">
+			<a href='./index.html#Home'><topNavButton class="active">
 				<topNavLogo></img>
 			</topNavButton></a>
 
-			<a href='./projects.html'><topNavButton>
+			<a href='./index.html#Porfolio'><topNavButton>
+				<topNavText>Porfolio</topNavText>
+			</topNavButton></a>
+
+			<a href='./index.html#Games'><topNavButton>
+				<topNavText>Games</topNavText>
+			</topNavButton></a>
+
+			<a href='./index.html#Projects'><topNavButton>
 				<topNavText>Projects</topNavText>
+			</topNavButton></a>
+
+			<a href='./index.html#Offers'><topNavButton>
+				<topNavText>Offers</topNavText>
 			</topNavButton></a>
 		</div>
 
@@ -44,34 +55,23 @@
 
 	<body bgcolor="black">
 
-		<img class="background asyncImage desktop" src="./multimedia/images/background small.jpg" data-src="./multimedia/images/background.jpg"></img>
-		<img class="background-mobile asyncImage mobile_device" src="./multimedia/images/background small.jpg" data-src="./multimedia/images/background.jpg"></img>
+		<img class="background desktop" src="./multimedia/images/background.jpg"></img>
+		<img class="background-mobile asyncImage mobile_device" src="./multimedia/images/background.jpg" data-src="./multimedia/images/background.jpg"></img>
 
 
 		<div id="GameTypes">
 
-			<div class="Unity"><div class="overMainnav desktop">
+			<div class="Unity">
 
-				<h1 id="projectTitle" class="Title">Title</h1>
+				<iframe id="UnityGame" class="UnityGame" mozallowfullscreen="true" allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad" frameborder="0" src="" msallowfullscreen="true" scrolling="no" allowfullscreen="true" webkitallowfullscreen="true" id="game_drop" allowtransparency="true"></iframe>
 
-				<div id="mainnav" class="mainnav">
-
-					<div id="space" style="height: 50px;"></div>
-
-
-						<iframe id="game" class="game" mozallowfullscreen="true" allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad" frameborder="0" src="" msallowfullscreen="true" scrolling="no" allowfullscreen="true" webkitallowfullscreen="true" id="game_drop" allowtransparency="true"></iframe>
-
-
-
-					<div id="space" style="height: 50px;"></div>
-
-				</div>
-				
-			</div></div>
+			</div>
 				
 
 			<div class="Scratch">
-				
+				<div style="overflow-y: hidden; height: 734px; overflow-x: hidden; width: 980px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);" id="applet">
+					<iframe id="ScratchGame" class="ScratchGame" allowtransparency="false" width="980" height="820" bgcolor=#F11111 allowfullscreen></iframe>
+				</div>
 			</div>
 
 		</div>

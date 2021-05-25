@@ -103,7 +103,7 @@ function setupPage(webMode){
         var projectPlay = document.getElementById("projectplay")
 
         if (projectInfo.game){
-            projectPlay.href = "/projectPlay.html?project=" + projectInfo.title //--
+            projectPlay.href = "/gamePage.html?game=" + projectInfo.title //--
         }else{
             projectPlay.className += " hide"
         }

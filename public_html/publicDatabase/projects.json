@@ -23,7 +23,7 @@
     {
       "title": "Fight Game",
       "icon": "./publicDatabase/projects/Fight Game/icon.png",
-      "iconLowRes": "./publicDatabase/projects/Fight Game/iconLowRes.png",
+      "iconLowRes": "./publicDatabase/projects/Fight Game/icon.png",
       "briefDescription": "Fight Game / Battle Buddy Simulator​ / Battle",
       "description": "This game has had lots of names so I refer to it with its prototype one, Fight Game. This game was made for some people from Fiverr. I've been working with them since November 2020. The game is still in development and I'm constantly releasing new updates.\n\nNote:\nI'm not the owner of the game. I've made all the game (I've had help from some friends to make some 3D models) and I'm still working on it. But the real owner is the people that pay me to develop the game. You can visit their group from the game page.",
       "images": [
