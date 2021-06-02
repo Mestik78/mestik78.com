@@ -10,7 +10,7 @@ function generatePorfolio(){
     
     const EntriesContainers = {
         "desktop": document.getElementById("PorfolioEntriesDesktop"),
-        "mobile": document.getElementById("PorfolioEntriesMobile")
+        //"mobile": document.getElementById("PorfolioEntriesMobile")
     }
     
     const EntriesClasses = {
@@ -33,8 +33,9 @@ function generatePorfolio(){
     
     function generatEntry(Project, webMode){
         
-        var entry = document.createElement('div');
+        var entry = document.createElement('a');
         entry.className = EntriesClasses[webMode]["entry"]
+        entry.href = "/projectPage.html?project=" + Project.title
     
         EntriesContainers[webMode].insertAdjacentElement('beforeend',entry);
     
@@ -67,8 +68,8 @@ function generatePorfolio(){
     
         for(i in EntriesJson){
             generatEntry(EntriesJson[i], "desktop")
-            generatEntry(EntriesJson[i], "mobile")
-            generateSpacing()
+            //generatEntry(EntriesJson[i], "mobile")
+            //generateSpacing()
         }
     }
 }

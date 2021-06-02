@@ -68,10 +68,11 @@ function start(){
 
 
 function generateSpacing(Container){
+    /*
     var spacingdesktop = document.createElement('div');
     spacingdesktop.style.height = "50px"
 
-    Container.insertAdjacentElement('beforeend',spacingdesktop);
+    Container.insertAdjacentElement('beforeend',spacingdesktop);*/
 }
 
 
@@ -186,6 +187,6 @@ function generateProjectImage(image, webMode){
     projectImageBg.insertAdjacentElement('beforeend',projectImage);
 
     
-    generateSpacing(container)
+    //generateSpacing(container)
 
 }

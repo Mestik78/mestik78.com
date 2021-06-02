@@ -1,4 +1,4 @@
-.projectPage{
+.projectPage, .projectPageUpper, .projectPageMid, .projectPageImages, .projectPageLinks{
     width: 100%;
     margin: 0 auto;
 
@@ -24,6 +24,7 @@
 
     background-color: rgba(0, 0, 0, 0.5);
     width: 500px;
+    max-width: calc(100% - 75px);
     height: 500px;
     
     display:flex;
@@ -64,12 +65,11 @@
 
 .projectdescbox{
 
+	width: calc(100% - 100px);
     position: relative;
-    width: calc(100% - 50px);
 
-    right: 25px;
-    top: 25px;
-    left: 25px;
+    right: 50px;
+    left: 50px;
     
 
     display:inline-table;
@@ -101,12 +101,18 @@
 
 .projectimages{
     display: block;
-    width: calc(100% - 725px + 75px);
+    width: calc(100% - 100px);
     height: fit-content;
+	
+	
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 45%);
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+    justify-content: space-evenly;
 
     position: relative;
-    top: 0px;
-    left: 75px;
+    left: 50px;
 }
 
 .projectimage-bg{
@@ -128,15 +134,12 @@
     border-color: #00b06f;
     color: #fff;
     border-radius: 8px;
-
-    min-width: 100px;
-
+    min-width: 75px;
     position: absolute;
-    right: calc(50px + 10%);
+    right: 75px;
     top: calc(100% - 75px);
-    left: calc(600px + 10%);
+    left: 625;
     bottom: 25px;
-    
 }
 
 .projectplay-arrow{
@@ -162,7 +165,7 @@
 .descandwidgets{
 
     position: relative;
-    width: calc(100% - 725px);
+    width: calc(50% - 75px);
 
     right: 600px;
     top: 0px;
@@ -179,6 +182,7 @@
 
     position: relative;
     width: 100%;
+	left: 50px;
 
     display:inline-table;
     justify-content: center;
