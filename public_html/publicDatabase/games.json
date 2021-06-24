@@ -9,9 +9,9 @@
       }
     },
     {
-      "title": "Zombie Blower",
-      "icon": "./publicDatabase/projects/Zombie Blower/icon.png",
-      "iconLowRes": "./publicDatabase/projects/Zombie Blower/iconLowRes.png",
+      "title": "ZB GameJam",
+      "icon": "./publicDatabase/projects/ZB GameJam/icon.png",
+      "iconLowRes": "./publicDatabase/projects/ZB GameJam/iconLowRes.png",
       "type": "Unity"
     },
     {

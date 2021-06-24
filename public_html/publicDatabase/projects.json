@@ -116,9 +116,9 @@
       }
     },
     {
-      "title": "Zombie Blower",
-      "icon": "./publicDatabase/projects/Zombie Blower/icon.png",
-      "iconLowRes": "./publicDatabase/projects/Zombie Blower/iconLowRes.png",
+      "title": "ZB GameJam",
+      "icon": "./publicDatabase/projects/ZB GameJam/icon.png",
+      "iconLowRes": "./publicDatabase/projects/ZB GameJam/iconLowRes.png",
       "briefDescription": "Zombie Blower was created for a game jam. It's a top-down shooter in which you have to decide if you want to stun or to push you enemies as you cant kill them.",
       "description": "Zombie Blower is a top-down shooter created for the CPB Jam in 2020. In this game you can't kill the enemies, you can just push them and stun them. So you will have to decide which one is more important.\nThis game was made in Unity in less than 2 days.\nYou can play the game from the browser without downloading anything. You just have to press the play button in the upper part of the page.\n\n\nFuture Plans:\n I'm thinking of making a port for Android.",
       "images": [

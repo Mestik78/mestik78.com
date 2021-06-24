@@ -19,7 +19,7 @@ img{
 
 .background{
     position: fixed;
-    width: 100%;
+    width: auto;
     height: auto;
     
     left: 50%;
@@ -29,7 +29,7 @@ img{
 .background-mobile{
     position: fixed;
     width: auto;
-    height: 100%;
+    height: auto;
     
     left: 50%;
     transform: translate(-50%);
