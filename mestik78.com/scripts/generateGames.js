@@ -25,7 +25,7 @@ function generateGames(){
     
     function generateLink(object, Game){
     
-        object.href = "/gamePage.html?game=" + Game.title //--
+        object.href = "/gamePage?game=" + Game.title //--
     }
     
     

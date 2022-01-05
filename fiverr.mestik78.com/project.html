@@ -1,0 +1,87 @@
+<html>
+
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta charset="utf-8"/>
+
+		<link rel="stylesheet" href="./styles/general.css">
+		<link rel="stylesheet" href="./styles/buttons.css">
+		<link rel="stylesheet" href="./styles/text.css">
+		<link rel="stylesheet" href="./styles/assetsSlot.css">
+		<link rel="stylesheet" href="./styles/linksSlot.css">
+		<link rel="stylesheet" href="./styles/tryItYouserlfSlot.css">
+		<link rel="stylesheet" href="./styles/gamePage.css">
+		<link rel="stylesheet" href="./styles/slideshow.css">
+		<link href='https://fonts.googleapis.com/css?family=ABeeZee|Montserrat' rel='stylesheet'>
+
+	</head>
+
+
+	<body>
+
+		<img id="backgroundBluredImage">
+		<img id="backgroundImage">
+
+		<div id="mainFrame" class="floatingMainFrame upperRoundedCorners">
+
+			<a id="buyButton" class="buyButton button" target="_blank">
+				<img class="cart" src="./icons/cart.png">
+				<div id="price" class="price"></div>
+			</a>
+
+			<div class="dataFrame">
+
+				<div id="gameTitle" class="gameTitle"></div>
+
+				<p id="description" class="text"></p>
+				
+				<div class="linksFrame">
+					<a id="robloxButton" class="button" style="background-color: var(--roblox);" target="_blank">
+						<img src="./icons/roblox.png">
+					</a>
+					<a class="button" style="background-color: var(--fiverr);" target="_blank" href="https://www.fiverr.com/miguelplaton/sell-you-a-roblox-game">
+						<img src="./icons/fiverr.png">
+					</a>
+				</div>
+				
+				<div id="assetsIncludedTitle" class="infoTitle">Assets Included:</div>
+				<div id="assetsViewer">
+					<div id="assetsFrame" class="assetsFrameMobile">
+					</div>
+				</div>
+
+				<div id="assetsIncludedTitle" class="infoTitle">Gallery:</div>
+				<div class="slideshowFrame">
+					<div id="slideshowImages" class="slideshowImages">
+					</div>
+
+					<div class="buttons">
+						<div class="move">
+							<div class="left button" onclick="plusDivs(-1)">&#10094;</div>
+							<div class="right button" onclick="plusDivs(1)">&#10095;</div>
+						</div>
+						<div id="jumpButtons" class="jumpButtons">
+						</div>
+					</div>
+				</div>
+				
+				<div id="assetsIncludedTitle" class="infoTitle">Try it yourself:</div>
+				
+				<a id="robloxBigButton" class="robloxBigButton button" target="_blank">
+					<img class="icon" src="./icons/roblox.png">
+					<div class="robloxBigButtonText">Play</div>
+				</a>
+
+				<div class="comment">Direct payment. No commissions.</div>
+			</div>
+
+		</div>
+	</body>
+
+	<script src="./scripts/loadProjectData.js"></script>
+	<script src="./scripts/detectMobile.js"></script>
+	<script src="./scripts/setupMobileProjectPage.js"></script>
+	<script src="./scripts/slideshow.js"></script>
+
+</html>

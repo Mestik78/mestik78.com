@@ -1,0 +1,26 @@
+.robloxBigButton {
+    display: block;
+    width: 100%;
+    max-width: 225px;
+    height: 75px;
+
+    border-radius: 25px;
+    background-color: var(--roblox);
+}
+.robloxBigButton > .icon {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    top: 13;
+    left: 20;
+}
+.robloxBigButton > .robloxBigButtonText {
+    position: absolute;
+    height: 50px;
+    left: 85px;
+    bottom: 9px;
+    
+    font-family: ABeeZee;
+    font-size: 40;
+    color: var(--white);
+}

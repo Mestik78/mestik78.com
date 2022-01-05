@@ -1,0 +1,28 @@
+.buyButton {
+    position: absolute;
+    height: calc(60px + 1vw);
+    width: calc(110px + 3vw);
+    top: -30px;
+    right: calc(30px + 5%);
+    background-color: var(--green);
+    border-radius: var(--corner-big);
+}
+
+.cart {
+    height: calc(34px + 1vw);
+    width: calc(37px + 1vw);
+    position: absolute;
+    left: calc(13px + 0.1vw);
+    top: 13px;
+}
+
+.price {
+    position: absolute;
+    right: 13px;
+    top: calc(18px - 0.1vw);
+
+    font-family: ABeeZee;
+    font-size: calc(24px + 1vw);
+    color: var(--white);
+    text-align: right;
+}

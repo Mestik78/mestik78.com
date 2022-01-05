@@ -32,7 +32,7 @@ function generateProjects(){
     
     
     function generateLink(object, Project){
-        object.href = "/projectPage.html?project=" + Project.title //--
+        object.href = "/projectPage?project=" + Project.title //--
     }
     
     

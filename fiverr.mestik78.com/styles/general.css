@@ -1,0 +1,102 @@
+:root {
+    --white: #E4F7EE;
+    --black: #3F4542;
+    --gray: #6E7873;
+    --green: #5BCA96;
+
+    --roblox: #C9695B;
+    --fiverr: #2C7D57;
+
+    --corner-big: calc(50px + 0.2vw);
+    --corner-small: calc(25px + 0.1vw);
+
+    --horizontal-margin: calc(30px + 1vw);
+    --vertical-margin: calc(35px + 1vw);
+
+    --shadow: 0px 3px 3px #808080b7;
+    --pressed-shadow: 0px 1px 3px #808080b7;
+    --disabled-shadow: 0px 1px 3px #808080b7;
+}
+
+body {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+
+    background-color: var(--black);
+    
+    user-select: none;
+}
+
+#backgroundImage {
+    height: 350px;
+    width: 100%;
+    transform: translate(-50%);
+    left: 50%;
+    position: absolute;
+    object-fit: cover;
+}
+
+#backgroundBluredImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+
+    filter: blur(4px);
+}
+
+.fixedMainFrame, .floatingMainFrame, .centeredMainFrame {
+    height: fit-content;
+    width: 100%;
+    max-width:calc(400px + 30vw);
+    
+    background-color: var(--white);
+}
+
+.fixedMainFrame {
+    min-height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.floatingMainFrame {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.centeredMainFrame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dataFrame { 
+    margin-top: var(--vertical-margin);
+    margin-bottom: var(--vertical-margin);
+    margin-left: var(--horizontal-margin);
+    margin-right: var(--horizontal-margin);
+}
+
+.dataFrame > * {
+    margin-bottom: 25px;
+}
+
+.noRoundedCorners {
+    border-radius: 0;
+}
+
+.upperRoundedCorners {
+    border-top-left-radius: var(--corner-big);
+    border-top-right-radius: var(--corner-big);
+}
+.lowerRoundedCorners {
+    border-bottom-left-radius: var(--corner-big);
+    border-bottom-right-radius: var(--corner-big);
+}

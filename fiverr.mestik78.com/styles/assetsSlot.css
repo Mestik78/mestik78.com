@@ -1,0 +1,57 @@
+.assetsViewerMobile {
+    height: 230px;
+    display: block ruby;
+    overflow: scroll;
+}
+
+.assetsViewerDesktop {
+    height: fit-content;
+}
+
+.assetsFrameDesktop {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, calc(130px + 20px + 1.2vw));
+    grid-row-gap: calc(20px + 1.7vw);
+    grid-column-gap: 0;
+
+    justify-content: space-between;
+}
+
+.assetsFrameMobile {
+    height: calc(225px + 1vw);
+    width: fit-content;
+    display: flex;
+}
+
+.assetsFrameMobile > *, .assetsFrameDesktop > * {
+    height: calc(185px + 1.7vw);
+    width: calc(130px + 1.2vw);
+    border-radius: var(--corner-small);
+    margin-right: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.assetImage {
+    border-radius: var(--corner-small);
+    width: 100%;
+    height: calc(100% - 38px);
+    object-fit: cover;
+}
+
+.assetTitle {
+    height: calc(75px + 1vw);
+    width: inherit;
+    position: relative;
+    bottom: calc(38px + 0.5vw);
+    background-color: var(--white);
+    border-radius: var(--corner-small);
+
+    font-family: ABeeZee;
+    font-size: calc(24px + 0.2vw);
+    text-align: center;
+    color: var(--black);
+
+    vertical-align: middle;
+    display: table-cell;
+}

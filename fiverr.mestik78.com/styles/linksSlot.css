@@ -1,0 +1,19 @@
+.linksFrame {
+    height: fit-content;
+    display: flex;
+}
+
+.linksFrame > * { 
+    width: calc(64px + 1vw);
+    height: calc(64px + 1vw);
+    border-radius: var(--corner-small);
+    margin-right: 25px;
+}
+
+.linksFrame > * > * {
+    position: relative;
+    width: 70%;
+    height: 70%;
+    left: 15%;
+    top: 15%;
+}

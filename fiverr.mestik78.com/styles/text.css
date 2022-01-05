@@ -1,0 +1,41 @@
+.storeGameTitle{
+    font-size: calc(20px + 2.5vw);
+    color: var(--white);
+}
+
+.title {
+    font-size: calc(30px + 1vw);
+    color: var(--black);
+}
+
+.gameTitle {
+    font-size: calc(36px + 1vw);
+    color: var(--black);
+}
+
+.infoTitle {
+    margin-top: 30px;
+
+    font-size: calc(24px + 1vw);
+    color: var(--black);
+}
+
+.text {
+    font-size: calc(14px + 0.6vw);
+    color: var(--black);
+}
+
+.comment {
+    font-size: calc(10px + 0.6vw);
+    color: var(--gray);
+}
+
+.bougthProductTitle {
+    font-size: calc(20px + 1vw);
+    color: var(--black);
+}
+
+.storeGameTitle, .gameTitle, .infoTitle, .text, .comment, .title, .bougthProductTitle {
+    font-family: ABeeZee;
+    user-select: text;
+}

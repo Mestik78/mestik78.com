@@ -1,0 +1,60 @@
+.tabsFrame {
+    position: sticky;
+    top: 0px;
+    height: calc(40px + 1vw);
+
+    display: flex;
+    justify-content: center;
+    
+    z-index: 1;
+}
+
+.tabsFrame > #gamesTab {
+    transform: translate(20px, -50%);
+}
+.tabsFrame > #assetsTab {
+    transform: translate(-20px, -50%);
+}
+
+.tab {
+    background-color: var(--green);
+    border-bottom-left-radius: var(--corner-big);
+    border-bottom-right-radius: var(--corner-big);
+    width: calc(150px + 4vw);
+    height: calc(80px + 2vw);
+    filter: drop-shadow(var(--shadow));
+}
+
+.tab:hover {
+    filter: brightness(95%) drop-shadow(var(--shadow));
+    scale: 1.05;
+    animation-name: example;
+    transition: 0.1s;
+}
+
+.tab:active {
+    filter: brightness(95%) drop-shadow(var(--pressed-shadow));
+    transition: 0.05s;
+}
+.tabsFrame > #gamesTab:active {
+    transform: translate(20px, -40%);
+}
+.tabsFrame > #assetsTab:active {
+    transform: translate(-20px, -40%);
+}
+
+.activeTab {
+    z-index: 1;
+}
+
+.tab > * {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+
+    font-size: calc(24px + 0.8vw);
+    font-family: ABeeZee;
+    
+    color: var(--white);
+}

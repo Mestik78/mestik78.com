@@ -27,7 +27,7 @@ function generatePorfolio(){
     
     function generateLink(object, Project){
     
-        object.href = "/projectPage.html?project=" + Project.title //--
+        object.href = "/projectPage?project=" + Project.title //--
     }
     
     
@@ -35,7 +35,7 @@ function generatePorfolio(){
         
         var entry = document.createElement('a');
         entry.className = EntriesClasses[webMode]["entry"]
-        entry.href = "/projectPage.html?project=" + Project.title
+        entry.href = "/projectPage?project=" + Project.title
     
         EntriesContainers[webMode].insertAdjacentElement('beforeend',entry);
     

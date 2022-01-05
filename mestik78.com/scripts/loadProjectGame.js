@@ -64,7 +64,7 @@ function loadGame(){
                 case "Unity":
                  
                     var projectGame = document.getElementById("UnityGame")
-                    projectGame.src = "./publicDatabase/games/" + gameInfo.title + "/index.html"
+                    projectGame.src = "./publicDatabase/games/" + gameInfo.title + "/"
     
                     break;
 

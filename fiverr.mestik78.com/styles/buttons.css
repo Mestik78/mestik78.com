@@ -1,0 +1,24 @@
+.button {
+    filter: drop-shadow(var(--shadow));
+    user-select: none !important;
+}
+
+.button > * {
+    user-select: none !important;
+}
+
+.button:hover:not(.button[disabled]){
+    filter: brightness(95%) drop-shadow(var(--shadow));
+    scale: 1.05;
+    transition: 0.1s;
+}
+
+.button:active:not(.button[disabled]) {
+    filter: brightness(95%) drop-shadow(var(--pressed-shadow));
+    transform: translateY(2px);
+    transition: 0.1s;
+}
+
+.button:disabled, .button[disabled] {
+    filter: saturate(0%);
+}
