@@ -1,75 +1,36 @@
 function generatePorfolio(){
     var EntriesJson
-    fetch("../publicDatabase/porfolioEntries.json")
+    fetch("../data/porfolioEntries.json")
         .then(response => response.json())
         .then(json => {
             EntriesJson = json
         })
-        .then(document.body.onloadstart = addElement)
+        .then(document.body.onloadstart = start)
     
     
-    const EntriesContainers = {
-        "desktop": document.getElementById("PorfolioEntriesDesktop"),
-        //"mobile": document.getElementById("PorfolioEntriesMobile")
+    const EntriesContainer = document.getElementById("porfolio-entries-container")
+    
+    function getLink(Project){
+        let link = "/project?project=" + Project.title
+        return link
     }
     
-    const EntriesClasses = {
-        "desktop": {
-            "entry": "entry",
-            "entryimage": "entryimage"
-        },
-        "mobile": {
-            "entry": "entry-mobile",
-            "entryimage": "entryimage-mobile"
-        }
-    }
-    
-    
-    function generateLink(object, Project){
-    
-        object.href = "/projectPage?project=" + Project.title //--
-    }
-    
-    
-    function generatEntry(Project, webMode){
+    function generatEntry(Project){
         
         var entry = document.createElement('a');
-        entry.className = EntriesClasses[webMode]["entry"]
-        entry.href = "/projectPage?project=" + Project.title
-    
-        EntriesContainers[webMode].insertAdjacentElement('beforeend',entry);
+        entry.className = "porfolio-entry rounded-effect"
+        entry.href = getLink(Project)
+        EntriesContainer.appendChild(entry);
     
         var projectImage = document.createElement('img');
-        projectImage.className = EntriesClasses[webMode]["entryimage"] + " lazy"
-        projectImage.setAttribute("data-src", Project.image) //--
-        projectImage.setAttribute("src", Project.image) //--
-        
-        entry.insertAdjacentElement('beforeend',projectImage);
+        projectImage.setAttribute("src", Project.image)
+        entry.appendChild(projectImage);
     
     }
     
-    function generateSpacing(){
-        /*var spacingdesktop = document.createElement('div');
-        spacingdesktop.style.height = "50px"
-        spacingdesktop.className = "space"
-    
-        Containers["desktop"].insertAdjacentElement('beforeend',spacingdesktop);*/
-        
-        var spacingmobile = document.createElement('div');
-        spacingmobile.style.height = "50px"
-        spacingmobile.className = "space"
-    
-        EntriesContainers["mobile"].insertAdjacentElement('beforeend',spacingmobile);
-    }
-    
-    
-    function addElement () {
-        console.log("I should be first")
-    
+    function start() {
         for(i in EntriesJson){
-            generatEntry(EntriesJson[i], "desktop")
-            //generatEntry(EntriesJson[i], "mobile")
-            //generateSpacing()
+            generatEntry(EntriesJson[i])
         }
     }
 }

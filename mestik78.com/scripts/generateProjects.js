@@ -1,108 +1,50 @@
 function generateProjects(){
     var ProjectsJson
-    fetch("../publicDatabase/projects.json")
+    fetch("../data/projects.json")
         .then(response => response.json())
         .then(json => {
             ProjectsJson = json
         })
-        .then(document.body.onloadstart = addElement)
+        .then(document.body.onloadstart = start)
     
     
-    const Containers = {
-        "desktop": document.getElementById("ProjectsDesktop"),
-        "mobile": document.getElementById("ProjectsMobile")
+    const Container =  document.getElementById("projects-entries-container")
+        
+    function getLink(Project){
+        let link = "/project?project=" + Project.title
+        return link
     }
     
-    const classes = {
-        "desktop": {
-            "project": "project",
-            "projectimage-bg": "projectimage-bg",
-            "projectimage": "projectimage",
-            "projecttitlebox": "projecttitlebox",
-            "projecttitle": "projecttitle"
-        },
-        "mobile": {
-            "project": "project-mobile",
-            "projectimage-bg": "projectimage-bg-mobile",
-            "projectimage": "projectimage-mobile",
-            "projecttitlebox": "projecttitlebox-mobile",
-            "projecttitle": "projecttitle-mobile"
-        }
-    }
-    
-    
-    function generateLink(object, Project){
-        object.href = "/projectPage?project=" + Project.title //--
-    }
-    
-    
-    function generateProject(Project, webMode){
+    function generateProject(Project){
         
+        var project = document.createElement('a');
+        project.className = "project-entry rounded-effect"
+        project.href = getLink(Project)
+        Container.appendChild(project);
     
-        var project = document.createElement('div');
-        project.className = classes[webMode]["project"]
+        var frame = document.createElement('div');
+        frame.href = getLink(Project)
+        project.appendChild(frame);
     
-        Containers[webMode].insertAdjacentElement('beforeend',project);
+        var image = document.createElement('img');
+        image.className = "projectimage asyncImage rounded-effect"
+        image.src = Project.icon
+        frame.appendChild(image);
     
-        
+        var imageOverlay = document.createElement('div');
+        imageOverlay.className = "imageOverlay rounded-effect"
+        frame.appendChild(imageOverlay);
     
-    
-        var projectImageBg = document.createElement("a");
-        projectImageBg.className = classes[webMode]["projectimage-bg"]
-        generateLink(projectImageBg, Project)
-    
-        project.insertAdjacentElement('beforeend',projectImageBg);
-    
-    
-        var projectImage = document.createElement('img');
-        projectImage.className = classes[webMode]["projectimage"] + " asyncImage"
-        projectImage.setAttribute("data-src", Project.icon) //--
-        projectImage.src = Project.iconLowRes //--
-        
-        projectImageBg.insertAdjacentElement('beforeend',projectImage);
-    
-    
-    
-        
-        var projectTitleBox = document.createElement('div');
-        projectTitleBox.className = classes[webMode]["projecttitlebox"]
-        
-        project.insertAdjacentElement('beforeend',projectTitleBox);
-    
-        
-        var projectTitle = document.createElement('a');
-        projectTitle.className = classes[webMode]["projecttitle"]
-        projectTitle.textContent = Project.title //--
-        generateLink(projectTitle, Project)
-        
-        projectTitleBox.insertAdjacentElement('beforeend',projectTitle);
-    
-    
-    
+        var title = document.createElement('p');
+        title.className = "text-project-title"
+        title.textContent = Project.title
+        project.appendChild(title);
     
     }
     
-    function generateSpacing(){
-        /*var spacingdesktop = document.createElement('div');
-        spacingdesktop.style.height = "50px"
-        spacingdesktop.className = "space"
-    
-        Containers["desktop"].insertAdjacentElement('beforeend',spacingdesktop);*/
-        
-        var spacingmobile = document.createElement('div');
-        spacingmobile.style.height = "50px"
-        spacingmobile.className = "space"
-    
-        Containers["mobile"].insertAdjacentElement('beforeend',spacingmobile);
-    }
-    
-    
-    function addElement () {
-    
+    function start() {
         for(i in ProjectsJson){
-            generateProject(ProjectsJson[i], "desktop")
-            generateProject(ProjectsJson[i], "mobile")
-            generateSpacing()
+            generateProject(ProjectsJson[i])
         }
     }
 }

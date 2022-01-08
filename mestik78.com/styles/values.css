@@ -1,0 +1,13 @@
+:root {
+    --margin: calc(20px + 2vw);
+
+    --border-radius: var(--margin);
+    --half-border-radius: calc(var(--margin)/2);
+
+    --blur-radius: 5px;
+
+    --text-nav-size: calc(var(--margin)/2 - 0.4vw);
+    --text-title-size: calc(var(--margin)*1.5 - 0.4vw);
+
+    --white: #F5EBEB;
+}

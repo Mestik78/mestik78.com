@@ -1,0 +1,68 @@
+<link href='https://fonts.googleapis.com/css?family=ABeeZee|Montserrat' rel='stylesheet'>
+
+
+<html>
+	<head>
+		<meta charset="utf-8"/>
+
+		<link rel="stylesheet" href="./styles/values.css">
+		<link rel="stylesheet" href="./styles/background.css">
+		<link rel="stylesheet" href="./styles/glassmorphism.css">
+		<link rel="stylesheet" href="./styles/text.css">
+		<link rel="stylesheet" href="./styles/buttons.css">
+		<link rel="stylesheet" href="./styles/logo.css">
+		<link rel="stylesheet" href="./styles/main-container.css">
+		<link rel="stylesheet" href="./styles/corners.css">
+		<link rel="stylesheet" href="./styles/project-page.css">
+		<link rel="stylesheet" href="./styles/slideshow.css">
+		<link rel="stylesheet" href="./styles/general.css">
+	
+		<TITLE>Mestik78</TITLE>
+		<link rel="icon" type="image/png" href='./multimedia/images/favicon.png' sizes="any">
+	</head>
+
+	<nav id="nav"></nav>
+
+	<body>
+		<img class="background" src="./multimedia/images/background.jpg"></img>
+
+		<div id="main-container" class="main-container-project">
+			
+			<div id="Data" class="glassmorphism rounded-corners">
+				<p id="project-title" class="text-title">Porfolio</p>
+
+				<div class="data-frame">
+					<img id="project-icon" class="rounded-corners">
+					<p id="project-description">description</p>
+				</div>
+			</div>
+			
+			<div id="Images" class="glassmorphism rounded-corners">
+				<div class="slideshowFrame">
+					<div id="slideshowImages" class="slideshowImages">
+					</div>
+
+					<div class="buttons">
+						<div class="move">
+							<div class="left button-action" onclick="plusDivs(-1)">&#10094;</div>
+							<div class="right button-action" onclick="plusDivs(1)">&#10095;</div>
+						</div>
+						<div id="jumpButtons" class="jumpButtons">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>
+
+<script type="text/javascript" src="./scripts/generateProjectPage.js"></script>
+<script type="text/javascript" src="./scripts/slideshow.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+	$(function(){
+		$("#nav").load("_nav");
+    });
+</script>

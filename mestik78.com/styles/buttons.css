@@ -1,0 +1,14 @@
+.button-action {
+    cursor: pointer;
+    user-select: none;
+}
+
+.button-action:hover {
+    transform: scale(1.025);
+    transition: 0.1s;
+}
+
+.button-action:active {
+    transform: scale(1);
+    transition: 0.1s;
+}

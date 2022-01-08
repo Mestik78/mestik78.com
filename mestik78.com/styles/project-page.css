@@ -1,0 +1,14 @@
+#Data > .data-frame {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, calc(13*var(--margin) - 19vw));
+    grid-row-gap: var(--margin);
+    justify-items: center;
+    justify-content: center;
+}
+
+#Data > .data-frame > * {
+    width: calc(100% - var(--margin));
+
+    text-align: justify;
+}

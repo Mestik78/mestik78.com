@@ -1,0 +1,17 @@
+[
+    {
+      "title": "Gravity Ball 3D",
+      "image": "./data/projects/Gravity Ball 3D/images/frontBanner.png",
+      "imageLowRes": "./data/projects/Gravity Ball 3D/images/frontBannerLowRes.png"
+    },
+    {
+      "title": "Fight Game",
+      "image": "./data/projects/Fight Game/frontBanner.png",
+      "imageLowRes": "./data/projects/Fight Game/frontBanner.png"
+    },
+    {
+      "title": "ZB GameJam",
+      "image": "./data/projects/Zombie Blower/frontBanner.png",
+      "imageLowRes": "./data/projects/Zombie Blower/frontBanner.png"
+    }
+]

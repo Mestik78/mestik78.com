@@ -149,20 +149,26 @@
     },
     "Mine Game": {
         "name": "Mine Game",
-        "price": 3,
-        "type": "hidden",
-        "description": "",
+        "price": 7,
+        "type": "game",
+        "description": "Mine Game is a simulator about mining. You can mine different ores and then sell them to get better tools and mine better ores.",
         "links": {
-          "Roblox": "",
-          "buyButton": ""
+          "Roblox": "https://www.roblox.com/games/5860330332/Mine-Game",
+          "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7R5ZF8GGQ8U3C"
         },
         "image": {
-          "main": "",
-          "desktop": "",
-          "mobile": ""
+          "main": "./data/images/Mine Game/1.png",
+          "desktop": "./data/images/Mine Game/5.png",
+          "mobile": "./data/images/Mine Game/1.png"
         },
         "assets": [],
-        "gallery": []
+        "gallery": [
+          "./data/images/Mine Game/1.png",
+          "./data/images/Mine Game/2.png",
+          "./data/images/Mine Game/3.png",
+          "./data/images/Mine Game/4.png",
+          "./data/images/Mine Game/5.png"
+        ]
     },
     "GIVER Parkour": {
         "name": "GIVER Parkour",
@@ -180,38 +186,25 @@
         "assets": [],
         "gallery": []
     },
-    "Character Creattor": {
-        "name": "Character Creator",
-        "price": 3,
-        "type": "hidden",
+    "Block Test": {
+        "name": "Block Test",
+        "price": 7,
+        "type": "asset",
+        "description": "You can add this asset to your game to make it have Minecraft's building system.",
         "links": {
-          "Roblox": "",
-          "buyButton": ""
+          "Roblox": "https://www.roblox.com/games/6967287630/Block-Test",
+          "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VVTGJPQ446SGE"
         },
         "image": {
-          "main": "",
-          "asset": "",
-          "desktop": "",
-          "mobile": ""
+          "main": "./data/images/Block Test/2.png",
+          "asset": "./data/images/Block Test/3.png",
+          "desktop": "./data/images/Block Test/3.png",
+          "mobile": "./data/images/Block Test/3.png"
         },
         "assets": [],
-        "gallery": []
-    },
-    "Character Creatrsor": {
-        "name": "Character Creator",
-        "price": 3,
-        "type": "hidden",
-        "links": {
-          "Roblox": "",
-          "buyButton": ""
-        },
-        "image": {
-          "main": "",
-          "asset": "",
-          "desktop": "",
-          "mobile": ""
-        },
-        "assets": [],
-        "gallery": []
+        "gallery": [
+          "./data/images/Block Test/2.png",
+          "./data/images/Block Test/3.png"
+        ]
     }
 }

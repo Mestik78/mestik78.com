@@ -1,7 +1,7 @@
 var ProjectsJson
 var WebsImages
 
-fetch("../publicDatabase/projects.json")
+fetch("../data/projects.json")
     .then(response => response.json())
     .then(json => {
         ProjectsJson = json
@@ -13,34 +13,7 @@ var currentProject
     
 var projectIndex = -1
 
-
-
-const Containers = {
-    "Desktop": document.getElementById("mainnav"),
-    "Mobile": document.getElementById("mainnav-mobile")
-}
-
-const classes = {
-    "Desktop": {
-        "projectTitle": "projectTitle",
-        "projecticon-bg": "projecticon-bg",
-        "projecticon": "projecticon",
-        "projectimage": "projectimage",
-        "projectimage-bg": "projectimage-bg",
-        "linkimage": "linkimage",
-        "linkimagecontainer": "linkimagecontainer"
-    },
-    "Mobile": {
-        "projectTitle": "projectTitle-mobile",
-        "projecticon-bg": "projecticon-bg-mobile",
-        "projecticon": "projecticon-mobile",
-        "projectimage": "projectimage-mobile",
-        "projectimage-bg": "projectimage-bg-mobile",
-        "linkimage": "linkimage-mobile",
-        "linkimagecontainer": "linkimagecontainer-mobile"
-    }
-}
-
+const Containers = document.getElementById("mainnav")
 
 function start(){
     var params = {};
@@ -56,83 +29,25 @@ function start(){
             projectIndex = i
         }
     }
-
-    if (projectIndex == -1){
-        //window.location.href = 'index.html';
-    }
-
-
-    setupPage("Desktop")
-    setupPage("Mobile")
+    setupPage()
 }
 
 
-function generateSpacing(Container){
-    /*
-    var spacingdesktop = document.createElement('div');
-    spacingdesktop.style.height = "50px"
-
-    Container.insertAdjacentElement('beforeend',spacingdesktop);*/
-}
-
-
-function setupPage(webMode){
-
+function setupPage(){
     projectInfo = ProjectsJson[projectIndex]
 
+    var projectTitle = document.getElementById("project-title")
+    projectTitle.innerText = projectInfo.title
 
-    var projectTitleObj = document.getElementById("projectTitle" + [webMode])
-    projectTitleObj.textContent = projectInfo.title
-    projectTitleObj.className = classes[webMode].projectTitle
+    var projectIcon = document.getElementById("project-icon")
+    projectIcon.src = projectInfo.icon
 
+    var projectDescription = document.getElementById("project-description")
+    projectDescription.textContent = projectInfo.description
 
+    loadGallery(projectInfo)
 
-    var projectIcon = document.getElementById("projecticon"+ [webMode])
-    projectIcon.src = projectInfo.icon //--
-
-
-    
-    var briefDescription = document.getElementById("projectbriefdesc"+ [webMode])
-    briefDescription.textContent = projectInfo.briefDescription //--
-    
-    var Description = document.getElementById("projectdesc"+ [webMode])
-    Description.textContent = projectInfo.description //--
-
-
-    if(webMode == "Desktop"){
-
-        var projectPlay = document.getElementById("projectplay")
-
-        if (projectInfo.game){
-            projectPlay.href = "/gamePage?game=" + projectInfo.title //--
-        }else{
-            projectPlay.className += " hide"
-        }
-
-
-        
-        var itchicoWidget = document.getElementById("itchioWidget")
-        if(projectInfo.widgets.hasOwnProperty("itch.io")){
-            itchicoWidget.src = projectInfo.widgets["itch.io"].src
-            itchicoWidget.href = projectInfo.widgets["itch.io"].href
-        }else{
-            itchicoWidget.className = "hide"
-        }
-    }
-
-
-
-
-
-    images = projectInfo.images
-    
-    for(i in images){
-        generateProjectImage(images[i], webMode)
-    }
-
-
-    
-    fetch("../publicDatabase/websImages.json")
+    fetch("../data/websImages.json")
         .then(response => response.json())
         .then(json => {
             WebsImages = json
@@ -146,7 +61,7 @@ function setupPage(webMode){
         )
 }
 
-function generateLinkImage(i, webMode){
+function generateLinkImage(i){
 
     container = document.getElementById("linksImages" + [webMode])
 
@@ -168,25 +83,23 @@ function generateLinkImage(i, webMode){
     linkImageContainer.insertAdjacentElement('beforeend',linkImage);
 }
 
+function loadGallery(projectInfo){
+    const slideshowImages = document.getElementById("slideshowImages")
+    const jumpButtons = document.getElementById("jumpButtons")
 
-
-function generateProjectImage(image, webMode){
-
-    container = document.getElementById("projectimages"+ [webMode])
-
-    var projectImageBg = document.createElement("div");
-    projectImageBg.className = classes[webMode]["projectimage-bg"]
-
-    container.insertAdjacentElement('beforeend',projectImageBg);
-
-
-    var projectImage = document.createElement('img');
-    projectImage.className = classes[webMode]["projectimage"]
-    projectImage.src = image //--
-    
-    projectImageBg.insertAdjacentElement('beforeend',projectImage);
-
-    
-    //generateSpacing(container)
-
+    var i = 1;
+    for (let image of projectInfo.images){
+        let newImage = document.createElement("img")
+        newImage.src = image
+        newImage.className = "slideImage rounded-corners"
+        slideshowImages.appendChild(newImage)
+        
+        let newJumpButton = document.createElement("span")
+        newJumpButton.className = "imageJump button-action"
+        let j = i;
+        newJumpButton.onclick = function(){currentDiv(j)}
+        jumpButtons.appendChild(newJumpButton)
+        i++;
+    }
+    currentDiv(1)
 }

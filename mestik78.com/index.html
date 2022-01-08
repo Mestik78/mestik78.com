@@ -1,339 +1,69 @@
 <link href='https://fonts.googleapis.com/css?family=ABeeZee|Montserrat' rel='stylesheet'>
 
-
 <html>
-
 	<head>
+		<meta charset="utf-8"/>
 
+		<link rel="stylesheet" href="./styles/values.css">
+		<link rel="stylesheet" href="./styles/background.css">
+		<link rel="stylesheet" href="./styles/glassmorphism.css">
+		<link rel="stylesheet" href="./styles/text.css">
+		<link rel="stylesheet" href="./styles/buttons.css">
+		<link rel="stylesheet" href="./styles/logo.css">
+		<link rel="stylesheet" href="./styles/main-container.css">
+		<link rel="stylesheet" href="./styles/porfolio.css">
+		<link rel="stylesheet" href="./styles/corners.css">
+		<link rel="stylesheet" href="./styles/games.css">
+		<link rel="stylesheet" href="./styles/projects.css">
+		<link rel="stylesheet" href="./styles/more.css">
 		<link rel="stylesheet" href="./styles/general.css">
-		<link rel="stylesheet" href="./styles/desktop/mainnav.css">
-		<link rel="stylesheet" href="./styles/mobile/mainnavMobile.css">
-		<link rel="stylesheet" href="./styles/desktop/topnav.css">
-		<link rel="stylesheet" href="./styles/mobile/topnavMobile.css">
-		<link rel="stylesheet" href="./styles/desktop/projects.css">
-		<link rel="stylesheet" href="./styles/mobile/projectsMobile.css">
-		<link rel="stylesheet" href="./styles/desktop/porfolioEntries.css">
-		<link rel="stylesheet" href="./styles/mobile/porfolioEntriesMobile.css">
-		<link rel="stylesheet" href="./styles/desktop/spaces.css">
-		<link rel="stylesheet" href="./styles/desktopMobile.css">
-		
+	
 		<TITLE>Mestik78</TITLE>
 		<link rel="icon" type="image/png" href='./multimedia/images/favicon.png' sizes="any">
-
 	</head>
-	<!-- Matomo -->
-	<script type="text/javascript">
-		var _paq = window._paq = window._paq || [];
-		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-		_paq.push(['trackPageView']);
-		_paq.push(['enableLinkTracking']);
-		(function() {
-		var u="https://mestik78.matomo.cloud/";
-		_paq.push(['setTrackerUrl', u+'matomo.php']);
-		_paq.push(['setSiteId', '1']);
-		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-		g.type='text/javascript'; g.async=true; g.src='//cdn.matomo.cloud/mestik78.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-	})();
-  	</script>
-  	<!-- End Matomo Code -->
 
-	
-	<nav>
+	<nav id="nav"></nav>
 
-		
-		<div class="topnav desktop">
-			<a href='#Home'><topNavButton class="active">
-				<topNavLogo></img>
-			</topNavButton></a>
-
-			<a href='#Porfolio'><topNavButton>
-				<topNavText>Porfolio</topNavText>
-			</topNavButton></a>
-
-			<a href='#Games'><topNavButton>
-				<topNavText>Games</topNavText>
-			</topNavButton></a>
-
-			<a href='#Projects'><topNavButton>
-				<topNavText>Projects</topNavText>
-			</topNavButton></a>
-
-			<a href='#More'><topNavButton>
-				<topNavText>More</topNavText>
-			</topNavButton></a>
-		</div>
-
-		
-		<div class="topnav-mobile mobile_device">
-			<a href='#Home'><topNavButton class="active">
-				<topNavLogo></img>
-			</topNavButton></a>
-
-			<a href='#Porfolio'><topNavButton>
-				<topNavText>Porfolio</topNavText>
-			</topNavButton></a>
-
-			<a href='#Projects'><topNavButton>
-				<topNavText>Projects</topNavText>
-			</topNavButton></a>
-
-			<a href='#More'><topNavButton>
-				<topNavText>More</topNavText>
-			</topNavButton></a>
-		</div>
-
-	</nav>
-
-
-	<body bgcolor="black">
-
-		<img class="background desktop" src="./multimedia/images/background.jpg"></img>
-		<img class="background-mobile asyncImage mobile_device" src="./multimedia/images/background.jpg" data-src="./multimedia/images/background.jpg"></img>
-
-
-
-
+	<body>
+		<img class="background" src="./multimedia/images/background.jpg"></img>
 		<div id="Home">
-
-
-			<div class="space" style="height: 15%;"></div>
-
-			<div class="overMainnav desktop">
-
-				<div class="imageContainer" style="width:100%;height:600px;margin-bottom: 75;">
-					<img src='./multimedia/images/Logo Tansparente.png' alt="Logo Mestik78" style="width:600px;height:100%;"></img>
-				</div>
-
-			</div>
-
-			
-			<div class="overMainnav mobile_device">
-
-				<div class="imageContainer" style="width:100%;height:800px;margin-bottom: 75;">
-					<img src='./multimedia/images/Logo Tansparente.png' alt="Logo Mestik78" style="width:800px;height:100%;"></img>
-				</div>
-
-			</div>
-
+			<logo class="main-logo"></div>
 		</div>
-
-
-
-		<div class="space" style="height: 75px;"></div>
-		<div class="space" style="height: calc(15%-125px);"></div>
-		<div id="Porfolio"> <!--Offers-->
-
-
-			<div id="PorfolioEntries" class="overMainnav desktop">
-
-				<div class="spaceBeforeMainavDesktop"></div>
-
-				<div class="mainnav desktop">
-
-					<div class="PorfolioEntriesContainer">
-
-						<div class="space spaceBeforeTitleDesktop"></div>
-						<h1 class="Title">Porfolio</h1>
-						<div class="space spaceAfterTitleDesktop"></div>
-
-						<div id="PorfolioEntriesDesktop" class="PorfolioEntries"></div>
-
-						<div class="space" style="height: 75px;"></div>
-					</div>
-
-				</div>
-
 				
-				<div id="spaceAfterMainavDesktop"></div>
+		<div id="main-container" class="main-container-index">
+			<div id="Porfolio" class="glassmorphism rounded-corners">
+				<p class="text-title">Porfolio</p>
+				<div id="porfolio-entries-container"></div>
 			</div>
-				
 
-			<!--
-			<div class="overMainnav-mobile mobile_device">
+			<div id="Games" class="glassmorphism rounded-corners">
+				<p class="text-title">Games</p>
+				<div id="games-entries-container"></div>
+			</div>
 
-				<div class="space" style="height: 225px;"></div>
+			<div id="Projects" class="glassmorphism rounded-corners">
+				<p class="text-title">Projects</p>
+				<div id="projects-entries-container"></div>
+			</div>
 
-				<div class="mainnav-mobile mobile_device">
-
-					<div id="PorfolioEntriesMobile" class="PorfolioEntries-mobile">
-
-						<div class="space" style="height: 25px;"></div>
-						<h1 class="Title">Porfolio</h1>
-						<div id="space" style="height: 50px;"></div>
-						<h4 class="Title" style="font-size: 50; font-style: italic;">work in progress</h4>
-
-					</div>
-
-				</div>
-
-				
-				<div id="space" style="height: 50px;"></div>
-			</div>-->
-
-			
-			<script type="text/javascript" src="./scripts/generatePorfolio.js"></script>
-
+			<div id="More" class="glassmorphism rounded-corners">
+				<p class="text-title">More</p>
+				<a href="https://www.fiverr.com/miguelplaton" target="_blank"><img class="button-action" src="/multimedia/images/webs/fiverr.png"></a>
+			</div>
 		</div>
-
-		
-		<div class="space" style="height: calc(15%-125px);"></div>
-		<div id="Games"> <!--Projects-->
-
-
-			<div id="Games" class="overMainnav desktop">
-
-				<div class="spaceBeforeMainavDesktop"></div>
-
-				<div class="mainnav desktop">
-
-					<div class="ProjectsContainer">
-
-						<div class="space spaceBeforeTitleDesktop"></div>
-						<h1 class="Title">Games</h1>
-						<div class="space spaceAfterTitleDesktop"></div>
-
-						<div id="GamesDesktop" class="ProjectsGrid"></div>
-
-						<div class="space" style="height: 25px;"></div>
-
-						<h3 class="text subtitle">All these games were made by Mestik78.</h3>
-
-						<div class="space" style="height: 50px;"></div>
-					</div>
-
-				</div>
-
-				
-				<div id="spaceAfterMainavDesktop"></div>
-			</div>
-
-			
-			<script type="text/javascript" src="./scripts/generateGames.js"></script>
-
-		</div>
-
-		
-		<div class="space" style="height: calc(15%-125px);"></div>
-		<div id="Projects"> <!--Projects-->
-
-
-			<div id="Projects" class="overMainnav desktop">
-
-				<div class="spaceBeforeMainavDesktop"></div>
-
-				<div class="mainnav desktop">
-
-					<div class="ProjectsContainer">
-
-						<div class="space spaceBeforeTitleDesktop"></div>
-						<h1 class="Title">Projects</h1>
-						<div class="space spaceAfterTitleDesktop"></div>
-
-						<div id="ProjectsDesktop" class="ProjectsGrid"></div>
-
-						<div class="space" style="height: 75px;"></div>
-					</div>
-
-				</div>
-
-				
-				<div id="spaceAfterMainavDesktop"></div>
-			</div>
-				
-
-			
-			<div class="overMainnav-mobile mobile_device">
-
-				<div class="space" style="height: 225px;"></div>
-
-				<div class="mainnav-mobile mobile_device">
-
-					<div class="space" style="height: 25px;"></div>	
-					<h1 class="Title">Projects</h1>
-					<div id="space" style="height: 25px;"></div>
-					<div id="ProjectsMobile" class="Projects-mobile">
-
-						<div id="space" style="height: 50px;"></div>
-
-					</div>
-
-				</div>
-
-				
-				<div id="space" style="height: 50px;"></div>
-			</div>
-
-			
-			<script type="text/javascript" src="./scripts/generateProjects.js"></script>
-
-		</div>
-
-
-		
-		<div class="space" style="height: calc(15%-125px);"></div>
-		<div id="More"> <!--Offers-->
-
-
-			<div id="More" class="overMainnav desktop">
-
-				<div class="spaceBeforeMainavDesktop"></div>
-
-				<div class="mainnav desktop">
-
-					<div class="OffersContainer">
-
-						<div class="space spaceBeforeTitleDesktop"></div>
-						<h1 class="Title">More</h1>
-						<div class="space spaceAfterTitleDesktop"></div>
-
-						<a href="https://www.fiverr.com/miguelplaton?up_rollout=true" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Fiverr_Logo_09.2020.svg/1280px-Fiverr_Logo_09.2020.svg.png" style="height: 100px; position: relative;left: 50%;    transform: translate(-50%);"/></a>
-
-						<div class="space" style="height: 75px;"></div>
-					</div>
-
-				</div>
-
-				
-				<div id="spaceAfterMainavDesktop"></div>
-			</div>
-				
-
-			
-			<div class="overMainnav-mobile mobile_device">
-
-				<div class="space" style="height: 225px;"></div>
-
-				<div class="mainnav-mobile mobile_device">
-
-					<div class="space" style="height: 25px;"></div>	
-					<h1 class="Title">More</h1>
-					<div id="space" style="height: 25px;"></div>
-					<div id="OffersMobile" class="Offers-mobile">
-
-						<h4 class="Title" style="font-size: 50; font-style: italic;">work in progress</h4>
-
-						<a href="https://www.fiverr.com/miguelplaton?up_rollout=true" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Fiverr_Logo_09.2020.svg/1280px-Fiverr_Logo_09.2020.svg.png" style="height: 100px; position: relative;left: 50%;    transform: translate(-50%);"/></a>
-
-						<div class="space" style="height: 75px;"></div>
-					</div>
-
-				</div>
-
-				
-				<div id="space" style="height: 50px;"></div>
-			</div>
-
-		</div>
-
-		
-		<div class="space" style="height: 50px;"></div>
-
 	</body>
-
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-	<script type="text/javascript" src="./scripts/loadLowResImages.js"></script>
-	<script type="text/javascript" src="./scripts/scrollAnimation.js"></script>
-
 </html>
+
+
+<script type="text/javascript" src="./scripts/generatePorfolio.js"></script>
+<script type="text/javascript" src="./scripts/generateGames.js"></script>
+<script type="text/javascript" src="./scripts/generateProjects.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+	$(function(){
+		$("#nav").load("_nav");
+    });
+</script>
+
+<script type="text/javascript" src="./scripts/scrollAnimation.js"></script>

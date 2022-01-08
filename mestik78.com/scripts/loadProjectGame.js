@@ -7,7 +7,7 @@ function loadGame(){
     var windowLoaded = false
 
     var GamesJson
-    fetch("../publicDatabase/games.json")
+    fetch("../data/games.json")
         .then(response => response.json())
         .then(json => {
             GamesJson = json
@@ -64,7 +64,7 @@ function loadGame(){
                 case "Unity":
                  
                     var projectGame = document.getElementById("UnityGame")
-                    projectGame.src = "./publicDatabase/games/" + gameInfo.title + "/"
+                    projectGame.src = "./data/games/" + gameInfo.title + "/"
     
                     break;
 

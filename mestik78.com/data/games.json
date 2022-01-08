@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Duck Hunt",
+      "icon": "./data/games/Duck Hunt/icon.png",
+      "iconLowRes": "./data/games/Duck Hunt/iconLowRes.png",
+      "type": "Scratch",
+      "data":{
+      	"ScratchId": "533892021"
+      }
+    },
+    {
+      "title": "ZB GameJam",
+      "icon": "./data/projects/ZB GameJam/icon.png",
+      "iconLowRes": "./data/projects/ZB GameJam/iconLowRes.png",
+      "type": "Unity"
+    },
+    {
+      "title": "Mestik's Paint",
+      "icon": "./data/games/Mestik's Paint/icon.png",
+      "iconLowRes": "./data/games/Mestik's Paint/iconLowRes.png",
+      "type": "Scratch",
+      "data":{
+      	"ScratchId": "333571993"
+      }
+    }
+  ]

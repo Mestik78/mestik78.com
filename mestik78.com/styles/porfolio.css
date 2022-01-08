@@ -1,0 +1,13 @@
+#Porfolio > #porfolio-entries-container {
+    justify-content: space-between;
+    display: flex;
+}
+
+.porfolio-entry {
+    width: calc(100%/3.5);
+    min-width: 100px;
+}
+
+.porfolio-entry > img {
+    width: 100%;
+}

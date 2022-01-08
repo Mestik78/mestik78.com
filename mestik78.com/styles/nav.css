@@ -1,0 +1,24 @@
+.topnav {
+    width: 100%;
+    height: calc(2* var(--margin) - 1.5vw);
+
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: calc(var(--margin)/2);
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.topnav > * {
+    text-decoration: none;
+    margin-right: calc(var(--margin)/2);
+}
+
+.topnav > * > p {
+    text-align: center;
+    font-size: var(--text-nav-size);
+}
