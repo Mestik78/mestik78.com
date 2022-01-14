@@ -35,7 +35,7 @@
     color: var(--black);
 }
 
-.storeGameTitle, .gameTitle, .infoTitle, .text, .comment, .title, .bougthProductTitle {
+p, .storeGameTitle, .gameTitle, .infoTitle, .text, .comment, .title, .bougthProductTitle {
     font-family: ABeeZee;
     user-select: text;
 }
