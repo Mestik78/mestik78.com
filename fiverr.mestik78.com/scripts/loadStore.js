@@ -20,6 +20,27 @@ function loadProject(project, frame) {
     storeGameTitle.className = "storeGameTitle"
     storeGameTitle.innerText = project.name
     newProject.appendChild(storeGameTitle)
+    
+    let extrasContainer = document.createElement("div")
+    extrasContainer.className = "extrasContainer"
+    newProject.appendChild(extrasContainer)
+    
+    if (project.gamepasses) {
+        let gamepasses = document.createElement("div")
+        gamepasses.className = "gamepasses"
+        extrasContainer.appendChild(gamepasses)
+
+        let gamepassesText = document.createElement("p")
+        gamepassesText.id = "gp"
+        gamepassesText.innerText = "GP"
+        gamepasses.appendChild(gamepassesText)
+
+        let gamepassesInfo = document.createElement("p")
+        gamepassesInfo.id = "info"
+        gamepassesInfo.className = "text"
+        gamepassesInfo.innerText = "Includes game passes"
+        gamepasses.appendChild(gamepassesInfo)
+    }
 }
 
 function deleteProjects(projectsFrame) {
