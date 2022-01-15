@@ -51,8 +51,8 @@
 
 .extrasContainer {
     position: absolute;
-    top: var(--margin);
-    right: var(--margin);   
+    top: var(--horizontal-margin);
+    right: var(--horizontal-margin);   
 
     width: 25%;
     max-width: 75px;
@@ -61,57 +61,3 @@
     flex-direction: row-reverse;
 }
 
-.extrasContainer > .gamepasses {
-    width: 100%;
-
-    padding-bottom: 100%;
-
-    background-color: #ffd9009f;
-    border-radius: var(--corner-small);
-
-    backdrop-filter: blur(5px) brightness(1.5);
-
-    display: block;
-}
-
-.extrasContainer > .gamepasses > #gp {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 100%;
-
-    text-decoration: none;
-    color: var(--white);
-    text-align: center;
-    font-size: calc(30px + 1vw);
-
-    margin: 0px;
-}
-
-.extrasContainer > .gamepasses > #info {
-    position: absolute;
-    left: calc(0px - var(--margin)/2);
-    transform: translateX(-100%);
-    top: 0;
-    height: fit-content;
-    width: fit-content;
-
-    display: none;
-
-    --hpadding: calc(var(--margin) / 3);
-    --vpadding: calc(var(--hpadding) / 3);
-    padding-left: var(--hpadding);
-    padding-right: var(--hpadding);
-    padding-top: var(--vpadding);
-    padding-bottom: var(--vpadding);
-
-    background-color: var(--white);
-    border-radius: var(--corner-big);
-
-    text-align: center;
-    vertical-align: middle;
-}
-
-.gamepasses:hover #info {display: ruby;}
