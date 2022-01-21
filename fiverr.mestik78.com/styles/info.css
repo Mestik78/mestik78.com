@@ -53,3 +53,4 @@
 }
 
 .gamepasses:hover #info {display: ruby;}
+.gamepasses:active #info {display: ruby;}
