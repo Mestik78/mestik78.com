@@ -4,9 +4,11 @@
 	<head>
 		<meta charset="utf-8"/>
 
+		<link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet'>
+
 		<link rel="stylesheet" href="./styles/values.css">
 		<link rel="stylesheet" href="./styles/background.css">
-		<link rel="stylesheet" href="./styles/glassmorphism.css">
+		<link rel="stylesheet" href="./styles/frame.css">
 		<link rel="stylesheet" href="./styles/text.css">
 		<link rel="stylesheet" href="./styles/buttons.css">
 		<link rel="stylesheet" href="./styles/logo.css">
@@ -25,30 +27,32 @@
 	<nav id="nav"></nav>
 
 	<body>
-		<img class="background" src="./multimedia/images/background.jpg"></img>
+		<img class="background"></img>
 		<div id="Home">
 			<logo class="main-logo"></div>
 		</div>
 				
 		<div id="main-container" class="main-container-index">
-			<div id="Porfolio" class="glassmorphism rounded-corners">
+			<div id="Porfolio" class="frame rounded-corners">
 				<p class="text-title">Porfolio</p>
 				<div id="porfolio-entries-container"></div>
 			</div>
 
-			<div id="Games" class="glassmorphism rounded-corners">
+			<div id="Games" class="frame rounded-corners">
 				<p class="text-title">Games</p>
 				<div id="games-entries-container"></div>
 			</div>
 
-			<div id="Projects" class="glassmorphism rounded-corners">
+			<div id="Projects" class="frame rounded-corners">
 				<p class="text-title">Projects</p>
 				<div id="projects-entries-container"></div>
 			</div>
 
-			<div id="More" class="glassmorphism rounded-corners">
+			<div id="More" class="frame rounded-corners">
 				<p class="text-title">More</p>
-				<a href="https://www.fiverr.com/miguelplaton" target="_blank"><img class="button-action" src="/multimedia/images/webs/fiverr.png"></a>
+				<div class="more-container">
+					<a href="https://www.fiverr.com/miguelplaton" target="_blank"><img class="button-action" src="/multimedia/images/webs/fiverr.png"></a>
+				</div>
 			</div>
 		</div>
 	</body>

@@ -8,6 +8,6 @@
     margin-top: var(--margin);
 }
 
-#More *{
+#More > .more-container *{
     height: 50px;
 }
