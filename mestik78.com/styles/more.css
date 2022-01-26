@@ -11,3 +11,7 @@
 #More > .more-container *{
     height: 50px;
 }
+
+#More > p {
+    width: 100%;
+}

@@ -1,5 +1,5 @@
 #Porfolio > #porfolio-entries-container {
-    justify-content: space-between;
+    justify-content: space-evenly;
     display: flex;
 }
 
