@@ -13,5 +13,5 @@ logo.main-logo {
 }
 
 logo.nav-logo {
-    height: calc(2* var(--margin) - 1.5vw);
+    height: calc(var(--margin)/3 + 8vh);
 }
