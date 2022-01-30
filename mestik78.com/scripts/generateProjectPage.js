@@ -45,6 +45,13 @@ function setupPage(){
     var projectDescription = document.getElementById("project-description")
     projectDescription.textContent = projectInfo.description
 
+    var projectPlay = document.getElementById("project-play-button")
+    if (projectInfo.game){
+        projectPlay.href = "/game?game=" + projectInfo.title
+    }else{
+        projectPlay.className += " hide"
+    }
+
     loadGallery(projectInfo)
 
     fetch("../data/websImages.json")

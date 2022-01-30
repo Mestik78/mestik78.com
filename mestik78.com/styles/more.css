@@ -4,6 +4,10 @@
     flex-direction: column;
 }
 
+#More > * {
+    width: 100%;
+}
+
 #More > a {
     margin-top: var(--margin);
 }

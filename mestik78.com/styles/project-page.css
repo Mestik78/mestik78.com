@@ -9,6 +9,33 @@
 
 #Data > .data-frame > * {
     width: calc(100% - var(--margin));
+    height: fit-content;
 
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+#Data > .data-frame > * > * {
+    width: 100%;
     text-align: justify;
+}
+
+#project-play-button{
+    height: calc(var(--margin) * 1);
+    width: 90% !important;
+    min-width: 75px;
+    
+    background-color: #00b06f;
+    border-radius: var(--half-border-radius);
+}
+
+.play-img {
+    height: var(--margin);
+
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
