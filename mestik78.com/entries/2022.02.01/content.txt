@@ -1,0 +1,25 @@
+# Sección Blog
+Buenos días internautas. Como podréis haber visto en caso de frecuentar esta página web, ha sufrído grandes cambios. Ahora cuenta con una sección de blog. Y es que me gustaría comentar de vez en cuando que proyectos tengo entre manos. Ahora mismo en lo que estoy trabajando es en el rediseño de la web, espero ya terminado cuando se esté leyendo esto.
+
+Me gustaría probar a lo largo de esta entrada del blog las diferentes capacidades que tiene el sistema de formato Markdown. Que es el que estoy usando ahora mismo para poder escribir este blog de forma cómoda y sencilla. Puede que lo conozcais debido a su uso en los archivos README de GitHub o en los mensajes de Discord. Sí, gracias a esto puedes usar los asteriscos * para poner tus mensajes en **negrita** y así poder gritar ligeramente más fuerte al discutir sobre que personaje de My Little Pony ganaría en una pelea a muerte.
+
+Una de las características que quiero probar es la inserción de imágenes a partir de una ruta relativa. De funcionar justo aquí deberíais de poder ver una captura de pantalla del estado actual de la página.
+
+![](./media/Screenshot-2022-02-01-20:43:47.png)
+
+Al parecer, programar un sistema de blogs es bastante más sencillo de lo que me esperaba. De hecho, el script que los carga tiene tan solo 13 lineas por el momento y es el siguiente:
+```
+const entryName = "2022.02.01"
+const entryPath = "../entries/" + entryName + "/"
+
+fetch(entryPath + "content.txt")
+  .then(response => response.text())
+  .then(text => {
+    console.log(text)
+      var md = new Remarkable();
+      var htmlText = md.render(text)
+      htmlText = htmlText.replaceAll("src=\"./","src=\""+entryPath)
+      console.log(htmlText)
+      document.getElementById("entry-container").innerHTML=htmlText
+    })
+```
