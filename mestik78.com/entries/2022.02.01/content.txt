@@ -5,7 +5,7 @@ Me gustaría probar a lo largo de esta entrada del blog las diferentes capacidad
 
 Una de las características que quiero probar es la inserción de imágenes a partir de una ruta relativa. De funcionar justo aquí deberíais de poder ver una captura de pantalla del estado actual de la página.
 
-![](./media/Screenshot-2022-02-01-20:43:47.png)
+![](./media/sshot.png)
 
 Al parecer, programar un sistema de blogs es bastante más sencillo de lo que me esperaba. De hecho, el script que los carga tiene tan solo 13 lineas por el momento y es el siguiente:
 ```

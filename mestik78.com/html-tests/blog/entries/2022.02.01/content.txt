@@ -5,4 +5,4 @@ Me gustaría probar a lo largo de esta entrada del blog las diferentes capacidad
 
 Una de las características que quiero probar es la inserción de imágenes a partir de una ruta relativa. De funcionar justo aquí deberíais de poder ver una captura de pantalla del estado actual de la página.
 
-![Esta es una imagen](./media/Screenshot-2022-02-01-20:43:47.png)
+![Esta es una imagen](./media/sshot.png)
