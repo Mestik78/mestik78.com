@@ -181,7 +181,7 @@
       "description": "You can add this map to your game.",
       "links": {
         "Roblox": "https://www.roblox.com/games/8799796049/Medieval-Map",
-        "buyButton": ""
+        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TKTJZZZ263TUY"
       },
       "image": {
         "main": "./data/images/Medieval Map/07.png",
@@ -237,7 +237,7 @@
       "description": "You can add this asset to your game so that players can locate themselves. This asset includes 2 compass styles. One on the top of the screen, like on Skyrim or Fortnite, and another on the bottom, as a normal compass.",
       "links": {
         "Roblox": "https://www.roblox.com/games/8579476119/Compass-GUI-Test",
-        "buyButton": ""
+        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NPY4GRJCTF2RJ"
       },
       "image": {
         "main": "./data/images/Compass GUI/13.png",
