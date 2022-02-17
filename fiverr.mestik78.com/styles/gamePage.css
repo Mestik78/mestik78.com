@@ -1,4 +1,6 @@
 .buyButton {
+    display: none;
+
     position: absolute;
     height: calc(60px + 1vw);
     width: calc(110px + 3vw);
