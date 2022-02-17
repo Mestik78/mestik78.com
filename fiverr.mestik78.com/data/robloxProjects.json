@@ -229,6 +229,29 @@
       "./data/images/Character Creator/4.png"
     ]
   },
+  "NPCs": {
+      "name": "NPCs",
+      "price": 7,
+      "type": "asset",
+      "gamepasses": false,
+      "description": "This asset includes multiple NPCs. It includes monsters, merchants and peasants (that randomize their appearance).",
+      "links": {
+        "Roblox": "https://www.roblox.com/games/8850714411/NPCs",
+        "buyButton": ""
+      },
+      "image": {
+        "main": "./data/images/NPCs/2.png",
+        "asset": "./data/images/NPCs/2.png",
+        "desktop": "./data/images/NPCs/1.png",
+        "mobile": "./data/images/NPCs/2.png"
+      },
+      "assets": [],
+      "gallery": [
+        "./data/images/NPCs/2.png",
+        "./data/images/NPCs/1.png",
+        "./data/images/NPCs/3.png"
+      ]
+  },
   "Compass GUI": {
       "name": "Compass GUI",
       "price": 5,
