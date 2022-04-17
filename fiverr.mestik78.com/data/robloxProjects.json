@@ -4,9 +4,9 @@
         "price": 10,
         "type": "game",
         "gamepasses": true,
-        "description": "Fight Game is a game heavily inspired by Dark Souls. In this game, you will have to fight with other players to get their souls, which are the currency of the game. They can be used to buy new weapons, armour, pets, etc.",
+        "description": "Fight Game is a game heavily inspired by Dark Souls. In this game, you will have to fight with other players to get their souls, which are the currency of the game. They can be used to buy new weapons, armor, pets, etc.",
         "links": {
-          "Roblox": "https://www.roblox.com/games/6130403285/Battle2-0-NEW-UPDATE",
+          "Roblox": "https://www.roblox.com/games/6638413542",
           "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ELU3XHUYA5RD8"
         },
         "image": {
@@ -34,7 +34,7 @@
       "gamepasses": false,
       "description": "Medieval Land is the evolution of Fight Game. This game is much more complex than Fight Game and adds lots of new mechanics. It adds item drops and enemies, like zombies, cyclops, dwarfs and shadows. It also has a village full of NPCs waiting for you to arrive.",
       "links": {
-        "Roblox": "https://www.roblox.com/games/6998003105/Medieval-Land",
+        "Roblox": "https://www.roblox.com/games/6998003105",
         "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8UZCHC8UP9AYJ"
       },
       "image": {
@@ -65,7 +65,7 @@
       "gamepasses": false,
       "description": "This is the first game made by Arshield Studios. It's a really simple but fun tycoon. It has spawners, that can drop items of various prices. As well as upgraders, that will make you earn more coins from each item.",
       "links": {
-        "Roblox": "https://www.roblox.com/games/5359018264/Mestik-Tycoon-Arshield-Studios",
+        "Roblox": "https://www.roblox.com/games/9368964311",
         "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GBX3TZ8LXGWQQ"
       },
       "image": {
@@ -90,7 +90,7 @@
       "gamepasses": false,
       "description": "I developed a way to create 2D games on Roblox and used it to make this clone of the retro game Space Invaders. It even has multiplayer.",
       "links": {
-        "Roblox": "https://www.roblox.com/games/6322106072/Space-Invaders",
+        "Roblox": "https://www.roblox.com/games/6322106072",
         "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4ERBDN54S7RRL"
       },
       "image": {
@@ -115,7 +115,7 @@
       "gamepasses": false,
       "description": "I developed a way to create 2D games on Roblox and used it to make this clone of the retro game Pong. It is multiplayer and also can be played on mobile.",
       "links": {
-        "Roblox": "https://www.roblox.com/games/6323606932/Pong",
+        "Roblox": "https://www.roblox.com/games/6323606932",
         "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=97VL7M4KH4NGC"
       },
       "image": {
@@ -137,7 +137,7 @@
       "gamepasses": false,
       "description": "Mine Game is a simulator about mining. You can mine different ores and then sell them to get better tools and mine better ores.",
       "links": {
-        "Roblox": "https://www.roblox.com/games/5860330332/Mine-Game",
+        "Roblox": "https://www.roblox.com/games/5860330332",
         "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7R5ZF8GGQ8U3C"
       },
       "image": {
@@ -180,7 +180,7 @@
       "gamepasses": false,
       "description": "You can add this map to your game.",
       "links": {
-        "Roblox": "https://www.roblox.com/games/8799796049/Medieval-Map",
+        "Roblox": "https://www.roblox.com/games/8799796049",
         "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TKTJZZZ263TUY"
       },
       "image": {
@@ -212,7 +212,7 @@
     "type": "asset",
     "gamepasses": false,
     "links": {
-      "Roblox": "https://www.roblox.com/games/6488734004/Character-Creator-Test",
+      "Roblox": "https://www.roblox.com/games/6488734004",
       "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YY59DFAT2GZKU"
     },
     "image": {
@@ -236,8 +236,8 @@
       "gamepasses": false,
       "description": "This asset includes multiple NPCs. It includes monsters, merchants and peasants (that randomize their appearance).",
       "links": {
-        "Roblox": "https://www.roblox.com/games/8850714411/NPCs",
-        "buyButton": ""
+        "Roblox": "https://www.roblox.com/games/8850714411",
+        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YKEPC36GMZL6Y"
       },
       "image": {
         "main": "./data/images/NPCs/2.png",
@@ -259,7 +259,7 @@
       "gamepasses": false,
       "description": "You can add this asset to your game so that players can locate themselves. This asset includes 2 compass styles. One on the top of the screen, like on Skyrim or Fortnite, and another on the bottom, as a normal compass.",
       "links": {
-        "Roblox": "https://www.roblox.com/games/8579476119/Compass-GUI-Test",
+        "Roblox": "https://www.roblox.com/games/8579476119",
         "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NPY4GRJCTF2RJ"
       },
       "image": {
@@ -288,7 +288,7 @@
       "gamepasses": false,
       "description": "You can add this asset to your game to make it have Minecraft's building system.",
       "links": {
-        "Roblox": "https://www.roblox.com/games/6967287630/Block-Test",
+        "Roblox": "https://www.roblox.com/games/6967287630",
         "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VVTGJPQ446SGE"
       },
       "image": {

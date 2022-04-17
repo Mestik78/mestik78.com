@@ -25,7 +25,7 @@ async function loadDownloadButton(projectData, id){
     let fileName = getFileFromName(projectData.name) + "-" + id + ".rbxl"
     let fileExists = doesFileExist("./data/files/" + fileName)
     if (fileExists) {
-        downloadButton.download = fileName
+        downloadButton.download = projectData.name + ".rbxl"
         downloadButton.href = "./data/files/" + fileName
     } else {
         downloadButton.setAttribute("disabled", "")
