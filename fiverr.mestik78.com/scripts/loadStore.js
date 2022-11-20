@@ -1,46 +1,27 @@
-function loadProject(project, frame) {
-    let newProject = document.createElement("a")
-    newProject.href = "/project?project=" + project.name
-    newProject.className = "project button"
+let Games = []
+let Assets = []
+
+
+
+function readStringFromFileAtPath(pathOfFileToReadFrom)
+{
+    var request = new XMLHttpRequest();
+    request.open("GET", pathOfFileToReadFrom, false);
+    request.send(null);
+    var returnValue = request.responseText;
+
+    return returnValue;
+}
+
+function loadProject(project, projectData, frame) {
+    let newProject = document.createElement("div")
+    newProject.innerHTML = readStringFromFileAtPath("../projectCard?project=" + project.name);
+    newProject.className = "projectFrame"
     frame.appendChild(newProject)
-    
-    let imageContainer = document.createElement("div")
-    imageContainer.className = "imageContainer"
-    newProject.appendChild(imageContainer)
-    
-    let image = document.createElement("img")
-    image.src = project.image.main
-    imageContainer.appendChild(image)
-    
-    let imageOverlay = document.createElement("div")
-    imageOverlay.className = "imageOverlay"
-    imageContainer.appendChild(imageOverlay)
-    
-    let storeGameTitle = document.createElement("div")
-    storeGameTitle.className = "storeGameTitle"
-    storeGameTitle.innerText = project.name
-    newProject.appendChild(storeGameTitle)
-    
-    let extrasContainer = document.createElement("div")
-    extrasContainer.className = "extrasContainer"
-    newProject.appendChild(extrasContainer)
-    
-    if (project.gamepasses) {
-        let gamepasses = document.createElement("div")
-        gamepasses.className = "gamepasses"
-        extrasContainer.appendChild(gamepasses)
 
-        let gamepassesText = document.createElement("p")
-        gamepassesText.id = "gp"
-        gamepassesText.innerText = "GP"
-        gamepasses.appendChild(gamepassesText)
+    loadProjectCard(project, projectData, newProject)
 
-        let gamepassesInfo = document.createElement("p")
-        gamepassesInfo.id = "info"
-        gamepassesInfo.className = "text"
-        gamepassesInfo.innerText = "Includes game passes"
-        gamepasses.appendChild(gamepassesInfo)
-    }
+    return newProject
 }
 
 function deleteProjects(projectsFrame) {
@@ -53,15 +34,24 @@ async function loadStore() {
         return
     }
     
-    const projectsFrame = document.getElementById("projectsFrame")
+    const gamesFrame = document.getElementById("gamesFrame")
+    const assetsFrame = document.getElementById("assetsFrame")
 
-    deleteProjects(projectsFrame)
-    for ([key, project] of Object.entries(ProjectsJson)) {
-        if (project.type == selectedTab) {
-            loadProject(project, projectsFrame)
+    deleteProjects(gamesFrame)
+    deleteProjects(assetsFrame)
+    for ([project, projectData] of Object.entries(ProjectsJson)) {
+        if (projectData.info.type != "hidden") {
+            let newProject = loadProject(project, projectData, gamesFrame)
+            if (projectData.info.type == "game") {
+                Games.push(newProject)
+            }
+            if (projectData.info.type == "asset") {
+                Assets.push(newProject)
+            }
         }
     }
 }
+loadStore()
 
 
 var ProjectsJson

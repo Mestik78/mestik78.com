@@ -1,20 +1,37 @@
 .projectsFrame {
-    --margin: calc(5vw - 18px);
-    margin-left: var(--margin);
-    margin-right: var(--margin);
+    overflow: hidden;
 }
 
 .projectsFrame > * {
-    margin-bottom: 25px;
+    margin-bottom: calc(var(--vertical-margin)/1.5);
+}
+
+.projectFrame {
+    width: 100%;
+    aspect-ratio: 1.75;
+    
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+
+    border: none;
+    
+    overflow: hidden;
+
+    border-radius: var(--corner-small);
 }
 
 .project {
     width: 100%;
-    padding-bottom: calc(75% - 7vw);
+    height: 100%;
 
     position: relative;
     box-sizing: border-box;
     display: block;
+
+    border: none;
+
+    overflow: hidden;
 }
 
 .project > .imageContainer {
@@ -48,16 +65,3 @@
     width: calc(100% - 50px);
     background-color: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)
 }
-
-.extrasContainer {
-    position: absolute;
-    top: var(--horizontal-margin);
-    right: var(--horizontal-margin);   
-
-    width: 25%;
-    max-width: 75px;
-
-    display: flex;
-    flex-direction: row-reverse;
-}
-

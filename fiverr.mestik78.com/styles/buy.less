@@ -1,0 +1,37 @@
+.buyButton {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    @media (max-width: 768px) {
+        top: -75px;
+    }
+
+    width: fit-content;
+    height: calc(64px + 1vw);
+    
+    background-color: var(--green);
+    border-radius: var(--corner-big);
+
+    padding-inline: 15px;
+
+    display: flex;
+    align-items: stretch;
+    text-decoration: none;
+    place-items: center;
+}
+.buyButton > * {
+    margin-inline: 5px;
+}
+
+.cart {
+    height: 80%;
+    aspect-ratio: 1;
+    top: 13px;
+}
+
+.price {
+    font-family: Fjalla One;
+    font-size: calc(32px + 1vw);
+    color: var(--white);
+    text-align: right;
+}

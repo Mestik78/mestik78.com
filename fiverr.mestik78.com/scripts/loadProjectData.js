@@ -83,7 +83,7 @@ function loadGallery(projectData){
         jumpButtons.appendChild(newJumpButton)
         i++;
     }
-    currentDiv(1)
+    currentDiv(1, true)
 }
 
 function loadProjectData(projectData) {

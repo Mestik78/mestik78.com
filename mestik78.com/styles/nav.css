@@ -1,6 +1,8 @@
 .topnav {
+    --nav-height: calc(var(--margin)/3 + 8vh);
+
     width: 100%;
-    height: calc(var(--margin)/3 + 8vh);
+    height: var(--nav-height);
 
     display:flex;
     justify-content: left;
@@ -24,5 +26,5 @@
 }
 
 .navborder {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #1d1d1d;
 }

@@ -20,9 +20,9 @@ function doesFileExist(urlToFile) {
     return http.status!=404;
 }
 
-async function loadDownloadButton(projectData, id){
+async function loadDownloadButton(currentProject, projectData, id){
     const downloadButton = document.getElementById("downloadButton")
-    let fileName = getFileFromName(projectData.name) + "-" + id + ".rbxl"
+    let fileName = getFileFromName(currentProject) + "-" + id + ".rbxl"
     let fileExists = doesFileExist("./data/files/" + fileName)
     if (fileExists) {
         downloadButton.download = projectData.name + ".rbxl"
@@ -32,10 +32,10 @@ async function loadDownloadButton(projectData, id){
     }
 }
 
-function loadDownloadData(projectData, id) {
+function loadDownloadData(currentProject, projectData, id) {
     loadBackground(projectData)
     loadTitle(projectData)
-    loadDownloadButton(projectData, id)
+    loadDownloadButton(currentProject, projectData, id)
 }
 
 
@@ -54,7 +54,7 @@ function start(){
     let currentProjectData = ProjectsJson[currentProject]
     let id = params.id
 
-    loadDownloadData(currentProjectData, id)
+    loadDownloadData(currentProject, currentProjectData, id)
 }
 
 var ProjectsJson

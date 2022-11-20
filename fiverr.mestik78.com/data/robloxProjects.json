@@ -2,11 +2,14 @@
   "Fight Game": {
         "name": "Fight Game",
         "price": 10,
-        "type": "game",
-        "gamepasses": true,
+        "info": {
+          "type": "game",
+          "original": true,
+          "gamepasses": true
+        },
         "description": "Fight Game is a game heavily inspired by Dark Souls. In this game, you will have to fight with other players to get their souls, which are the currency of the game. They can be used to buy new weapons, armor, pets, etc.",
         "links": {
-          "Roblox": "https://www.roblox.com/games/6638413542",
+          "Roblox": "https://www.roblox.com/games/6130403285",
           "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ELU3XHUYA5RD8"
         },
         "image": {
@@ -27,11 +30,46 @@
           "./data/images/Fight Game/9.png"
         ]
   }, 
+  "Island Tycoon": {
+      "name": "Island Tycoon",
+      "price": 10,
+      "info": {
+        "type": "game",
+        "original": false,
+        "gamepasses": false
+      },
+      "description": "This game is a Tycoon located on an Island. It's a complex Tycoon with lots of upgrades, weapons and fun things to do. You can even unlock vehicles.",
+      "links": {
+        "Roblox": "https://www.roblox.com/games/11465552121",
+        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AAF2Y5P2JUTPU"
+      },
+      "image": {
+        "main": "./data/images/Island Tycoon/8.png",
+        "desktop": "./data/images/Island Tycoon/8.png",
+        "mobile": "./data/images/Island Tycoon/7.png"
+      },
+      "assets": [],
+      "gallery": [
+        "./data/images/Island Tycoon/2.png",
+        "./data/images/Island Tycoon/3.png",
+        "./data/images/Island Tycoon/4.png",
+        "./data/images/Island Tycoon/5.png",
+        "./data/images/Island Tycoon/6.png",
+        "./data/images/Island Tycoon/7.png",
+        "./data/images/Island Tycoon/8.png",
+        "./data/images/Island Tycoon/9.png",
+        "./data/images/Island Tycoon/10.png",
+        "./data/images/Island Tycoon/11.png"
+      ]
+  },
   "Medieval Land": {
       "name": "Medieval Land",
       "price": 15,
-      "type": "game",
-      "gamepasses": false,
+      "info": {
+        "type": "game",
+        "original": true,
+        "gamepasses": false
+      },
       "description": "Medieval Land is the evolution of Fight Game. This game is much more complex than Fight Game and adds lots of new mechanics. It adds item drops and enemies, like zombies, cyclops, dwarfs and shadows. It also has a village full of NPCs waiting for you to arrive.",
       "links": {
         "Roblox": "https://www.roblox.com/games/6998003105",
@@ -58,126 +96,47 @@
         "./data/images/Medieval land/12.png"
       ]
   },
-  "Arshield Studios Tycoon": {
-      "name": "Arshield Studios Tycoon",
-      "price": 3,
-      "type": "game",
-      "gamepasses": false,
-      "description": "This is the first game made by Arshield Studios. It's a really simple but fun tycoon. It has spawners, that can drop items of various prices. As well as upgraders, that will make you earn more coins from each item.",
+  "Parkour Haven": {
+      "name": "Parkour Haven",
+      "price": 15,
+      "info": {
+        "type": "game",
+        "original": false,
+        "gamepasses": true
+      },
+      "description": "",
       "links": {
-        "Roblox": "https://www.roblox.com/games/9368964311",
-        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GBX3TZ8LXGWQQ"
+        "Roblox": "https://www.roblox.com/games/11465208551",
+        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P236SDQ25T3LW"
       },
       "image": {
-        "main": "./data/images/Arshield Tycoon/1.png",
-        "desktop": "./data/images/Arshield Tycoon/6.png",
-        "mobile": "./data/images/Arshield Tycoon/5.png"
+        "main": "./data/images/Parkour Haven/2.png",
+        "desktop": "./data/images/Parkour Haven/9.png",
+        "mobile": "./data/images/Parkour Haven/12.png"
       },
       "assets": [],
       "gallery": [
-        "./data/images/Arshield Tycoon/1.png",
-        "./data/images/Arshield Tycoon/2.png",
-        "./data/images/Arshield Tycoon/3.png",
-        "./data/images/Arshield Tycoon/4.png",
-        "./data/images/Arshield Tycoon/5.png",
-        "./data/images/Arshield Tycoon/6.png"
+        "./data/images/Parkour Haven/1.png",
+        "./data/images/Parkour Haven/2.png",
+        "./data/images/Parkour Haven/3.png",
+        "./data/images/Parkour Haven/4.png",
+        "./data/images/Parkour Haven/5.png",
+        "./data/images/Parkour Haven/6.png",
+        "./data/images/Parkour Haven/7.png",
+        "./data/images/Parkour Haven/8.png",
+        "./data/images/Parkour Haven/9.png",
+        "./data/images/Parkour Haven/10.png",
+        "./data/images/Parkour Haven/11.png"
       ]
   },
-  "Space Invaders": {
-      "name": "Space Invaders",
-      "price": 3,
-      "type": "game",
-      "gamepasses": false,
-      "description": "I developed a way to create 2D games on Roblox and used it to make this clone of the retro game Space Invaders. It even has multiplayer.",
-      "links": {
-        "Roblox": "https://www.roblox.com/games/6322106072",
-        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4ERBDN54S7RRL"
-      },
-      "image": {
-        "main": "./data/images/Space Invaders/6.png",
-        "desktop": "./data/images/Space Invaders/6.png",
-        "mobile": "./data/images/Space Invaders/6.png"
-      },
-      "assets": [],
-      "gallery": [
-        "./data/images/Space Invaders/1.png",
-        "./data/images/Space Invaders/2.png",
-        "./data/images/Space Invaders/3.png",
-        "./data/images/Space Invaders/4.png",
-        "./data/images/Space Invaders/5.png",
-        "./data/images/Space Invaders/6.png"
-      ]
-  },
-  "Pong": {
-      "name": "Pong",
-      "price": 3,
-      "type": "game",
-      "gamepasses": false,
-      "description": "I developed a way to create 2D games on Roblox and used it to make this clone of the retro game Pong. It is multiplayer and also can be played on mobile.",
-      "links": {
-        "Roblox": "https://www.roblox.com/games/6323606932",
-        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=97VL7M4KH4NGC"
-      },
-      "image": {
-        "main": "./data/images/Pong/3.png",
-        "desktop": "./data/images/Pong/3.png",
-        "mobile": "./data/images/Pong/3.png"
-      },
-      "assets": [],
-      "gallery": [
-        "./data/images/Pong/1.png",
-        "./data/images/Pong/2.png",
-        "./data/images/Pong/3.png"
-      ]
-  },
-  "Mine Game": {
-      "name": "Mine Game",
-      "price": 7,
-      "type": "game",
-      "gamepasses": false,
-      "description": "Mine Game is a simulator about mining. You can mine different ores and then sell them to get better tools and mine better ores.",
-      "links": {
-        "Roblox": "https://www.roblox.com/games/5860330332",
-        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7R5ZF8GGQ8U3C"
-      },
-      "image": {
-        "main": "./data/images/Mine Game/1.png",
-        "desktop": "./data/images/Mine Game/5.png",
-        "mobile": "./data/images/Mine Game/1.png"
-      },
-      "assets": [],
-      "gallery": [
-        "./data/images/Mine Game/1.png",
-        "./data/images/Mine Game/2.png",
-        "./data/images/Mine Game/3.png",
-        "./data/images/Mine Game/4.png",
-        "./data/images/Mine Game/5.png"
-      ]
-  },
-  "GIVER Parkour": {
-      "name": "GIVER Parkour",
-      "price": 5,
-      "type": "hidden",
-      "gamepasses": true,
-      "links": {
-        "Roblox": "",
-        "buyButton": ""
-      },
-      "image": {
-        "main": "",
-        "desktop": "",
-        "mobile": ""
-      },
-      "assets": [],
-      "gallery": []
-  },
-
-    
   "Medieval Map": {
       "name": "Medieval Map",
       "price": 12,
-      "type": "asset",
-      "gamepasses": false,
+      "info": {
+        "type": "asset",
+        "original": false,
+        "gamepasses": false
+      },
       "description": "You can add this map to your game.",
       "links": {
         "Roblox": "https://www.roblox.com/games/8799796049",
@@ -206,11 +165,376 @@
         "./data/images/Medieval Map/13.png"
       ]
   },
+  "Island Survival": {
+      "name": "Island Survival",
+      "price": 15,
+      "info": {
+        "type": "game",
+        "original": false,
+        "gamepasses": false
+      },
+      "description": "",
+      "links": {
+        "Roblox": "https://www.roblox.com/games/11538234056",
+        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7VNPNWQZKRXQC"
+      },
+      "image": {
+        "main": "./data/images/Island Survival/12.png",
+        "desktop": "./data/images/Island Survival/11.png",
+        "mobile": "./data/images/Island Survival/9.png"
+      },
+      "assets": [],
+      "gallery": [
+        "./data/images/Island Survival/10.png",
+        "./data/images/Island Survival/4.png",
+        "./data/images/Island Survival/5.png",
+        "./data/images/Island Survival/6.png",
+        "./data/images/Island Survival/7.png",
+        "./data/images/Island Survival/8.png",
+        "./data/images/Island Survival/9.png",
+        "./data/images/Island Survival/1.png",
+        "./data/images/Island Survival/2.png",
+        "./data/images/Island Survival/3.png",
+        "./data/images/Island Survival/11.png",
+        "./data/images/Island Survival/12.png"
+      ]
+  },
+  "Dont Press the Button": {
+      "name": "Don't Press the Button",
+      "price": 13,
+      "info": {
+        "type": "game",
+        "original": false,
+        "gamepasses": false
+      },
+      "description": "",
+      "links": {
+        "Roblox": "https://www.roblox.com/games/11538285855",
+        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FV3YVCDV27FX4"
+      },
+      "image": {
+        "main": "./data/images/Don't Press the Button/4.png",
+        "desktop": "./data/images/Don't Press the Button/1.png",
+        "mobile": "./data/images/Don't Press the Button/1.png"
+      },
+      "assets": [],
+      "gallery": [
+        "./data/images/Don't Press the Button/1.png",
+        "./data/images/Don't Press the Button/2.png",
+        "./data/images/Don't Press the Button/3.png",
+        "./data/images/Don't Press the Button/4.png",
+        "./data/images/Don't Press the Button/6.png",
+        "./data/images/Don't Press the Button/5.png"
+      ]
+  },
+  "Arshield Studios Tycoon": {
+      "name": "Arshield Studios Tycoon",
+      "price": 3,
+      "info": {
+        "type": "game",
+        "original": true,
+        "gamepasses": false
+      },
+      "description": "This is the first game made by Arshield Studios. It's a really simple but fun tycoon. It has spawners, that can drop items of various prices. As well as upgraders, that will make you earn more coins from each item.",
+      "links": {
+        "Roblox": "https://www.roblox.com/games/9368964311",
+        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GBX3TZ8LXGWQQ"
+      },
+      "image": {
+        "main": "./data/images/Arshield Tycoon/1.png",
+        "desktop": "./data/images/Arshield Tycoon/6.png",
+        "mobile": "./data/images/Arshield Tycoon/5.png"
+      },
+      "assets": [],
+      "gallery": [
+        "./data/images/Arshield Tycoon/1.png",
+        "./data/images/Arshield Tycoon/2.png",
+        "./data/images/Arshield Tycoon/3.png",
+        "./data/images/Arshield Tycoon/4.png",
+        "./data/images/Arshield Tycoon/5.png",
+        "./data/images/Arshield Tycoon/6.png"
+      ]
+  },
+  "Vibe Hangout": {
+      "name": "Vibe Hangout",
+      "price": 7,
+      "info": {
+        "type": "game",
+        "original": false,
+        "gamepasses": false
+      },
+      "description": "",
+      "links": {
+        "Roblox": "https://www.roblox.com/games/11465342399",
+        "buyButton": ""
+      },
+      "image": {
+        "main": "./data/images/Vibe Hangout/4.png",
+        "desktop": "./data/images/Vibe Hangout/10.png",
+        "mobile": "./data/images/Vibe Hangout/4.png"
+      },
+      "assets": [],
+      "gallery": [
+        "./data/images/Vibe Hangout/5.png",
+        "./data/images/Vibe Hangout/6.png",
+        "./data/images/Vibe Hangout/4.png",
+        "./data/images/Vibe Hangout/9.png",
+        "./data/images/Vibe Hangout/1.png",
+        "./data/images/Vibe Hangout/10.png",
+        "./data/images/Vibe Hangout/2.png",
+        "./data/images/Vibe Hangout/12.png",
+        "./data/images/Vibe Hangout/13.png",
+        "./data/images/Vibe Hangout/11.png",
+        "./data/images/Vibe Hangout/14.png",
+        "./data/images/Vibe Hangout/3.png",
+        "./data/images/Vibe Hangout/7.png",
+        "./data/images/Vibe Hangout/8.png"
+      ]
+  },
+  "Space Invaders": {
+      "name": "Space Invaders",
+      "price": 3,
+      "info": {
+        "type": "game",
+        "original": true,
+        "gamepasses": false
+      },
+      "description": "I developed a way to create 2D games on Roblox and used it to make this clone of the retro game Space Invaders. It even has multiplayer.",
+      "links": {
+        "Roblox": "https://www.roblox.com/games/6322106072",
+        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4ERBDN54S7RRL"
+      },
+      "image": {
+        "main": "./data/images/Space Invaders/6.png",
+        "desktop": "./data/images/Space Invaders/6.png",
+        "mobile": "./data/images/Space Invaders/6.png"
+      },
+      "assets": [],
+      "gallery": [
+        "./data/images/Space Invaders/1.png",
+        "./data/images/Space Invaders/2.png",
+        "./data/images/Space Invaders/3.png",
+        "./data/images/Space Invaders/4.png",
+        "./data/images/Space Invaders/5.png",
+        "./data/images/Space Invaders/6.png"
+      ]
+  },
+  "Pong": {
+      "name": "Pong",
+      "price": 3,
+      "info": {
+        "type": "game",
+        "original": true,
+        "gamepasses": false
+      },
+      "description": "I developed a way to create 2D games on Roblox and used it to make this clone of the retro game Pong. It is multiplayer and also can be played on mobile.",
+      "links": {
+        "Roblox": "https://www.roblox.com/games/6323606932",
+        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=97VL7M4KH4NGC"
+      },
+      "image": {
+        "main": "./data/images/Pong/3.png",
+        "desktop": "./data/images/Pong/3.png",
+        "mobile": "./data/images/Pong/3.png"
+      },
+      "assets": [],
+      "gallery": [
+        "./data/images/Pong/1.png",
+        "./data/images/Pong/2.png",
+        "./data/images/Pong/3.png"
+      ]
+  },
+  "SCP: Site": {
+      "name": "SCP: Site",
+      "price": 7,
+      "info": {
+        "type": "game",
+        "original": false,
+        "gamepasses": false
+      },
+      "description": "",
+      "links": {
+        "Roblox": "https://www.roblox.com/games/11465228697",
+        "buyButton": ""
+      },
+      "image": {
+        "main": "./data/images/SCP Site/6.png",
+        "desktop": "./data/images/SCP Site/6.png",
+        "mobile": "./data/images/SCP Site/7.png"
+      },
+      "assets": [],
+      "gallery": [
+        "./data/images/SCP Site/10.png",
+        "./data/images/SCP Site/13.png",
+        "./data/images/SCP Site/5.png",
+        "./data/images/SCP Site/4.png",
+        "./data/images/SCP Site/9.png",
+        "./data/images/SCP Site/11.png",
+        "./data/images/SCP Site/12.png",
+        "./data/images/SCP Site/14.png",
+        "./data/images/SCP Site/6.png",
+        "./data/images/SCP Site/7.png",
+        "./data/images/SCP Site/1.png",
+        "./data/images/SCP Site/2.png",
+        "./data/images/SCP Site/3.png",
+        "./data/images/SCP Site/8.png",
+        "./data/images/SCP Site/15.png"
+      ]
+  },
+  "Zombie Survival": {
+      "name": "Zombie Survival",
+      "price": 7,
+      "info": {
+        "type": "game",
+        "original": false,
+        "gamepasses": false
+      },
+      "description": "",
+      "links": {
+        "Roblox": "https://www.roblox.com/games/11465214022",
+        "buyButton": ""
+      },
+      "image": {
+        "main": "./data/images/Zombie Survival/3.png",
+        "desktop": "./data/images/Zombie Survival/2.png",
+        "mobile": "./data/images/Zombie Survival/2.png"
+      },
+      "assets": [],
+      "gallery": [
+        "./data/images/Zombie Survival/1.png",
+        "./data/images/Zombie Survival/2.png",
+        "./data/images/Zombie Survival/3.png",
+        "./data/images/Zombie Survival/4.png",
+        "./data/images/Zombie Survival/5.png",
+        "./data/images/Zombie Survival/6.png"
+      ]
+  },
+  "Mine Game": {
+      "name": "Mine Game",
+      "price": 7,
+      "info": {
+        "type": "game",
+        "original": true,
+        "gamepasses": false
+      },
+      "description": "Mine Game is a simulator about mining. You can mine different ores and then sell them to get better tools and mine better ores.",
+      "links": {
+        "Roblox": "https://www.roblox.com/games/5860330332",
+        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7R5ZF8GGQ8U3C"
+      },
+      "image": {
+        "main": "./data/images/Mine Game/1.png",
+        "desktop": "./data/images/Mine Game/5.png",
+        "mobile": "./data/images/Mine Game/1.png"
+      },
+      "assets": [],
+      "gallery": [
+        "./data/images/Mine Game/1.png",
+        "./data/images/Mine Game/2.png",
+        "./data/images/Mine Game/3.png",
+        "./data/images/Mine Game/4.png",
+        "./data/images/Mine Game/5.png"
+      ]
+  },
+  "Youtuber Tycoon": {
+      "name": "Youtuber Tycoon",
+      "price": 7,
+      "info": {
+        "type": "game",
+        "original": false,
+        "gamepasses": false
+      },
+      "description": "",
+      "links": {
+        "Roblox": "https://www.roblox.com/games/11538267575",
+        "buyButton": ""
+      },
+      "image": {
+        "main": "./data/images/game/8.png",
+        "desktop": "./data/images/game/8.png",
+        "mobile": "./data/images/game/7.png"
+      },
+      "assets": [],
+      "gallery": [
+        "./data/images/game/1.png"
+      ]
+  },
+  "Island Tcoon": {
+      "name": "Island Tycoon",
+      "price": 7,
+      "info": {
+        "type": "hidden",
+        "original": false,
+        "gamepasses": false
+      },
+      "description": "",
+      "links": {
+        "Roblox": "https://www.roblox.com/games/11465552121",
+        "buyButton": ""
+      },
+      "image": {
+        "main": "./data/images/Island Tycoon/8.png",
+        "desktop": "./data/images/Island Tycoon/8.png",
+        "mobile": "./data/images/Island Tycoon/7.png"
+      },
+      "assets": [],
+      "gallery": [
+        "./data/images/Island Tycoon/1.png"
+      ]
+  },
+  "GIVER Parkour": {
+      "name": "GIVER Parkour",
+      "price": 5,
+      "info": {
+        "type": "hidden",
+        "original": true,
+        "gamepasses": true
+      },
+      "links": {
+        "Roblox": "",
+        "buyButton": ""
+      },
+      "image": {
+        "main": "",
+        "desktop": "",
+        "mobile": ""
+      },
+      "assets": [],
+      "gallery": []
+  },
+
+    
+  "Castle Map": {
+    "name": "Castle Map",
+    "price": 7,
+    "info": {
+      "type": "asset",
+      "original": false,
+      "gamepasses": false
+    },
+    "description": "",
+    "links": {
+      "Roblox": "https://www.roblox.com/games/11538328966",
+      "buyButton": ""
+    },
+    "image": {
+      "main": "./data/images/game/8.png",
+      "desktop": "./data/images/game/8.png",
+      "mobile": "./data/images/game/7.png"
+    },
+    "assets": [],
+    "gallery": [
+      "./data/images/game/1.png"
+    ]
+},
   "Character Creator": {
     "name": "Character Creator",
     "price": 3,
-    "type": "asset",
-    "gamepasses": false,
+    "info": {
+      "type": "asset",
+      "original": true,
+      "gamepasses": false
+    },
     "links": {
       "Roblox": "https://www.roblox.com/games/6488734004",
       "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YY59DFAT2GZKU"
@@ -232,8 +556,11 @@
   "NPCs": {
       "name": "NPCs",
       "price": 7,
-      "type": "asset",
-      "gamepasses": false,
+      "info": {
+        "type": "asset",
+        "original": true,
+        "gamepasses": false
+      },
       "description": "This asset includes multiple NPCs. It includes monsters, merchants and peasants (that randomize their appearance).",
       "links": {
         "Roblox": "https://www.roblox.com/games/8850714411",
@@ -255,8 +582,11 @@
   "Compass GUI": {
       "name": "Compass GUI",
       "price": 5,
-      "type": "asset",
-      "gamepasses": false,
+      "info": {
+        "type": "asset",
+        "original": true,
+        "gamepasses": false
+      },
       "description": "You can add this asset to your game so that players can locate themselves. This asset includes 2 compass styles. One on the top of the screen, like on Skyrim or Fortnite, and another on the bottom, as a normal compass.",
       "links": {
         "Roblox": "https://www.roblox.com/games/8579476119",
@@ -284,8 +614,11 @@
   "Block Test": {
       "name": "Block Test",
       "price": 7,
-      "type": "asset",
-      "gamepasses": false,
+      "info": {
+        "type": "asset",
+        "original": true,
+        "gamepasses": false
+      },
       "description": "You can add this asset to your game to make it have Minecraft's building system.",
       "links": {
         "Roblox": "https://www.roblox.com/games/6967287630",

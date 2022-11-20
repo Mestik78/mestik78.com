@@ -35,7 +35,17 @@
     color: var(--black);
 }
 
-p, .storeGameTitle, .gameTitle, .infoTitle, .text, .comment, .title, .bougthProductTitle {
-    font-family: ABeeZee;
+.robloxBigButtonText {
+    font-size: 40;
+    color: var(--white);
+}
+
+.storeGameTitle, .gameTitle, .infoTitle, .comment, .title, .bougthProductTitle, .robloxBigButtonText {
+    font-family: Fjalla One;
+    user-select: text;
+}
+
+p, .text {
+    font-family: Noto Sans Limbu;
     user-select: text;
 }

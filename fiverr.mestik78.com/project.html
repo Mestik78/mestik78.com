@@ -8,15 +8,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<meta charset="utf-8"/>
 
-		<link rel="stylesheet" href="./styles/general.css">
+		<link rel="stylesheet/less" type="text/css" href="./styles/general.less" />
 		<link rel="stylesheet" href="./styles/buttons.css">
 		<link rel="stylesheet" href="./styles/text.css">
 		<link rel="stylesheet" href="./styles/assetsSlot.css">
 		<link rel="stylesheet" href="./styles/linksSlot.css">
 		<link rel="stylesheet" href="./styles/tryItYouserlfSlot.css">
-		<link rel="stylesheet" href="./styles/gamePage.css">
+		<link rel="stylesheet/less" type="text/css" href="./styles/buy.less" />
 		<link rel="stylesheet" href="./styles/slideshow.css">
-		<link href='https://fonts.googleapis.com/css?family=ABeeZee|Montserrat' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans+Limbu' rel='stylesheet'>
 
 	</head>
 
@@ -40,9 +40,9 @@
 	<body>
 
 		<img id="backgroundBluredImage">
-		<img id="backgroundImage">
+		<img id="backgroundImage" class="mobileBackground">
 
-		<div id="mainFrame" class="floatingMainFrame upperRoundedCorners">
+		<div id="mainFrame" class="projectMainFrame">
 
 			<a id="buyButton" class="buyButton button" target="_blank">
 				<img class="cart" src="./icons/cart.png">
@@ -66,7 +66,7 @@
 				
 				<div id="assetsIncludedTitle" class="infoTitle">Assets Included:</div>
 				<div id="assetsViewer">
-					<div id="assetsFrame" class="assetsFrameMobile">
+					<div id="assetsFrame">
 					</div>
 				</div>
 
@@ -96,9 +96,9 @@
 		</div>
 	</body>
 
-	<script src="./scripts/loadProjectData.js"></script>
-	<script src="./scripts/detectMobile.js"></script>
-	<script src="./scripts/setupMobileProjectPage.js"></script>
 	<script src="./scripts/slideshow.js"></script>
+	<script src="./scripts/loadProjectData.js"></script>
+	<script src="./scripts/disablePayment.js"></script>
 
+	<script src="https://cdn.jsdelivr.net/npm/less" ></script>
 </html>

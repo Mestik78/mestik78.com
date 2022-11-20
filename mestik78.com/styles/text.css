@@ -1,6 +1,7 @@
 p, h1, h2, h3, h4, h5, h6 {
     font-family: "Didact Gothic";
     color: var(--white);
+    font-size: var(--text-size);
 }
 
 .text-title {
@@ -10,8 +11,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
     margin-top: 0px;
     margin-bottom: calc(var(--margin)/1.5);
-
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .text-game-title {

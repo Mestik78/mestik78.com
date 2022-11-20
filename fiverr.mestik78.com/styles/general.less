@@ -1,0 +1,119 @@
+:root {
+    --white: #E4F7EE;
+    --black: #3F4542;
+    --gray: #6E7873;
+    --green: #5BCA96;
+
+    --roblox: #C9695B;
+    --fiverr: #2C7D57;
+
+    --corner-big: 16mm;
+    --corner-small: 8mm;
+
+    --horizontal-margin: min(20mm, 8%);
+    --vertical-margin: min(12mm, 10%);
+
+    --shadow: 0px 3px 3px #000000b7;
+    --pressed-shadow: 0px 1px 3px #000000b7;
+    --disabled-shadow: 0px 1px 3px #000000b7;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+
+    background-color: var(--black);
+    
+    user-select: none;
+}
+
+#backgroundImage {
+    height: 350px;
+    width: 100%;
+    transform: translate(-50%);
+    left: 50%;
+    position: absolute;
+    object-fit: cover;
+}
+
+#backgroundBluredImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+
+    filter: blur(4px);
+}
+
+#mainFrame {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+
+    height: fit-content;
+    width: ~"min(100%, max(768px, 50%))";
+    
+    background-color: var(--white);
+
+    @media (min-width: 768px) {
+        top: ~"min(5mm, calc((100vw - 768px)/2))";
+        .upperRoundedCorners;
+        .lowerRoundedCorners;
+    }
+}
+.floatingMainFrame {
+    top:300px !important;
+}
+.projectMainFrame {
+    .floatingMainFrame;
+    @media (max-width: 768px) {
+        .upperRoundedCorners;
+    }
+}
+.mobileBackground {
+    @media (min-width: 768px) {
+        .hide;
+    }
+}
+
+.downloadMainFrame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#mainFrame > * { 
+    margin-top: var(--vertical-margin);
+    margin-bottom: var(--vertical-margin);
+    margin-left: var(--horizontal-margin);
+    margin-right: var(--horizontal-margin);
+}
+
+.dataFrame > * {
+    margin-bottom: 25px;
+}
+
+.noRoundedCorners {
+    border-radius: 0;
+}
+
+.upperRoundedCorners {
+    border-top-left-radius: var(--corner-big);
+    border-top-right-radius: var(--corner-big);
+}
+.lowerRoundedCorners {
+    border-bottom-left-radius: var(--corner-big);
+    border-bottom-right-radius: var(--corner-big);
+}
+
+.hide {
+    display: none !important;
+}

@@ -19,7 +19,7 @@ function generateGames(){
     function generateGame(Game){
     
         var game = document.createElement('a');
-        game.className = "game-entry rounded-effect"
+        game.className = "game-entry rounded-effect-and-children"
         game.href = getLink(Game)
         GameContainer.appendChild(game);
     
@@ -28,7 +28,7 @@ function generateGames(){
         game.appendChild(frame);
     
         var image = document.createElement('img');
-        image.className = "gameimage asyncImage"
+        image.className = "gameimage asyncImage card"
         image.src = Game.icon
         frame.appendChild(image);
     

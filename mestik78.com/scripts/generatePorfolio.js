@@ -18,7 +18,7 @@ function generatePorfolio(){
     function generatEntry(Project){
         
         var entry = document.createElement('a');
-        entry.className = "porfolio-entry rounded-effect"
+        entry.className = "porfolio-entry rounded-effect-and-children card"
         entry.href = getLink(Project)
         EntriesContainer.appendChild(entry);
     

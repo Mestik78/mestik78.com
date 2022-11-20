@@ -1,28 +1,20 @@
 .tabsFrame {
-    position: sticky;
-    top: 0px;
-    height: calc(40px + 1vw);
-
     display: flex;
     justify-content: center;
-    
-    z-index: 1;
-}
-
-.tabsFrame > #gamesTab {
-    transform: translate(20px, -50%);
-}
-.tabsFrame > #assetsTab {
-    transform: translate(-20px, -50%);
 }
 
 .tab {
     background-color: var(--green);
-    border-bottom-left-radius: var(--corner-big);
-    border-bottom-right-radius: var(--corner-big);
-    width: calc(150px + 4vw);
-    height: calc(80px + 2vw);
+    border-radius: var(--corner-small);
+    width: clamp(40px, 25%, 200px);
+    height: fit-content;
     filter: drop-shadow(var(--shadow));
+    margin-inline: 3%;
+
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
 }
 
 .tab:hover {
@@ -36,25 +28,24 @@
     filter: brightness(95%) drop-shadow(var(--pressed-shadow));
     transition: 0.05s;
 }
-.tabsFrame > #gamesTab:active {
-    transform: translate(20px, -40%);
-}
-.tabsFrame > #assetsTab:active {
-    transform: translate(-20px, -40%);
-}
 
 .activeTab {
     z-index: 1;
 }
 
 .tab > * {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translate(-50%);
-
     font-size: calc(24px + 0.8vw);
-    font-family: ABeeZee;
-    
+    font-family: Fjalla One;
+
     color: var(--white);
+}
+
+.hiddenProject {
+    transition-duration: 0.5s;
+    transition: all 0.5s, display 0.6s;
+
+    display: none !important;
+
+    filter: opacity(0%);
+    transform: scale(50%);
 }

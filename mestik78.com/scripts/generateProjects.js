@@ -18,7 +18,7 @@ function generateProjects(){
     function generateProject(Project){
         
         var project = document.createElement('a');
-        project.className = "project-entry rounded-effect"
+        project.className = "project-entry rounded-effect-and-children"
         project.href = getLink(Project)
         Container.appendChild(project);
     
@@ -27,12 +27,12 @@ function generateProjects(){
         project.appendChild(frame);
     
         var image = document.createElement('img');
-        image.className = "projectimage asyncImage rounded-effect"
+        image.className = "projectimage asyncImage rounded-effect-and-children card"
         image.src = Project.icon
         frame.appendChild(image);
     
         var imageOverlay = document.createElement('div');
-        imageOverlay.className = "imageOverlay rounded-effect"
+        imageOverlay.className = "imageOverlay rounded-effect-and-children"
         frame.appendChild(imageOverlay);
     
         var title = document.createElement('p');

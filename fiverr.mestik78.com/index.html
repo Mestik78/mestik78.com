@@ -1,4 +1,4 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 
@@ -8,13 +8,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<meta charset="utf-8"/>
 
-		<link rel="stylesheet" href="./styles/general.css">
+		<link rel="stylesheet/less" type="text/css" href="./styles/general.less" />
 		<link rel="stylesheet" href="./styles/buttons.css">
 		<link rel="stylesheet" href="./styles/text.css">
 		<link rel="stylesheet" href="./styles/tabs.css">
 		<link rel="stylesheet" href="./styles/projects.css">
 		<link rel="stylesheet" href="./styles/info.css">
-		<link href='https://fonts.googleapis.com/css?family=ABeeZee|Montserrat' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans+Limbu' rel='stylesheet'>
 
 	</head>
 
@@ -42,17 +42,20 @@
 
 		<div id="mainFrame" class="fixedMainFrame">
 			<div class="tabsFrame">
-				<div id="gamesTab" class="tab">
+				<a id="gamesTab" class="tab">
+					<div>All</div>
+				</a>
+				<a id="gamesTab" class="tab">
 					<div>Games</div>
-				</div>
-				<div id="assetsTab" class="tab">
+				</a>
+				<a id="assetsTab" class="tab">
 					<div>Assets</div>
-				</div>
+				</a>
 			</div>
 
 			<div class="dataFrame">
-				<div id="projectsFrame" class="projectsFrame">
-				</div>
+				<div id="gamesFrame" class="projectsFrame"></div>
+				<div id="assetsFrame" class="projectsFrame"></div>
 			</div>
 
 		</div>
@@ -60,7 +63,8 @@
 
 	<script src="./scripts/loadStore.js"></script>
 	<script src="./scripts/tabsControl.js"></script>
-	<script src="./scripts/detectMobile.js"></script>
-	<script src="./scripts/setupMobileStorePage.js"></script>
+	<script src="./scripts/loadProjectCard.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/less" ></script>
 
 </html>
