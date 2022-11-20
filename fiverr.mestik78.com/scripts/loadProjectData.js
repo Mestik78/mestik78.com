@@ -18,8 +18,12 @@ function loadDescription(projectData){
 }
 
 function loadLinks(projectData){
-    const buyButton = document.getElementById("buyButton")
-    buyButton.href = projectData.links.buyButton
+    if (projectData.links.buyButton == "") {
+        buyButton.className += " hide"
+    } else {
+        const buyButton = document.getElementById("buyButton")
+        buyButton.href = projectData.links.buyButton
+    }
     const robloxButton = document.getElementById("robloxButton")
     robloxButton.href = projectData.links.Roblox
     const robloxBigButton = document.getElementById("robloxBigButton")
