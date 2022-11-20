@@ -7,6 +7,10 @@ function loadBackground(projectData){
     backgroundBluredImage.src = projectData.image.desktop
 }
 
+function loadPageTitle(projectData){
+    document.title = projectData.name
+}
+
 function loadTitle(projectData){
     const title = document.getElementById("gameTitle")
     title.innerText = projectData.name
@@ -92,6 +96,7 @@ function loadGallery(projectData){
 
 function loadProjectData(projectData) {
     loadBackground(projectData)
+    loadPageTitle(projectData)
     loadTitle(projectData)
     loadDescription(projectData)
     loadLinks(projectData)
