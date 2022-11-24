@@ -40,5 +40,9 @@ async function loadproject(project, projectData, projectFrame) {
 
 
 async function loadProjectCard(project, projectData, projectFrame) {
-    await loadproject(project, projectData, projectFrame)
+    try {
+        await loadproject(project, projectData, projectFrame)
+    } catch {
+        projectFrame.innerHTML = '<img id="errorImage"></img>';
+    }
 }

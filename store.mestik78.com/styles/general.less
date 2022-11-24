@@ -44,16 +44,19 @@ body {
 }
 
 #backgroundBluredImage {
+    top: 0;
     height: 100%;
     width: 100%;
     object-fit: cover;
     position: fixed;
 
+    z-index: -1;
+
     filter: blur(4px);
 }
 
 #mainFrame {
-    position: absolute;
+    position: relative;
     top: 0px;
     left: 50%;
     transform: translate(-50%);
@@ -92,8 +95,7 @@ body {
 }
 
 #mainFrame > * { 
-    margin-top: var(--vertical-margin);
-    margin-bottom: var(--vertical-margin);
+    padding-top: var(--vertical-margin);
     margin-left: var(--horizontal-margin);
     margin-right: var(--horizontal-margin);
 }
