@@ -1,4 +1,74 @@
 {
+  "Island Survival": {
+      "name": "Island Survival",
+      "price": 15,
+      "info": {
+        "type": "game",
+        "original": false,
+        "gamepasses": false
+      },
+      "description": "",
+      "links": {
+        "Roblox": "https://www.roblox.com/games/11538234056",
+        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7VNPNWQZKRXQC"
+      },
+      "image": {
+        "main": "./data/images/Island Survival/12.png",
+        "desktop": "./data/images/Island Survival/11.png",
+        "mobile": "./data/images/Island Survival/9.png"
+      },
+      "assets": [],
+      "gallery": [
+        "./data/images/Island Survival/10.png",
+        "./data/images/Island Survival/4.png",
+        "./data/images/Island Survival/5.png",
+        "./data/images/Island Survival/6.png",
+        "./data/images/Island Survival/7.png",
+        "./data/images/Island Survival/8.png",
+        "./data/images/Island Survival/9.png",
+        "./data/images/Island Survival/1.png",
+        "./data/images/Island Survival/2.png",
+        "./data/images/Island Survival/3.png",
+        "./data/images/Island Survival/11.png",
+        "./data/images/Island Survival/12.png"
+      ]
+  },
+  "Medieval Map": {
+      "name": "Medieval Map",
+      "price": 12,
+      "info": {
+        "type": "asset",
+        "original": false,
+        "gamepasses": false
+      },
+      "description": "You can add this map to your game.",
+      "links": {
+        "Roblox": "https://www.roblox.com/games/8799796049",
+        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TKTJZZZ263TUY"
+      },
+      "image": {
+        "main": "./data/images/Medieval Map/07.png",
+        "asset": "./data/images/Medieval Map/07.png",
+        "desktop": "./data/images/Medieval Map/08.png",
+        "mobile": "./data/images/Medieval Map/07.png"
+      },
+      "assets": [],
+      "gallery": [
+        "./data/images/Medieval Map/01.png",
+        "./data/images/Medieval Map/02.png",
+        "./data/images/Medieval Map/03.png",
+        "./data/images/Medieval Map/04.png",
+        "./data/images/Medieval Map/05.png",
+        "./data/images/Medieval Map/06.png",
+        "./data/images/Medieval Map/07.png",
+        "./data/images/Medieval Map/08.png",
+        "./data/images/Medieval Map/09.png",
+        "./data/images/Medieval Map/10.png",
+        "./data/images/Medieval Map/11.png",
+        "./data/images/Medieval Map/12.png",
+        "./data/images/Medieval Map/13.png"
+      ]
+  },
   "Fight Game": {
         "name": "Fight Game",
         "price": 10,
@@ -60,6 +130,42 @@
         "./data/images/Island Tycoon/9.png",
         "./data/images/Island Tycoon/10.png",
         "./data/images/Island Tycoon/11.png"
+      ]
+  },
+  "Compound Tycoon": {
+      "name": "Compound Tycoon",
+      "price": 10,
+      "info": {
+        "type": "game",
+        "original": false,
+        "gamepasses": false
+      },
+      "description": "",
+      "links": {
+        "Roblox": "https://www.roblox.com/games/11651896818",
+        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7F37WWB6RNDGN"
+      },
+      "image": {
+        "main": "./data/images/Compound Tycoon/13.png",
+        "desktop": "./data/images/Compound Tycoon/14.png",
+        "mobile": "./data/images/Compound Tycoon/1.png"
+      },
+      "assets": [],
+      "gallery": [
+        "./data/images/Compound Tycoon/7.png",
+        "./data/images/Compound Tycoon/1.png",
+        "./data/images/Compound Tycoon/2.png",
+        "./data/images/Compound Tycoon/3.png",
+        "./data/images/Compound Tycoon/5.png",
+        "./data/images/Compound Tycoon/6.png",
+        "./data/images/Compound Tycoon/8.png",
+        "./data/images/Compound Tycoon/9.png",
+        "./data/images/Compound Tycoon/10.png",
+        "./data/images/Compound Tycoon/11.png",
+        "./data/images/Compound Tycoon/12.png",
+        "./data/images/Compound Tycoon/13.png",
+        "./data/images/Compound Tycoon/14.png",
+        "./data/images/Compound Tycoon/15.png"
       ]
   },
   "Medieval Land": {
@@ -129,76 +235,6 @@
         "./data/images/Parkour Haven/11.png"
       ]
   },
-  "Medieval Map": {
-      "name": "Medieval Map",
-      "price": 12,
-      "info": {
-        "type": "asset",
-        "original": false,
-        "gamepasses": false
-      },
-      "description": "You can add this map to your game.",
-      "links": {
-        "Roblox": "https://www.roblox.com/games/8799796049",
-        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TKTJZZZ263TUY"
-      },
-      "image": {
-        "main": "./data/images/Medieval Map/07.png",
-        "asset": "./data/images/Medieval Map/07.png",
-        "desktop": "./data/images/Medieval Map/08.png",
-        "mobile": "./data/images/Medieval Map/07.png"
-      },
-      "assets": [],
-      "gallery": [
-        "./data/images/Medieval Map/01.png",
-        "./data/images/Medieval Map/02.png",
-        "./data/images/Medieval Map/03.png",
-        "./data/images/Medieval Map/04.png",
-        "./data/images/Medieval Map/05.png",
-        "./data/images/Medieval Map/06.png",
-        "./data/images/Medieval Map/07.png",
-        "./data/images/Medieval Map/08.png",
-        "./data/images/Medieval Map/09.png",
-        "./data/images/Medieval Map/10.png",
-        "./data/images/Medieval Map/11.png",
-        "./data/images/Medieval Map/12.png",
-        "./data/images/Medieval Map/13.png"
-      ]
-  },
-  "Island Survival": {
-      "name": "Island Survival",
-      "price": 15,
-      "info": {
-        "type": "game",
-        "original": false,
-        "gamepasses": false
-      },
-      "description": "",
-      "links": {
-        "Roblox": "https://www.roblox.com/games/11538234056",
-        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7VNPNWQZKRXQC"
-      },
-      "image": {
-        "main": "./data/images/Island Survival/12.png",
-        "desktop": "./data/images/Island Survival/11.png",
-        "mobile": "./data/images/Island Survival/9.png"
-      },
-      "assets": [],
-      "gallery": [
-        "./data/images/Island Survival/10.png",
-        "./data/images/Island Survival/4.png",
-        "./data/images/Island Survival/5.png",
-        "./data/images/Island Survival/6.png",
-        "./data/images/Island Survival/7.png",
-        "./data/images/Island Survival/8.png",
-        "./data/images/Island Survival/9.png",
-        "./data/images/Island Survival/1.png",
-        "./data/images/Island Survival/2.png",
-        "./data/images/Island Survival/3.png",
-        "./data/images/Island Survival/11.png",
-        "./data/images/Island Survival/12.png"
-      ]
-  },
   "Dont Press the Button": {
       "name": "Don't Press the Button",
       "price": 13,
@@ -257,7 +293,7 @@
   },
   "Vibe Hangout": {
       "name": "Vibe Hangout",
-      "price": 7,
+      "price": 8,
       "info": {
         "type": "game",
         "original": false,
@@ -266,7 +302,7 @@
       "description": "",
       "links": {
         "Roblox": "https://www.roblox.com/games/11465342399",
-        "buyButton": ""
+        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VLPG7JRCABHTL"
       },
       "image": {
         "main": "./data/images/Vibe Hangout/4.png",
@@ -344,9 +380,9 @@
         "./data/images/Pong/3.png"
       ]
   },
-  "SCP: Site": {
+  "SCP Site": {
       "name": "SCP: Site",
-      "price": 7,
+      "price": 10,
       "info": {
         "type": "game",
         "original": false,
@@ -355,7 +391,7 @@
       "description": "",
       "links": {
         "Roblox": "https://www.roblox.com/games/11465228697",
-        "buyButton": ""
+        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A7Q25ZG679FJN"
       },
       "image": {
         "main": "./data/images/SCP Site/6.png",
@@ -383,7 +419,7 @@
   },
   "Zombie Survival": {
       "name": "Zombie Survival",
-      "price": 7,
+      "price": 6,
       "info": {
         "type": "game",
         "original": false,
@@ -392,7 +428,7 @@
       "description": "",
       "links": {
         "Roblox": "https://www.roblox.com/games/11465214022",
-        "buyButton": ""
+        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8ZQ3DQTNTWW82"
       },
       "image": {
         "main": "./data/images/Zombie Survival/3.png",
@@ -438,7 +474,7 @@
   },
   "Youtuber Tycoon": {
       "name": "Youtuber Tycoon",
-      "price": 7,
+      "price": 8,
       "info": {
         "type": "game",
         "original": false,
@@ -447,7 +483,7 @@
       "description": "",
       "links": {
         "Roblox": "https://www.roblox.com/games/11538267575",
-        "buyButton": ""
+        "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8D6CPHSCY7THA"
       },
       "image": {
         "main": "./data/images/game/8.png",
@@ -506,7 +542,7 @@
     
   "Castle Map": {
     "name": "Castle Map",
-    "price": 7,
+    "price": 6,
     "info": {
       "type": "asset",
       "original": false,
@@ -515,7 +551,7 @@
     "description": "",
     "links": {
       "Roblox": "https://www.roblox.com/games/11538328966",
-      "buyButton": ""
+      "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9XHB7KSEL7JAY"
     },
     "image": {
       "main": "./data/images/game/8.png",

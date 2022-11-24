@@ -26,7 +26,7 @@ function loadLinks(projectData){
         buyButton.className += " hide"
     } else {
         const buyButton = document.getElementById("buyButton")
-        buyButton.href = projectData.links.buyButton
+        buyButton.onclick = function() {window.open(projectData.links.buyButton,'Payment','width=500,height=650')}
     }
     const robloxButton = document.getElementById("robloxButton")
     robloxButton.href = projectData.links.Roblox
