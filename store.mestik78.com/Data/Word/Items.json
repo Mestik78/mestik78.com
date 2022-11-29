@@ -1,0 +1,25 @@
+{
+    "Test": {
+        "name": "Test",
+        "price": 15,
+        "info": {
+          "type": "game",
+          "original": false,
+          "gamepasses": false
+        },
+        "description": "",
+        "links": {
+          "Roblox": "https://www.roblox.com/games/11538234056",
+          "buyButton": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7VNPNWQZKRXQC"
+        },
+        "image": {
+          "main": "1.png",
+          "desktop": "1.png",
+          "mobile": "1.png"
+        },
+        "assets": [],
+        "gallery": [
+          "1.png"
+        ]
+    }
+}

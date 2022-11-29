@@ -1,4 +1,4 @@
-let storeName, storeFolder
+let storeName, storeFolder, storeInfo
 
 function getCurrentStore(){
     storeName = getUpperFolder()
@@ -6,6 +6,12 @@ function getCurrentStore(){
         storeName =  "roblox"
     }
     storeFolder = "./data/"+toFirstUppercase(storeName)+"/"
+    
+    fetch(storeFolder + "storeInfo.json")
+        .then(response => response.json())
+        .then(json => {
+            storeInfo = json
+        })
 }
 
 function loadBackground(){
