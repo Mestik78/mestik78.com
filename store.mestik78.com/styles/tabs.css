@@ -40,7 +40,7 @@
     color: var(--white);
 }
 
-.hiddenProject {
+.hiddenItem {
     transition-duration: 0.5s;
     transition: all 0.5s, display 0.6s;
 

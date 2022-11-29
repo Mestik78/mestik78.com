@@ -1,0 +1,1 @@
+document.getElementById("nav").innerHTML = readStringFromFileAtPath("../nav.html")

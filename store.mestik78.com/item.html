@@ -23,7 +23,7 @@
 		<meta name="google-site-verification" content="-EFYWRQgl8eapvlHvR93lQrJ05ZFhUuEsMtSD7Ppkjs" />
 		<!-- end of Google Merchant -->
 
-		<link rel="icon" type="image/png" href='./data/images/favicon.png' sizes="any">
+		<link rel="icon" type="image/png" href='./icons/favicon.png' sizes="any">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<meta charset="utf-8"/>
@@ -66,7 +66,7 @@
 		<img id="backgroundBluredImage">
 		<img id="backgroundImage" class="mobileBackground">
 
-		<div id="mainFrame" class="projectMainFrame">
+		<div id="mainFrame" class="itemMainFrame">
 
 			<a id="buyButton" class="buyButton button">
 				<img class="cart" src="./icons/cart.png">
@@ -89,14 +89,11 @@
 					<a class="button" id="discordButton" style="background-color: var(--discord);" target="_blank" href="https://discord.gg/ZYWn4nRntP">
 						<img src="./icons/discord.png">
 					</a>
+					<a class="button" id="paypalButton" style="background-color: var(--paypal);">
+						<img src="./icons/paypal.png">
+					</a>
 				</div>
 				
-				<div id="assetsIncludedTitle" class="infoTitle">Assets Included:</div>
-				<div id="assetsViewer">
-					<div id="assetsFrame">
-					</div>
-				</div>
-
 				<div id="assetsIncludedTitle" class="infoTitle">Gallery:</div>
 				<div class="slideshowFrame">
 					<div id="slideshowImages" class="slideshowImages">
@@ -123,9 +120,13 @@
 		</div>
 	</body>
 
-	<script src="./scripts/slideshow.js"></script>
-	<script src="./scripts/loadProjectData.js"></script>
-	<script src="./scripts/fiverrCensorship.js"></script>
+	<script src="./scripts/API/url.js"></script>
+	<script src="./scripts/API/files.js"></script>
+	<script src="./scripts/API/text.js"></script>
+	<script src="./scripts/Store/loadStore.js"></script>
+	<script src="./scripts/Item/slideshow.js"></script>
+	<script src="./scripts/Item/loadItemData.js"></script>
+	<script src="./scripts/General/fiverrCensorship.js"></script>
 
 	<script src="https://cdn.jsdelivr.net/npm/less" ></script>
 </html>

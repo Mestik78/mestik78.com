@@ -1,12 +1,12 @@
-.projectsFrame {
+.itemsFrame {
     overflow: hidden;
 }
 
-.projectsFrame > * {
+.itemsFrame > * {
     margin-bottom: calc(var(--vertical-margin)/1.5);
 }
 
-.projectFrame {
+.itemFrame {
     width: 100%;
     aspect-ratio: 1.75;
     
@@ -21,7 +21,7 @@
     border-radius: var(--corner-small);
 }
 
-.project {
+.item {
     width: 100%;
     height: 100%;
 
@@ -34,13 +34,13 @@
     overflow: hidden;
 }
 
-.project > .imageContainer {
+.item > .imageContainer {
     width: 100%;
     height: 100%;
     position: absolute;
 }
 
-.project > .imageContainer > img {
+.item > .imageContainer > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -48,7 +48,7 @@
 
     border-radius: var(--corner-small);
 }
-.project > .imageContainer > .imageOverlay {
+.item > .imageContainer > .imageOverlay {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -57,7 +57,7 @@
     background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.45) 17%, rgba(0,0,0,0.05) 75%);
 }
 
-.project > .storeGameTitle {
+.item > .storeGameTitle {
     position: absolute;
     bottom: 25px;
     left: 25px;
@@ -68,5 +68,5 @@
 
 #errorImage {
     content: url("../icons/error.png");
-    .project > .imageContainer;
+    .item > .imageContainer;
 }

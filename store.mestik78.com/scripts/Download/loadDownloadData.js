@@ -1,11 +1,11 @@
-function loadBackground(projectData){
+function loadBackground(itemData){
     const backgroundBluredImage = document.getElementById("backgroundBluredImage")
-    backgroundBluredImage.src = projectData.image.desktop
+    backgroundBluredImage.src = itemData.image.desktop
 }
 
-function loadTitle(projectData){
+function loadTitle(itemData){
     const title = document.getElementById("gameTitle")
-    title.innerText = projectData.name
+    title.innerText = itemData.name
 }
 
 function getFileFromName(name){
@@ -20,22 +20,22 @@ function doesFileExist(urlToFile) {
     return http.status!=404;
 }
 
-async function loadDownloadButton(currentProject, projectData, id){
+async function loadDownloadButton(currentItem, itemData, id){
     const downloadButton = document.getElementById("downloadButton")
-    let fileName = getFileFromName(currentProject) + "-" + id + ".rbxl"
+    let fileName = getFileFromName(currentItem) + "-" + id + ".rbxl"
     let fileExists = doesFileExist("./data/files/" + fileName)
     if (fileExists) {
-        downloadButton.download = projectData.name + ".rbxl"
+        downloadButton.download = itemData.name + ".rbxl"
         downloadButton.href = "./data/files/" + fileName
     } else {
         downloadButton.setAttribute("disabled", "")
     }
 }
 
-function loadDownloadData(currentProject, projectData, id) {
-    loadBackground(projectData)
-    loadTitle(projectData)
-    loadDownloadButton(currentProject, projectData, id)
+function loadDownloadData(currentItem, itemData, id) {
+    loadBackground(itemData)
+    loadTitle(itemData)
+    loadDownloadButton(currentItem, itemData, id)
 }
 
 
@@ -50,17 +50,17 @@ function getParams() {
 
 function start(){
     let params = getParams()
-    let currentProject = params.project
-    let currentProjectData = ProjectsJson[currentProject]
+    let currentItem = params.item
+    let currentItemData = ItemsJson[currentItem]
     let id = params.id
 
-    loadDownloadData(currentProject, currentProjectData, id)
+    loadDownloadData(currentItem, currentItemData, id)
 }
 
-var ProjectsJson
-fetch("./data/robloxProjects.json")
+var ItemsJson
+fetch("./data/robloxItems.json")
     .then(response => response.json())
     .then(json => {
-        ProjectsJson = json
+        ItemsJson = json
     })
     .then(document.body.onloadstart = start)

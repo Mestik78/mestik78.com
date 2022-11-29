@@ -25,7 +25,7 @@
 		<!-- end of Google Merchant -->
 
 
-		<link rel="icon" type="image/png" href='./data/images/favicon.png' sizes="any">
+		<link rel="icon" type="image/png" href='./icons/favicon.png' sizes="any">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<meta charset="utf-8"/>
@@ -36,7 +36,7 @@
 		<link rel="stylesheet" href="./styles/buttons.css">
 		<link rel="stylesheet" href="./styles/text.css">
 		<link rel="stylesheet" href="./styles/tabs.css">
-		<link rel="stylesheet/less" type="text/css" href="./styles/projects.less" />
+		<link rel="stylesheet/less" type="text/css" href="./styles/items.less" />
 		<link rel="stylesheet/less" type="text/css" href="./styles/nav.less" />
 		<link rel="stylesheet" href="./styles/info.css">
 		<link href='https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans+Limbu' rel='stylesheet'>
@@ -70,7 +70,7 @@
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
 
-		<img id="backgroundBluredImage" src="./data/images/Fight Game/7.png">
+		<img id="backgroundBluredImage">
 
 		<div id="mainFrame" class="fixedMainFrame">
 			<div class="tabsFrame">
@@ -86,17 +86,19 @@
 			</div>
 
 			<div class="dataFrame">
-				<div id="gamesFrame" class="projectsFrame"></div>
-				<div id="assetsFrame" class="projectsFrame"></div>
+				<div id="itemsFrame" class="itemsFrame"></div>
 			</div>
 
 		</div>
 	</body>
 
-	<script src="./scripts/loadStore.js"></script>
-	<script src="./scripts/tabsControl.js"></script>
-	<script src="./scripts/loadProjectCard.js"></script>
-	<script src="./scripts/loadNav.js"></script>
+	<script src="./scripts/API/url.js"></script>
+	<script src="./scripts/API/files.js"></script>
+	<script src="./scripts/API/text.js"></script>
+	<script src="./scripts/General/loadNav.js"></script>
+	<script src="./scripts/Store/loadStore.js"></script>
+	<script src="./scripts/Store/loadItems.js"></script>
+	<script src="./scripts/Store/loadItemCard.js"></script>
 
 	<script src="https://cdn.jsdelivr.net/npm/less" ></script>
 
