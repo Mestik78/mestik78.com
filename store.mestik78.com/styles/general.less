@@ -8,7 +8,7 @@ body {
     margin-right: 0px;
     margin-top: 0px;
 
-    background-color: var(--black);
+    background-color: var(--c-background);
     
     user-select: none;
 }
@@ -20,6 +20,7 @@ body {
     left: 50%;
     position: absolute;
     object-fit: cover;
+    display: var(--background-display);
 }
 
 #backgroundBluredImage {
@@ -30,6 +31,8 @@ body {
     position: fixed;
 
     z-index: -1;
+    
+    display: var(--background-display);
 
     filter: blur(4px);
 }
@@ -43,7 +46,7 @@ body {
     height: fit-content;
     width: ~"min(100%, max(768px, 50%))";
     
-    background-color: var(--white);
+    background-color: var(--c-background);
 
     @media (min-width: 768px) {
         top: ~"min(5mm, calc((100vw - 768px)/2))";
@@ -52,7 +55,7 @@ body {
     }
 }
 .floatingMainFrame {
-    top:300px !important;
+    top:var(--floating-main-frame-distance) !important;
 }
 .itemMainFrame {
     .floatingMainFrame;

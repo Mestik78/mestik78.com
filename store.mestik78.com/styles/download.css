@@ -2,7 +2,7 @@
     width: 50%;
     max-width: 250px;
     height: 50px;
-    background-color: var(--green);
+    background-color: var(--c-button);
     border-radius: var(--corner-small);
 }
 

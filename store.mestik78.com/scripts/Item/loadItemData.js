@@ -1,5 +1,3 @@
-//ItemsJson = JSON.parse(items)
-
 function loadBackground(item, itemData){
     const backgroundImage = document.getElementById("backgroundImage")
     if (backgroundImage) { backgroundImage.src = storeFolder + "Images/Items/" + item + "/" + itemData.image.mobile }

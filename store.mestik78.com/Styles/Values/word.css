@@ -1,0 +1,36 @@
+:root {
+    --white: #ffffff;
+    --black: #191b1d;
+    --gray: #232527;
+    --blue: #103F91;
+
+    --c-highlight: var(--blue);
+    --c-background: var(--white);
+    --background-display: none;
+    --c-text: var(--white);
+    --c-comment: var(--black);
+    --c-title: var(--white);
+    --c-item-title: var(--black);
+    --c-info-bubble: var(--white);
+    --c-slideshow-button: var(--white);
+    --c-button: var(--c-highlight);
+    --c-buy-button: var(--c-highlight);
+    --floating-main-frame-distance: 0px;
+    --buy-button-distance-top: var(--vertical-margin);
+    --c-image-overlay: linear-gradient(0deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.045) 17%, rgba(0,0,0,0.005) 75%);
+
+    --roblox: #C9695B;
+    --fiverr: #2C7D57;
+    --discord: #7289da;
+    --paypal: #e5eff6;
+
+    --corner-big: 4mm;
+    --corner-small: 2mm;
+
+    --horizontal-margin: min(20mm, 8%);
+    --vertical-margin: min(12mm, 10%);
+
+    --shadow: 0px 3px 3px #000000b7;
+    --pressed-shadow: 0px 1px 3px #000000b7;
+    --disabled-shadow: 0px 1px 3px #000000b7;
+}

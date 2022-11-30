@@ -1,43 +1,43 @@
 .storeGameTitle{
     font-size: calc(20px + 2.5vw);
-    color: var(--white);
+    color: var(--c-item-title);
 }
 
 .title {
     font-size: calc(30px + 1vw);
-    color: var(--black);
+    color: var(--c-title);
 }
 
 .gameTitle {
     font-size: calc(36px + 1vw);
-    color: var(--black);
+    color: var(--c-title);
 }
 
 .infoTitle {
     margin-top: 30px;
 
     font-size: calc(24px + 1vw);
-    color: var(--black);
+    color: var(--c-title);
 }
 
 .text {
     font-size: calc(14px + 0.6vw);
-    color: var(--black);
+    color: var(--c-text);
 }
 
 .comment {
     font-size: calc(10px + 0.6vw);
-    color: var(--gray);
+    color: var(--c-comment);
 }
 
 .bougthProductTitle {
     font-size: calc(20px + 1vw);
-    color: var(--black);
+    color: var(--c-title);
 }
 
 .robloxBigButtonText {
     font-size: 40;
-    color: var(--white);
+    color: var(--c-text);
 }
 
 .storeGameTitle, .gameTitle, .infoTitle, .comment, .title, .bougthProductTitle, .robloxBigButtonText {

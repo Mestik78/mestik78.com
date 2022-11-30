@@ -1,6 +1,6 @@
 .buyButton {
     position: absolute;
-    top: -30px;
+    top: var(--buy-button-distance-top);
     right: -30px;
     @media (max-width: 768px) {
         top: -75px;
@@ -9,7 +9,7 @@
     width: fit-content;
     height: calc(64px + 1vw);
     
-    background-color: var(--green);
+    background-color: var(--c-buy-button);
     border-radius: var(--corner-big);
 
     padding-inline: 15px;
@@ -18,6 +18,8 @@
     align-items: stretch;
     text-decoration: none;
     place-items: center;
+
+    padding-top: 0 !important;
 }
 .buyButton > * {
     margin-inline: 5px;
@@ -32,6 +34,6 @@
 .price {
     font-family: Fjalla One;
     font-size: calc(32px + 1vw);
-    color: var(--white);
+    color: var(--c-text);
     text-align: right;
 }

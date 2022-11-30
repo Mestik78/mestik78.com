@@ -50,7 +50,7 @@
     font-family: ABeeZee;
     font-size: calc(24px + 0.2vw);
     text-align: center;
-    color: var(--black);
+    color: var(--c-title);
 
     vertical-align: middle;
     display: table-cell;

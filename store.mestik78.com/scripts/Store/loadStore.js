@@ -1,6 +1,8 @@
+let loadStore = {}
+
 let storeName, storeFolder, storeInfo
 
-function getCurrentStore(){
+loadStore.getCurrentStore = function() {
     storeName = getUpperFolder()
     if (!storeName || !checkExists("./data/"+toFirstUppercase(storeName))) {
         storeName =  "roblox"
@@ -12,14 +14,23 @@ function getCurrentStore(){
         .then(json => {
             storeInfo = json
         })
+        .then(loadStore.loadCurrentStore)
 }
 
-function loadBackground(){
+loadStore.loadBackground = function(){
     document.getElementById("backgroundBluredImage").src = storeFolder + "Images/Background.png"
 }
-function loadCurrentStore(){
-    loadBackground()
+loadStore.loadStyle = function() {
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = "../../Styles/Values/" + storeInfo.style + ".css"
+    document.getElementsByTagName('HEAD')[0].appendChild(link);
 }
 
-getCurrentStore()
-loadCurrentStore()
+loadStore.loadCurrentStore = function() {
+    loadStore.loadBackground()
+    loadStore.loadStyle()
+}
+
+loadStore.getCurrentStore()

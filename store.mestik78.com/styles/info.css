@@ -26,7 +26,7 @@
     width: 100%;
     height: 100%;
 
-    color: var(--white);
+    color: var(--c-info-bubble);
     text-align: center;
     font-size: calc(35px + 0.4vw);
 
@@ -49,7 +49,7 @@
     padding-top: var(--vpadding);
     padding-bottom: var(--vpadding);
 
-    background-color: var(--white);
+    background-color: var(--c-background);
     border-radius: var(--corner-big);
 
     text-align: right;
